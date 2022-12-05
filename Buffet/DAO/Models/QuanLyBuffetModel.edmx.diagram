@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="3487d6c3bcb145d292a52603a73552a2" Name="Diagram1">
+        <EntityTypeShape EntityType="CuaHangBuffetModel.BANAN" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuaHangBuffetModel.DANHMUCDOUONG" Width="1.5" PointX="1.5" PointY="18" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuaHangBuffetModel.DANHMUCMONAN" Width="1.5" PointX="5.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuaHangBuffetModel.DOANHTHU" Width="1.5" PointX="3" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuaHangBuffetModel.DOUONG" Width="1.5" PointX="3.75" PointY="17.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuaHangBuffetModel.HOADON" Width="1.5" PointX="6" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuaHangBuffetModel.KHO" Width="1.5" PointX="0.75" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuaHangBuffetModel.LOAISANPHAMKHO" Width="1.5" PointX="0.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuaHangBuffetModel.MONAN" Width="1.5" PointX="8" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuaHangBuffetModel.NHANVIEN" Width="1.5" PointX="0.75" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuaHangBuffetModel.PHANQUYEN" Width="1.5" PointX="0.75" PointY="20.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuaHangBuffetModel.QUANTRIVIEN" Width="1.5" PointX="0.75" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuaHangBuffetModel.SANPHAMKHO" Width="1.5" PointX="3" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuaHangBuffetModel.TAIKHOAN" Width="1.5" PointX="3" PointY="14.125" IsExpanded="true" />
+        <AssociationConnector Association="CuaHangBuffetModel.FK__HOADON__MaBanAn__49C3F6B7" ManuallyRouted="false" />
+        <AssociationConnector Association="CuaHangBuffetModel.FK__DOUONG__MaDanhMu__45F365D3" ManuallyRouted="false" />
+        <AssociationConnector Association="CuaHangBuffetModel.FK__MONAN__MaDanhMuc__3D5E1FD2" ManuallyRouted="false" />
+        <AssociationConnector Association="CuaHangBuffetModel.FK__DOANHTHU__MaHoaD__4E88ABD4" ManuallyRouted="false" />
+        <AssociationConnector Association="CuaHangBuffetModel.FK__DOANHTHU__MaNhan__4F7CD00D" ManuallyRouted="false" />
+        <AssociationConnector Association="CuaHangBuffetModel.FK__HOADON__MaDoUong__4AB81AF0" ManuallyRouted="false" />
+        <AssociationConnector Association="CuaHangBuffetModel.FK__HOADON__MaNhanVi__4BAC3F29" ManuallyRouted="false" />
+        <AssociationConnector Association="CuaHangBuffetModel.FK__SANPHAMKH__MaKho__35BCFE0A" ManuallyRouted="false" />
+        <AssociationConnector Association="CuaHangBuffetModel.FK__SANPHAMKH__MaLoa__34C8D9D1" ManuallyRouted="false" />
+        <AssociationConnector Association="CuaHangBuffetModel.FK__SANPHAMKH__MaNha__37A5467C" ManuallyRouted="false" />
+        <AssociationConnector Association="CuaHangBuffetModel.FK__TAIKHOAN__MaNhan__2C3393D0" ManuallyRouted="false" />
+        <AssociationConnector Association="CuaHangBuffetModel.FK__TAIKHOAN__MaPhan__2D27B809" ManuallyRouted="false" />
+        <AssociationConnector Association="CuaHangBuffetModel.FK__SANPHAMKH__MaQua__36B12243" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
