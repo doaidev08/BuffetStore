@@ -67,8 +67,9 @@ namespace Buffet.GUI.QuanLyBanAn
 
                 if (busDatBan.BUS_DatBan_TaoHoaDon(hoaDon))
                 {
+                    GUI_CapNhatTTBan();
 
-                    
+
                     thongBao.HienThiThongBao(
                         this,
                         bunifuSnackbar1,
