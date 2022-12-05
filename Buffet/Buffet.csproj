@@ -403,7 +403,9 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Assets\Icons\" />
     <Folder Include="Assets\Images\" />
+    <Folder Include="Assets\SQL\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="DAO\Models\QuanLyBuffetModel.Context.tt">

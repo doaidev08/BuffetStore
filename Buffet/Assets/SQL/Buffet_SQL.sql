@@ -1,0 +1,339 @@
+﻿CREATE DATABASE CuaHangBuffet;
+GO
+
+USE CuaHangBuffet;
+GO
+
+CREATE TABLE QUANTRIVIEN(
+    MaQuanTriVien INT PRIMARY KEY NOT NULL IDENTITY,
+	TenTruyCapQTV VARCHAR(10) NOT NULL,
+	MatKhau VARCHAR(50) NOT NULL
+);
+GO
+
+CREATE TABLE NHANVIEN (
+    MaNhanVien INT PRIMARY KEY NOT NULL IDENTITY,
+    HoTenNhanVien NVARCHAR(255) NOT NULL,
+	NgaySinh DATE NOT NULL,
+	SoCCCDNhanVien INT NOT NULL UNIQUE,
+	DienThoai CHAR(10) NOT NULL UNIQUE,
+);
+GO
+CREATE TABLE PHANQUYEN(
+	MaPhanQuyen INT PRIMARY KEY NOT NULL IDENTITY,
+	VaiTroPhanQuyen NVARCHAR(255) NOT NULL,
+);
+GO
+
+CREATE TABLE  TAIKHOAN(
+	MaTaiKhoan INT PRIMARY KEY NOT NULL IDENTITY,
+	TenTruyCap VARCHAR(10) NOT NULL,
+	MatKhau  VARCHAR(50) NOT NULL,
+	VaiTro NVARCHAR(50) NOT NULL,
+	MaPhanQuyen INT NOT NULL,
+	MaNhanVien INT,
+	FOREIGN KEY(MaNhanVien) REFERENCES dbo.NHANVIEN(MaNhanVien),
+	FOREIGN KEY(MaPhanQuyen) REFERENCES dbo.PHANQUYEN(MaPhanQuyen)
+);
+GO
+
+CREATE TABLE KHO (
+	MaKho INT PRIMARY KEY NOT NULL IDENTITY,
+	TenKho NVARCHAR(255) NOT NULL
+);
+GO
+
+CREATE TABLE LOAISANPHAMKHO(
+	MaLoaiSanPhamKho INT PRIMARY KEY NOT NULL IDENTITY,
+	TenLoaiSanPhamKho NVARCHAR(255) NOT NULL,
+);
+GO
+
+CREATE TABLE SANPHAMKHO (
+    MaSanPhamKho INT PRIMARY KEY NOT NULL IDENTITY,
+	TenSanPhamKho NVARCHAR(255) NOT NULL,
+	Kho NVARCHAR(255) NOT NULL,
+	LoaiSanPhamKho NVARCHAR(255) NOT NULL,
+	DonViTinh NVARCHAR(255) NOT NULL,
+	SoLuong INT NOT NULL,
+	NguoiNhapKho NVARCHAR(255),
+	NguoiCapNhat NVARCHAR(255),
+	TinhTrangSpKho BIT DEFAULT 1,
+	MaKho INT,
+	MaLoaiSanPhamKho INT,
+	MaQuanTriVien INT,
+	MaNhanVien INT,
+	FOREIGN KEY(MaLoaiSanPhamKho) REFERENCES dbo.LOAISANPHAMKHO(MaLoaiSanPhamKho),
+	FOREIGN KEY(MaKho) REFERENCES dbo.KHO(MaKho),
+	FOREIGN KEY(MaQuanTriVien) REFERENCES dbo.QUANTRIVIEN(MaQuanTriVien),
+	FOREIGN KEY(MaNhanVien) REFERENCES dbo.NHANVIEN(MaNhanVien),
+);
+GO
+
+CREATE TABLE DANHMUCMONAN(
+	MaDanhMucMonAn INT PRIMARY KEY NOT NULL IDENTITY,
+	TenDanhMucMonAn NVARCHAR(255) NOT NULL,
+);
+GO
+
+CREATE TABLE MONAN (
+    MaMonAn INT PRIMARY KEY NOT NULL IDENTITY,
+	TenMonAn NVARCHAR(255) NOT NULL,
+	LoaiMonAn NVARCHAR(255) NOT NULL,
+	SoLuongMonAn INT NOT NULL,
+	TinhTrangMonAn BIT DEFAULT 1,
+	MaDanhMucMonAn INT,
+	FOREIGN KEY(MaDanhMucMonAn) REFERENCES dbo.DANHMUCMONAN(MaDanhMucMonAn)
+);
+GO
+
+CREATE TABLE BANAN (
+    MaBanAn INT PRIMARY KEY NOT NULL IDENTITY,
+	TenBanAn NVARCHAR(255) NOT NULL,
+	SucChua INT NOT NULL,
+	TinhTrangBanAn BIT DEFAULT 0,
+);
+GO
+CREATE TABLE DANHMUCDOUONG(
+	MaDanhMucDoUong INT PRIMARY KEY NOT NULL IDENTITY,
+	TenDanhMucDoUong NVARCHAR(255) NOT NULL,
+);
+GO
+CREATE TABLE DOUONG (
+    MaDoUong INT PRIMARY KEY NOT NULL IDENTITY,
+	TenDoUong NVARCHAR(255) NOT NULL,
+	LoaiDoUong NVARCHAR(255) NOT NULL,
+	GiaDoUong MONEY NOT NULL,
+	TinhTrangDoUong BIT DEFAULT 1,
+	MaDanhMucDoUong INT,
+	FOREIGN KEY(MaDanhMucDoUong) REFERENCES dbo.DANHMUCDOUONG(MaDanhMucDoUong)
+);
+GO
+
+CREATE TABLE HOADON (
+    MaHoaDon INT PRIMARY KEY NOT NULL IDENTITY,
+	TenKhachHang NVARCHAR(255) NOT NULL,
+	SoLuongKhach INT NOT NULL,
+	BanKhachHang NVARCHAR(255) NOT NULL,
+	ThoiGianKhachVao DATETIME,
+	GiaSetBuffet MONEY,
+	SoLuongDoUong INT,
+	TongPhiDoUong MONEY,
+	PhiDuThua MONEY,
+	TongTien MONEY,
+	Thue INT, --Thuế giá theo %
+	GiamGIa	INT, --Giảm giá theo %
+	TienThanhToan MONEY,
+	SoTienNhan MONEY,
+	SoTienTraKhach MONEY,
+	ThoiGianHoaDon DATETIME,
+	TinhTrangHoaDon BIT DEFAULT 0,
+	MaBanAn INT,
+	MaDoUong INT,
+	MaNhanVien INT,
+	FOREIGN KEY(MaBanAn) REFERENCES dbo.BANAN(MaBanAn),
+	FOREIGN KEY(MaDoUong) REFERENCES dbo.DOUONG(MaDoUong),
+	FOREIGN KEY(MaNhanVien) REFERENCES dbo.NHANVIEN(MaNhanVien),
+);
+GO
+
+CREATE TABLE DOANHTHU (
+    MaDoanhThu INT PRIMARY KEY NOT NULL IDENTITY,
+	TenDoanhThu NVARCHAR(255) NOT NULL,
+	NgayDoanhThu DATETIME NOT NULL,
+	NhanVienDoanhThu NVARCHAR(255) NOT NULL,
+	TongDoanhThu MONEY NOT NULL,
+	MaHoaDon INT,
+	MaNhanVien INT,
+	FOREIGN KEY(MaHoaDon) REFERENCES dbo.HOADON(MaHoaDon),
+	FOREIGN KEY(MaNhanVien) REFERENCES dbo.NHANVIEN(MaNhanVien),
+);
+GO
+
+
+-- Thêm dữ liệu QUẢN TRỊ VIÊN 
+INSERT INTO QUANTRIVIEN(
+	TenTruyCapQTV,
+	MatKhau
+)VALUES(
+	'admin',
+	'admin'
+);
+
+-- Thêm dữ liệu PHÂN QUYỀN
+INSERT INTO PHANQUYEN(
+	VaiTroPhanQuyen
+)VALUES(
+	N'Lễ tân'
+);
+INSERT INTO PHANQUYEN(
+	VaiTroPhanQuyen
+)VALUES(
+	N'Nhân viên phục vụ'
+);
+INSERT INTO PHANQUYEN(
+	VaiTroPhanQuyen
+)VALUES(
+	N'Đầu bếp'
+);
+-- Thêm dữ liệu NHÂN VIÊN 
+INSERT INTO NHANVIEN(
+	HoTenNhanVien,
+	NgaySinh,
+	SoCCCDNhanVien,
+	DienThoai
+)VALUES(
+	N'Nguyễn Văn A',
+	'2022-01-11',
+	1921223333,
+	'0923456822'
+);
+INSERT INTO NHANVIEN(
+	HoTenNhanVien,
+	NgaySinh,
+	SoCCCDNhanVien,
+	DienThoai
+)VALUES(
+	N'Nguyễn Văn B',
+	'2022-01-11',
+	1921223337,
+	'0923456827'
+);
+
+INSERT INTO NHANVIEN(
+	HoTenNhanVien,
+	NgaySinh,
+	SoCCCDNhanVien,
+	DienThoai
+)VALUES(
+	N'Nguyễn Văn C',
+	'2022-01-11',
+	1921223332,
+	'0923456821'
+);
+
+-- Thêm dữ liệu BÀN ĂN 
+INSERT INTO BANAN(
+	TenBanAn,
+	SucChua
+)VALUES(
+	N'Bàn 1',
+	5
+);
+
+INSERT INTO BANAN(
+	TenBanAn,
+	SucChua
+)VALUES(
+	N'Bàn 2',
+	5
+);
+
+INSERT INTO BANAN(
+	TenBanAn,
+	SucChua
+)VALUES(
+	N'Bàn 3',
+	5
+);
+
+INSERT INTO BANAN(
+	TenBanAn,
+	SucChua
+)VALUES(
+	N'Bàn 4',
+	5
+);
+
+INSERT INTO BANAN(
+	TenBanAn,
+	SucChua
+)VALUES(
+	N'Bàn 5',
+	5
+);
+INSERT INTO BANAN(
+	TenBanAn,
+	SucChua
+)VALUES(
+	N'Bàn 6',
+	6
+);
+
+INSERT INTO BANAN(
+	TenBanAn,
+	SucChua,
+	TinhTrangBanAn
+)VALUES(
+	N'Bàn 7',
+	7,
+	1
+);
+-- Thêm dữ liệu DANH MỤC MÓN ĂN 
+INSERT INTO DANHMUCMONAN(
+	TenDanhMucMonAn
+)
+VALUES(
+	N'Điểm tâm'
+);
+
+INSERT INTO DANHMUCMONAN(
+	TenDanhMucMonAn
+)
+VALUES(
+	N'Món chính'
+);
+
+INSERT INTO DANHMUCMONAN(
+	TenDanhMucMonAn
+)
+VALUES(
+	N'Tráng miệng'
+);
+-- Thêm dữ liệu DANH MỤC ĐỒ UỐNG
+INSERT INTO DANHMUCDOUONG(
+	TenDanhMucDoUong
+)
+VALUES(
+	N'NƯỚC NGỌT'
+);
+
+INSERT INTO DANHMUCDOUONG(
+	TenDanhMucDoUong
+)
+VALUES(
+	N'BIA'
+);
+
+INSERT INTO DANHMUCDOUONG(
+	TenDanhMucDoUong
+)
+VALUES(
+	N'RƯỢU'
+);
+
+-- Thêm dữ liệu KHO
+INSERT INTO KHO(
+	TenKho
+)
+VALUES(
+	N'Kho Số 1'
+);
+
+-- Thêm dữ liệu LOAISANPHAMKHO
+INSERT INTO LOAISANPHAMKHO(
+	TenLoaiSanPhamKho
+)
+VALUES(
+	N'Nguyên liệu'
+);
+
+INSERT INTO LOAISANPHAMKHO(
+	TenLoaiSanPhamKho
+)
+VALUES(
+	N'Vật tư'
+);
+
+select * from BANAN
+select * from HOADON
