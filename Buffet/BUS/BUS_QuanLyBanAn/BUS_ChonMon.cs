@@ -29,7 +29,7 @@ namespace Buffet.BUS.BUS_QuanLyBanAn
                 BunifuButton bunifuButton = new BunifuButton();
                 bunifuButton.Text = ls.TenBanAn.ToString() + " (Sức chứa: " + ls.SucChua.ToString() + ")";
                 bunifuButton.Name = ls.MaBanAn.ToString();
-               /* bunifuButton.Click += new System.EventHandler(BUS_DatBanPicker);*/
+                bunifuButton.Click += new System.EventHandler(BUS_LayHoaDonBan);
                 if (!ls.TinhTrangBanAn)   //Mặc định bàn ăn là 0 (false)- chưa có người ngồi 
                 {
                     bunifuButton.Enabled = false;
@@ -40,6 +40,10 @@ namespace Buffet.BUS.BUS_QuanLyBanAn
                 }
                 flowLayoutPanel.Controls.Add(bunifuButton);
             }
+        }
+        public void BUS_LayHoaDonBan(object sender, EventArgs e)
+        {
+
         }
     }
 }
