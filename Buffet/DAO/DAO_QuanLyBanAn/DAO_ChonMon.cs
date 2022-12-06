@@ -19,7 +19,7 @@ namespace Buffet.DAO.DAO_QuanLyBanAn
         }
         public void DAO_LayHoaDonBan()
         {
-            var hoaDon = databaseOrigin.database.BANAN.Find(1);
+            var hoaDon = databaseOrigin.database.BANANs.Find(1);
 
         }
     }

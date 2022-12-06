@@ -17,6 +17,7 @@ namespace Buffet
         {
             InitializeComponent();
             hideSubMenu();
+            this.FormBorderStyle = FormBorderStyle.Sizable;
         }
 
         public void hideSubMenu()
@@ -85,6 +86,7 @@ namespace Buffet
         private void btnFoodAdd_Click(object sender, EventArgs e)
         {
             hideSubMenu();
+            openChildForm(new Buffet.GUI.GUI_FoodManagement.fAddFood());
         }
 
         private void btnFoodView_Click(object sender, EventArgs e)

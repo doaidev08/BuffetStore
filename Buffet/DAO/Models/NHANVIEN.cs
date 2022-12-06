@@ -17,10 +17,10 @@ namespace Buffet.DAO.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public NHANVIEN()
         {
-            this.DOANHTHU = new HashSet<DOANHTHU>();
-            this.HOADON = new HashSet<HOADON>();
-            this.SANPHAMKHO = new HashSet<SANPHAMKHO>();
-            this.TAIKHOAN = new HashSet<TAIKHOAN>();
+            this.DOANHTHUs = new HashSet<DOANHTHU>();
+            this.HOADONs = new HashSet<HOADON>();
+            this.SANPHAMKHOes = new HashSet<SANPHAMKHO>();
+            this.TAIKHOANs = new HashSet<TAIKHOAN>();
         }
     
         public int MaNhanVien { get; set; }
@@ -30,12 +30,12 @@ namespace Buffet.DAO.Models
         public string DienThoai { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<DOANHTHU> DOANHTHU { get; set; }
+        public virtual ICollection<DOANHTHU> DOANHTHUs { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<HOADON> HOADON { get; set; }
+        public virtual ICollection<HOADON> HOADONs { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<SANPHAMKHO> SANPHAMKHO { get; set; }
+        public virtual ICollection<SANPHAMKHO> SANPHAMKHOes { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<TAIKHOAN> TAIKHOAN { get; set; }
+        public virtual ICollection<TAIKHOAN> TAIKHOANs { get; set; }
     }
 }
