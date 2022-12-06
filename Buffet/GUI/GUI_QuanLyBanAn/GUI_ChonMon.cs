@@ -1,4 +1,5 @@
-﻿using Bunifu.UI.WinForms;
+﻿using Buffet.BUS.BUS_QuanLyBanAn;
+using Bunifu.UI.WinForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,19 +14,21 @@ namespace Buffet.GUI.QuanLyBanAn
 {
     public partial class GUI_ChonMon : Form
     {
+        BUS_ChonMon busChonMon;
         public GUI_ChonMon()
         {
+            busChonMon = new BUS_ChonMon();
             InitializeComponent();
-            GUI_HienThiBanDangAn();
+            
         }
 
 
 
 
         //Hiển thị các bàn ăn đang ăn
-        public void GUI_HienThiBanDangAn()
+        public void GUI_LayDSBanDangAn()
         {
-
+            busChonMon.BUS_LayDSBanDangAn(flowLayoutPanel1);
         }
         //Chuyển TabPage 
         public void GUI_ChuyenPage(string page)
@@ -60,7 +63,7 @@ namespace Buffet.GUI.QuanLyBanAn
 
         private void GUI_ChonMon_Load(object sender, EventArgs e)
         {
-
+            GUI_LayDSBanDangAn();
         }
 
         private void bunifuButton2_Click(object sender, EventArgs e)

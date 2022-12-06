@@ -308,7 +308,7 @@
             this.btnTableView.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(197)))), ((int)(((byte)(153)))));
             this.btnTableView.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnTableView.BackgroundImage")));
             this.btnTableView.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.btnTableView.ButtonText = "Xem danh sách bàn ăn";
+            this.btnTableView.ButtonText = "Chọn món";
             this.btnTableView.ButtonTextMarginLeft = 0;
             this.btnTableView.ColorContrastOnClick = 45;
             this.btnTableView.ColorContrastOnHover = 45;
@@ -400,7 +400,7 @@
             this.btnTableAdd.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(197)))), ((int)(((byte)(153)))));
             this.btnTableAdd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnTableAdd.BackgroundImage")));
             this.btnTableAdd.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.btnTableAdd.ButtonText = "Thêm bàn ăn";
+            this.btnTableAdd.ButtonText = "Đặt bàn ăn";
             this.btnTableAdd.ButtonTextMarginLeft = 0;
             this.btnTableAdd.ColorContrastOnClick = 45;
             this.btnTableAdd.ColorContrastOnHover = 45;
