@@ -41,9 +41,13 @@ namespace Buffet.BUS.BUS_QuanLyBanAn
                 flowLayoutPanel.Controls.Add(bunifuButton);
             }
         }
+        public string maBanAn;
         public void BUS_LayHoaDonBan(object sender, EventArgs e)
         {
-
+            BunifuButton btn = sender as BunifuButton;
+            maBanAn = btn.Name.ToString();
         }
+
+ 
     }
 }
