@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Bunifu.UI.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,7 +16,27 @@ namespace Buffet.GUI.QuanLyBanAn
         public GUI_ChonMon()
         {
             InitializeComponent();
+            GUI_HienThiBanDangAn();
         }
+
+
+
+
+        //Hiển thị các bàn ăn đang ăn
+        public void GUI_HienThiBanDangAn()
+        {
+
+        }
+        //Chuyển TabPage 
+        public void GUI_ChuyenPage(string page)
+        {
+
+            bunifuPages1.SetPage(page);
+        }
+
+
+
+
 
         private void tabPage1_Click(object sender, EventArgs e)
         {
@@ -43,6 +64,16 @@ namespace Buffet.GUI.QuanLyBanAn
         }
 
         private void bunifuButton2_Click(object sender, EventArgs e)
+        {
+            GUI_ChuyenPage("Món Ăn");
+        }
+
+        private void bunifuButton3_Click(object sender, EventArgs e)
+        {
+            GUI_ChuyenPage("Đồ uống");
+        }
+
+        private void bunifuToggleSwitch1_CheckedChanged(object sender, BunifuToggleSwitch.CheckedChangedEventArgs e)
         {
 
         }

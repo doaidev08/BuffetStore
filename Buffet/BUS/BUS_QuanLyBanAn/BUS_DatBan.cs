@@ -14,7 +14,7 @@ using System.Windows.Forms;
 
 namespace Buffet.BUS.BUSQuanLyBanAn
 {
-    class BUS_DatBan
+    public class BUS_DatBan
     {
         DAO_DatBan daoDatBan;
         

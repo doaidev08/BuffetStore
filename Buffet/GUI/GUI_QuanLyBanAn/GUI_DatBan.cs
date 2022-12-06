@@ -58,11 +58,7 @@ namespace Buffet.GUI.QuanLyBanAn
                 hoaDon.SoLuongKhach = (int)numericUpDown1.Value;
                 hoaDon.ThoiGianKhachVao = bunifuDatePicker1.Value;
 
-                string banKhachHang = "";
-                foreach (var i in busDatBan.tablePickers)
-                {
-                    banKhachHang += i.ToString()+",";
-                }
+                string banKhachHang = String.Join(",", busDatBan.tablePickers);
                 hoaDon.BanKhachHang = banKhachHang;
 
                 if (busDatBan.BUS_DatBan_TaoHoaDon(hoaDon))
