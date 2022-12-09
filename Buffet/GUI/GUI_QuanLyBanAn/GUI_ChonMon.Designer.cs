@@ -71,8 +71,8 @@
             this.bunifuPages1 = new Bunifu.UI.WinForms.BunifuPages();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.bunifuButton4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.bunifuButton5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.bunifuPanel1.SuspendLayout();
             this.bunifuPanel2.SuspendLayout();
             this.bunifuPanel3.SuspendLayout();
@@ -83,6 +83,7 @@
             // 
             // bunifuPanel1
             // 
+            this.bunifuPanel1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.bunifuPanel1.BackgroundColor = System.Drawing.Color.Transparent;
             this.bunifuPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel1.BackgroundImage")));
             this.bunifuPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -605,6 +606,7 @@
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.flowLayoutPanel1.Location = new System.Drawing.Point(4, 1);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(235, 422);
@@ -612,6 +614,7 @@
             // 
             // bunifuPanel3
             // 
+            this.bunifuPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.bunifuPanel3.BackgroundColor = System.Drawing.Color.Transparent;
             this.bunifuPanel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel3.BackgroundImage")));
             this.bunifuPanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -947,17 +950,6 @@
             this.bunifuButton4.TextPadding = new System.Windows.Forms.Padding(0);
             this.bunifuButton4.UseDefaultRadiusAndThickness = true;
             // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.bunifuButton5);
-            this.tabPage2.Location = new System.Drawing.Point(4, 4);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(267, 371);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Đồ uống";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
             // bunifuButton5
             // 
             this.bunifuButton5.AllowAnimations = true;
@@ -1049,6 +1041,17 @@
             this.bunifuButton5.TextPadding = new System.Windows.Forms.Padding(0);
             this.bunifuButton5.UseDefaultRadiusAndThickness = true;
             // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.bunifuButton5);
+            this.tabPage2.Location = new System.Drawing.Point(4, 4);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(267, 371);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Đồ uống";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
             // GUI_ChonMon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1089,11 +1092,11 @@
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel3;
         private Bunifu.UI.WinForms.BunifuPages bunifuPages1;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton3;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton2;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton4;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton5;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton5;
     }
 }

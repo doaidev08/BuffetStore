@@ -30,34 +30,33 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fAddFood));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges10 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges11 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuFormCaptionButton.BorderEdges borderEdges12 = new Bunifu.UI.WinForms.BunifuFormCaptionButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties13 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties14 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties15 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties16 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
             this.btnDeleteVal = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.btnAddFood = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
-            this.bunifuFormCaptionButton1 = new Bunifu.UI.WinForms.BunifuFormCaptionButton();
             this.BorderRadius = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.txbFoodName = new Bunifu.UI.WinForms.BunifuTextBox();
             this.selectFoodCate = new Bunifu.UI.WinForms.BunifuDropdown();
             this.txtFoodCount = new System.Windows.Forms.NumericUpDown();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
-            this.lbFoodCount = new Bunifu.UI.WinForms.BunifuLabel();
-            this.lbFoodCate = new Bunifu.UI.WinForms.BunifuLabel();
-            this.lbFoodName = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuPanel3 = new Bunifu.UI.WinForms.BunifuPanel();
             this.bunifuPanel4 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.lbFoodCate = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuPanel3 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.lbFoodName = new Bunifu.UI.WinForms.BunifuLabel();
+            this.lbFoodCount = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuSnackbar1 = new Bunifu.UI.WinForms.BunifuSnackbar(this.components);
             this.bunifuPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtFoodCount)).BeginInit();
             this.bunifuPanel1.SuspendLayout();
-            this.bunifuPanel3.SuspendLayout();
             this.bunifuPanel4.SuspendLayout();
+            this.bunifuPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // bunifuLabel1
@@ -115,11 +114,11 @@
             this.btnDeleteVal.ColorContrastOnClick = 45;
             this.btnDeleteVal.ColorContrastOnHover = 45;
             this.btnDeleteVal.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges10.BottomLeft = true;
-            borderEdges10.BottomRight = true;
-            borderEdges10.TopLeft = true;
-            borderEdges10.TopRight = true;
-            this.btnDeleteVal.CustomizableEdges = borderEdges10;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btnDeleteVal.CustomizableEdges = borderEdges1;
             this.btnDeleteVal.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnDeleteVal.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnDeleteVal.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -184,6 +183,7 @@
             this.btnDeleteVal.TextMarginLeft = 0;
             this.btnDeleteVal.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnDeleteVal.UseDefaultRadiusAndThickness = true;
+            this.btnDeleteVal.Click += new System.EventHandler(this.btnDeleteVal_Click);
             // 
             // btnAddFood
             // 
@@ -205,11 +205,11 @@
             this.btnAddFood.ColorContrastOnClick = 45;
             this.btnAddFood.ColorContrastOnHover = 45;
             this.btnAddFood.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges11.BottomLeft = true;
-            borderEdges11.BottomRight = true;
-            borderEdges11.TopLeft = true;
-            borderEdges11.TopRight = true;
-            this.btnAddFood.CustomizableEdges = borderEdges11;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.btnAddFood.CustomizableEdges = borderEdges2;
             this.btnAddFood.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnAddFood.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnAddFood.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -274,49 +274,7 @@
             this.btnAddFood.TextMarginLeft = 0;
             this.btnAddFood.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnAddFood.UseDefaultRadiusAndThickness = true;
-            // 
-            // bunifuFormCaptionButton1
-            // 
-            this.bunifuFormCaptionButton1.AllowAnimations = true;
-            this.bunifuFormCaptionButton1.AllowBorderColorChanges = true;
-            this.bunifuFormCaptionButton1.AllowDefaults = true;
-            this.bunifuFormCaptionButton1.AllowMouseEffects = true;
-            this.bunifuFormCaptionButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bunifuFormCaptionButton1.AnimationSpeed = 200;
-            this.bunifuFormCaptionButton1.AutoSizeCaptions = true;
-            this.bunifuFormCaptionButton1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuFormCaptionButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(233)))));
-            this.bunifuFormCaptionButton1.BackHoverColor = System.Drawing.Color.LightGray;
-            this.bunifuFormCaptionButton1.BackPressedColor = System.Drawing.Color.Silver;
-            this.bunifuFormCaptionButton1.BorderColor = System.Drawing.Color.LightGray;
-            this.bunifuFormCaptionButton1.BorderHoverColor = System.Drawing.Color.DarkGray;
-            this.bunifuFormCaptionButton1.BorderPressedColor = System.Drawing.Color.DarkGray;
-            this.bunifuFormCaptionButton1.BorderRadius = 1;
-            this.bunifuFormCaptionButton1.BorderStyle = Bunifu.UI.WinForms.BunifuFormCaptionButton.BorderStyles.Solid;
-            this.bunifuFormCaptionButton1.BorderThickness = 1;
-            this.bunifuFormCaptionButton1.CaptionType = Bunifu.UI.WinForms.BunifuFormCaptionButton.CaptionTypes.Minimize;
-            this.bunifuFormCaptionButton1.ColorContrastOnClick = 30;
-            this.bunifuFormCaptionButton1.ColorContrastOnHover = 30;
-            this.bunifuFormCaptionButton1.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges12.BottomLeft = true;
-            borderEdges12.BottomRight = true;
-            borderEdges12.TopLeft = true;
-            borderEdges12.TopRight = true;
-            this.bunifuFormCaptionButton1.CustomizableEdges = borderEdges12;
-            this.bunifuFormCaptionButton1.DefaultBorderColor = System.Drawing.Color.Silver;
-            this.bunifuFormCaptionButton1.DefaultColor = System.Drawing.Color.Gainsboro;
-            this.bunifuFormCaptionButton1.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.bunifuFormCaptionButton1.IconColor = System.Drawing.Color.Black;
-            this.bunifuFormCaptionButton1.IconHoverColor = System.Drawing.Color.Black;
-            this.bunifuFormCaptionButton1.IconPressedColor = System.Drawing.Color.Black;
-            this.bunifuFormCaptionButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuFormCaptionButton1.Image")));
-            this.bunifuFormCaptionButton1.ImageMargin = new System.Windows.Forms.Padding(1, 1, 0, 0);
-            this.bunifuFormCaptionButton1.ImageSize = new System.Drawing.Size(20, 20);
-            this.bunifuFormCaptionButton1.Location = new System.Drawing.Point(757, 12);
-            this.bunifuFormCaptionButton1.Name = "bunifuFormCaptionButton1";
-            this.bunifuFormCaptionButton1.ShowBorders = true;
-            this.bunifuFormCaptionButton1.Size = new System.Drawing.Size(31, 30);
-            this.bunifuFormCaptionButton1.TabIndex = 0;
+            this.btnAddFood.Click += new System.EventHandler(this.btnAddFood_Click);
             // 
             // BorderRadius
             // 
@@ -363,26 +321,26 @@
             this.txbFoodName.Modified = false;
             this.txbFoodName.Multiline = false;
             this.txbFoodName.Name = "txbFoodName";
-            stateProperties13.BorderColor = System.Drawing.Color.DarkOrange;
-            stateProperties13.FillColor = System.Drawing.Color.Empty;
-            stateProperties13.ForeColor = System.Drawing.Color.Empty;
-            stateProperties13.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txbFoodName.OnActiveState = stateProperties13;
-            stateProperties14.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties14.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties14.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txbFoodName.OnDisabledState = stateProperties14;
-            stateProperties15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties15.FillColor = System.Drawing.Color.Empty;
-            stateProperties15.ForeColor = System.Drawing.Color.Empty;
-            stateProperties15.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txbFoodName.OnHoverState = stateProperties15;
-            stateProperties16.BorderColor = System.Drawing.Color.Silver;
-            stateProperties16.FillColor = System.Drawing.Color.White;
-            stateProperties16.ForeColor = System.Drawing.Color.Empty;
-            stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txbFoodName.OnIdleState = stateProperties16;
+            stateProperties1.BorderColor = System.Drawing.Color.DarkOrange;
+            stateProperties1.FillColor = System.Drawing.Color.Empty;
+            stateProperties1.ForeColor = System.Drawing.Color.Empty;
+            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txbFoodName.OnActiveState = stateProperties1;
+            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txbFoodName.OnDisabledState = stateProperties2;
+            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties3.FillColor = System.Drawing.Color.Empty;
+            stateProperties3.ForeColor = System.Drawing.Color.Empty;
+            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txbFoodName.OnHoverState = stateProperties3;
+            stateProperties4.BorderColor = System.Drawing.Color.Silver;
+            stateProperties4.FillColor = System.Drawing.Color.White;
+            stateProperties4.ForeColor = System.Drawing.Color.Empty;
+            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txbFoodName.OnIdleState = stateProperties4;
             this.txbFoodName.Padding = new System.Windows.Forms.Padding(3);
             this.txbFoodName.PasswordChar = '\0';
             this.txbFoodName.PlaceholderForeColor = System.Drawing.Color.RosyBrown;
@@ -449,7 +407,6 @@
             this.selectFoodCate.Text = null;
             this.selectFoodCate.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
             this.selectFoodCate.TextLeftMargin = 5;
-            this.selectFoodCate.SelectedIndexChanged += new System.EventHandler(this.selectFoodCate_SelectedIndexChanged);
             // 
             // txtFoodCount
             // 
@@ -483,23 +440,22 @@
             this.bunifuPanel1.Size = new System.Drawing.Size(711, 192);
             this.bunifuPanel1.TabIndex = 1;
             // 
-            // lbFoodCount
+            // bunifuPanel4
             // 
-            this.lbFoodCount.AllowParentOverrides = false;
-            this.lbFoodCount.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lbFoodCount.AutoEllipsis = false;
-            this.lbFoodCount.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lbFoodCount.CursorType = System.Windows.Forms.Cursors.Default;
-            this.lbFoodCount.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.lbFoodCount.ForeColor = System.Drawing.Color.DarkOrange;
-            this.lbFoodCount.Location = new System.Drawing.Point(17, 119);
-            this.lbFoodCount.Name = "lbFoodCount";
-            this.lbFoodCount.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lbFoodCount.Size = new System.Drawing.Size(60, 20);
-            this.lbFoodCount.TabIndex = 0;
-            this.lbFoodCount.Text = "Số lượng";
-            this.lbFoodCount.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.lbFoodCount.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuPanel4.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.bunifuPanel4.BackgroundColor = System.Drawing.Color.Transparent;
+            this.bunifuPanel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel4.BackgroundImage")));
+            this.bunifuPanel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuPanel4.BorderColor = System.Drawing.Color.Transparent;
+            this.bunifuPanel4.BorderRadius = 3;
+            this.bunifuPanel4.BorderThickness = 1;
+            this.bunifuPanel4.Controls.Add(this.selectFoodCate);
+            this.bunifuPanel4.Controls.Add(this.lbFoodCate);
+            this.bunifuPanel4.Location = new System.Drawing.Point(385, 18);
+            this.bunifuPanel4.Name = "bunifuPanel4";
+            this.bunifuPanel4.ShowBorders = true;
+            this.bunifuPanel4.Size = new System.Drawing.Size(322, 41);
+            this.bunifuPanel4.TabIndex = 5;
             // 
             // lbFoodCate
             // 
@@ -519,6 +475,23 @@
             this.lbFoodCate.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.lbFoodCate.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
+            // bunifuPanel3
+            // 
+            this.bunifuPanel3.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.bunifuPanel3.BackgroundColor = System.Drawing.Color.Transparent;
+            this.bunifuPanel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel3.BackgroundImage")));
+            this.bunifuPanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuPanel3.BorderColor = System.Drawing.Color.Transparent;
+            this.bunifuPanel3.BorderRadius = 3;
+            this.bunifuPanel3.BorderThickness = 1;
+            this.bunifuPanel3.Controls.Add(this.txbFoodName);
+            this.bunifuPanel3.Controls.Add(this.lbFoodName);
+            this.bunifuPanel3.Location = new System.Drawing.Point(9, 18);
+            this.bunifuPanel3.Name = "bunifuPanel3";
+            this.bunifuPanel3.ShowBorders = true;
+            this.bunifuPanel3.Size = new System.Drawing.Size(320, 42);
+            this.bunifuPanel3.TabIndex = 4;
+            // 
             // lbFoodName
             // 
             this.lbFoodName.AllowParentOverrides = false;
@@ -537,46 +510,99 @@
             this.lbFoodName.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.lbFoodName.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // bunifuPanel3
+            // lbFoodCount
             // 
-            this.bunifuPanel3.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.bunifuPanel3.BackgroundColor = System.Drawing.Color.Transparent;
-            this.bunifuPanel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel3.BackgroundImage")));
-            this.bunifuPanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuPanel3.BorderColor = System.Drawing.Color.Transparent;
-            this.bunifuPanel3.BorderRadius = 3;
-            this.bunifuPanel3.BorderThickness = 1;
-            this.bunifuPanel3.Controls.Add(this.txbFoodName);
-            this.bunifuPanel3.Controls.Add(this.lbFoodName);
-            this.bunifuPanel3.Location = new System.Drawing.Point(9, 18);
-            this.bunifuPanel3.Name = "bunifuPanel3";
-            this.bunifuPanel3.ShowBorders = true;
-            this.bunifuPanel3.Size = new System.Drawing.Size(320, 42);
-            this.bunifuPanel3.TabIndex = 4;
+            this.lbFoodCount.AllowParentOverrides = false;
+            this.lbFoodCount.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lbFoodCount.AutoEllipsis = false;
+            this.lbFoodCount.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lbFoodCount.CursorType = System.Windows.Forms.Cursors.Default;
+            this.lbFoodCount.Font = new System.Drawing.Font("Segoe UI", 11.25F);
+            this.lbFoodCount.ForeColor = System.Drawing.Color.DarkOrange;
+            this.lbFoodCount.Location = new System.Drawing.Point(17, 119);
+            this.lbFoodCount.Name = "lbFoodCount";
+            this.lbFoodCount.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lbFoodCount.Size = new System.Drawing.Size(60, 20);
+            this.lbFoodCount.TabIndex = 0;
+            this.lbFoodCount.Text = "Số lượng";
+            this.lbFoodCount.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.lbFoodCount.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // bunifuPanel4
+            // bunifuSnackbar1
             // 
-            this.bunifuPanel4.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.bunifuPanel4.BackgroundColor = System.Drawing.Color.Transparent;
-            this.bunifuPanel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel4.BackgroundImage")));
-            this.bunifuPanel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuPanel4.BorderColor = System.Drawing.Color.Transparent;
-            this.bunifuPanel4.BorderRadius = 3;
-            this.bunifuPanel4.BorderThickness = 1;
-            this.bunifuPanel4.Controls.Add(this.selectFoodCate);
-            this.bunifuPanel4.Controls.Add(this.lbFoodCate);
-            this.bunifuPanel4.Location = new System.Drawing.Point(385, 18);
-            this.bunifuPanel4.Name = "bunifuPanel4";
-            this.bunifuPanel4.ShowBorders = true;
-            this.bunifuPanel4.Size = new System.Drawing.Size(322, 41);
-            this.bunifuPanel4.TabIndex = 5;
+            this.bunifuSnackbar1.AllowDragging = false;
+            this.bunifuSnackbar1.AllowMultipleViews = true;
+            this.bunifuSnackbar1.ClickToClose = true;
+            this.bunifuSnackbar1.DoubleClickToClose = true;
+            this.bunifuSnackbar1.DurationAfterIdle = 3000;
+            this.bunifuSnackbar1.ErrorOptions.ActionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuSnackbar1.ErrorOptions.ActionBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuSnackbar1.ErrorOptions.ActionBorderRadius = 1;
+            this.bunifuSnackbar1.ErrorOptions.ActionFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.bunifuSnackbar1.ErrorOptions.ActionForeColor = System.Drawing.Color.Black;
+            this.bunifuSnackbar1.ErrorOptions.BackColor = System.Drawing.Color.White;
+            this.bunifuSnackbar1.ErrorOptions.BorderColor = System.Drawing.Color.White;
+            this.bunifuSnackbar1.ErrorOptions.CloseIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(204)))), ((int)(((byte)(199)))));
+            this.bunifuSnackbar1.ErrorOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.bunifuSnackbar1.ErrorOptions.ForeColor = System.Drawing.Color.Black;
+            this.bunifuSnackbar1.ErrorOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon")));
+            this.bunifuSnackbar1.ErrorOptions.IconLeftMargin = 12;
+            this.bunifuSnackbar1.FadeCloseIcon = false;
+            this.bunifuSnackbar1.Host = Bunifu.UI.WinForms.BunifuSnackbar.Hosts.FormOwner;
+            this.bunifuSnackbar1.InformationOptions.ActionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuSnackbar1.InformationOptions.ActionBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuSnackbar1.InformationOptions.ActionBorderRadius = 1;
+            this.bunifuSnackbar1.InformationOptions.ActionFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.bunifuSnackbar1.InformationOptions.ActionForeColor = System.Drawing.Color.Black;
+            this.bunifuSnackbar1.InformationOptions.BackColor = System.Drawing.Color.White;
+            this.bunifuSnackbar1.InformationOptions.BorderColor = System.Drawing.Color.White;
+            this.bunifuSnackbar1.InformationOptions.CloseIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(213)))), ((int)(((byte)(255)))));
+            this.bunifuSnackbar1.InformationOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.bunifuSnackbar1.InformationOptions.ForeColor = System.Drawing.Color.Black;
+            this.bunifuSnackbar1.InformationOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon1")));
+            this.bunifuSnackbar1.InformationOptions.IconLeftMargin = 12;
+            this.bunifuSnackbar1.Margin = 10;
+            this.bunifuSnackbar1.MaximumSize = new System.Drawing.Size(0, 0);
+            this.bunifuSnackbar1.MaximumViews = 7;
+            this.bunifuSnackbar1.MessageRightMargin = 15;
+            this.bunifuSnackbar1.MessageTopMargin = 0;
+            this.bunifuSnackbar1.MinimumSize = new System.Drawing.Size(0, 0);
+            this.bunifuSnackbar1.ShowBorders = false;
+            this.bunifuSnackbar1.ShowCloseIcon = false;
+            this.bunifuSnackbar1.ShowIcon = true;
+            this.bunifuSnackbar1.ShowShadows = true;
+            this.bunifuSnackbar1.SuccessOptions.ActionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuSnackbar1.SuccessOptions.ActionBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuSnackbar1.SuccessOptions.ActionBorderRadius = 1;
+            this.bunifuSnackbar1.SuccessOptions.ActionFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.bunifuSnackbar1.SuccessOptions.ActionForeColor = System.Drawing.Color.Black;
+            this.bunifuSnackbar1.SuccessOptions.BackColor = System.Drawing.Color.White;
+            this.bunifuSnackbar1.SuccessOptions.BorderColor = System.Drawing.Color.White;
+            this.bunifuSnackbar1.SuccessOptions.CloseIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(255)))), ((int)(((byte)(237)))));
+            this.bunifuSnackbar1.SuccessOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.bunifuSnackbar1.SuccessOptions.ForeColor = System.Drawing.Color.Black;
+            this.bunifuSnackbar1.SuccessOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon2")));
+            this.bunifuSnackbar1.SuccessOptions.IconLeftMargin = 12;
+            this.bunifuSnackbar1.ViewsMargin = 7;
+            this.bunifuSnackbar1.WarningOptions.ActionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuSnackbar1.WarningOptions.ActionBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuSnackbar1.WarningOptions.ActionBorderRadius = 1;
+            this.bunifuSnackbar1.WarningOptions.ActionFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.bunifuSnackbar1.WarningOptions.ActionForeColor = System.Drawing.Color.Black;
+            this.bunifuSnackbar1.WarningOptions.BackColor = System.Drawing.Color.White;
+            this.bunifuSnackbar1.WarningOptions.BorderColor = System.Drawing.Color.White;
+            this.bunifuSnackbar1.WarningOptions.CloseIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(143)))));
+            this.bunifuSnackbar1.WarningOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.bunifuSnackbar1.WarningOptions.ForeColor = System.Drawing.Color.Black;
+            this.bunifuSnackbar1.WarningOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon3")));
+            this.bunifuSnackbar1.WarningOptions.IconLeftMargin = 12;
+            this.bunifuSnackbar1.ZoomCloseIcon = true;
             // 
             // fAddFood
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.bunifuFormCaptionButton1);
             this.Controls.Add(this.bunifuPanel2);
             this.Controls.Add(this.bunifuPanel1);
             this.Controls.Add(this.bunifuLabel1);
@@ -587,10 +613,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtFoodCount)).EndInit();
             this.bunifuPanel1.ResumeLayout(false);
             this.bunifuPanel1.PerformLayout();
-            this.bunifuPanel3.ResumeLayout(false);
-            this.bunifuPanel3.PerformLayout();
             this.bunifuPanel4.ResumeLayout(false);
             this.bunifuPanel4.PerformLayout();
+            this.bunifuPanel3.ResumeLayout(false);
+            this.bunifuPanel3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -602,7 +628,6 @@
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel2;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnDeleteVal;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnAddFood;
-        private Bunifu.UI.WinForms.BunifuFormCaptionButton bunifuFormCaptionButton1;
         private Bunifu.Framework.UI.BunifuElipse BorderRadius;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.UI.WinForms.BunifuTextBox txbFoodName;
@@ -614,5 +639,6 @@
         private Bunifu.UI.WinForms.BunifuLabel lbFoodName;
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel4;
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel3;
+        private Bunifu.UI.WinForms.BunifuSnackbar bunifuSnackbar1;
     }
 }
