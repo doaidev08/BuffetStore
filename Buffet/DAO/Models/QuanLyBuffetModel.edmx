@@ -46,8 +46,8 @@
           </Key>
           <Property Name="MaDoUong" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="TenDoUong" Type="nvarchar" MaxLength="255" Nullable="false" />
-          <Property Name="LoaiDoUong" Type="nvarchar" MaxLength="255" Nullable="false" />
           <Property Name="GiaDoUong" Type="money" Nullable="false" />
+          <Property Name="SoLuongDoUong" Type="int" Nullable="false" />
           <Property Name="TinhTrangDoUong" Type="bit" />
           <Property Name="MaDanhMucDoUong" Type="int" />
         </EntityType>
@@ -63,10 +63,9 @@
           <Property Name="GiaSetBuffet" Type="money" />
           <Property Name="SoLuongDoUong" Type="int" />
           <Property Name="TongPhiDoUong" Type="money" />
-          <Property Name="PhiDuThua" Type="money" />
           <Property Name="TongTien" Type="money" />
           <Property Name="Thue" Type="int" />
-          <Property Name="GiamGIa" Type="int" />
+          <Property Name="GiamGia" Type="int" />
           <Property Name="TienThanhToan" Type="money" />
           <Property Name="SoTienNhan" Type="money" />
           <Property Name="SoTienTraKhach" Type="money" />
@@ -430,8 +429,8 @@
           </Key>
           <Property Name="MaDoUong" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="TenDoUong" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="LoaiDoUong" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="GiaDoUong" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="SoLuongDoUong" Type="Int32" Nullable="false" />
           <Property Name="TinhTrangDoUong" Type="Boolean" />
           <Property Name="MaDanhMucDoUong" Type="Int32" />
           <NavigationProperty Name="DANHMUCDOUONG" Relationship="Self.FK__DOUONG__MaDanhMu__45F365D3" FromRole="DOUONG" ToRole="DANHMUCDOUONG" />
@@ -449,10 +448,9 @@
           <Property Name="GiaSetBuffet" Type="Decimal" Precision="19" Scale="4" />
           <Property Name="SoLuongDoUong" Type="Int32" />
           <Property Name="TongPhiDoUong" Type="Decimal" Precision="19" Scale="4" />
-          <Property Name="PhiDuThua" Type="Decimal" Precision="19" Scale="4" />
           <Property Name="TongTien" Type="Decimal" Precision="19" Scale="4" />
           <Property Name="Thue" Type="Int32" />
-          <Property Name="GiamGIa" Type="Int32" />
+          <Property Name="GiamGia" Type="Int32" />
           <Property Name="TienThanhToan" Type="Decimal" Precision="19" Scale="4" />
           <Property Name="SoTienNhan" Type="Decimal" Precision="19" Scale="4" />
           <Property Name="SoTienTraKhach" Type="Decimal" Precision="19" Scale="4" />
@@ -834,8 +832,8 @@
               <MappingFragment StoreEntitySet="DOUONG">
                 <ScalarProperty Name="MaDoUong" ColumnName="MaDoUong" />
                 <ScalarProperty Name="TenDoUong" ColumnName="TenDoUong" />
-                <ScalarProperty Name="LoaiDoUong" ColumnName="LoaiDoUong" />
                 <ScalarProperty Name="GiaDoUong" ColumnName="GiaDoUong" />
+                <ScalarProperty Name="SoLuongDoUong" ColumnName="SoLuongDoUong" />
                 <ScalarProperty Name="TinhTrangDoUong" ColumnName="TinhTrangDoUong" />
                 <ScalarProperty Name="MaDanhMucDoUong" ColumnName="MaDanhMucDoUong" />
               </MappingFragment>
@@ -852,10 +850,9 @@
                 <ScalarProperty Name="GiaSetBuffet" ColumnName="GiaSetBuffet" />
                 <ScalarProperty Name="SoLuongDoUong" ColumnName="SoLuongDoUong" />
                 <ScalarProperty Name="TongPhiDoUong" ColumnName="TongPhiDoUong" />
-                <ScalarProperty Name="PhiDuThua" ColumnName="PhiDuThua" />
                 <ScalarProperty Name="TongTien" ColumnName="TongTien" />
                 <ScalarProperty Name="Thue" ColumnName="Thue" />
-                <ScalarProperty Name="GiamGIa" ColumnName="GiamGIa" />
+                <ScalarProperty Name="GiamGia" ColumnName="GiamGia" />
                 <ScalarProperty Name="TienThanhToan" ColumnName="TienThanhToan" />
                 <ScalarProperty Name="SoTienNhan" ColumnName="SoTienNhan" />
                 <ScalarProperty Name="SoTienTraKhach" ColumnName="SoTienTraKhach" />

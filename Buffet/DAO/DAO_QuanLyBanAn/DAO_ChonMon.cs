@@ -17,10 +17,35 @@ namespace Buffet.DAO.DAO_QuanLyBanAn
         {
             
         }
-        public void DAO_LayHoaDonBan(string maBanAn)
+        public dynamic DAO_HoaDonBanAn(HOADON hoaDon)
         {
-            var hoaDon = databaseOrigin.database.HOADON.Find(maBanAn);
+            var hoaDonFind = databaseOrigin.database.HOADON
+                             .Where(s => s.BanKhachHang.Contains(hoaDon.BanKhachHang))
+                             .ToList();
 
+            return hoaDonFind;
         }
+        public dynamic DAO_LayDanhMucDoUong()
+        {
+            var danhMucDoUong = databaseOrigin.database.DANHMUCDOUONG
+                        .Select(s => new
+                        {
+                            s.MaDanhMucDoUong,
+                            s.TenDanhMucDoUong
+                        }).ToList();
+            return danhMucDoUong;
+        }
+        public dynamic DAO_DanhSachDoUong()
+        {
+            var doUong = databaseOrigin.database.DOUONG
+                         .Select(s => new
+                         {
+                             s.MaDoUong,
+                             s.TenDoUong,
+                             s.SoLuongDoUong
+                         }).ToList();
+            return doUong;
+        }
+
     }
 }

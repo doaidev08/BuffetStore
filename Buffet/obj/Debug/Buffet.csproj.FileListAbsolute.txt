@@ -438,3 +438,4 @@ E:\BTLDOTNET\BuffetStore\Buffet\obj\Debug\Buffet.csproj.Fody.CopyLocal.cache
 E:\BTLDOTNET\BuffetStore\Buffet\obj\Debug\Buffet.csproj.CopyComplete
 E:\BTLDOTNET\BuffetStore\Buffet\obj\Debug\Buffet.exe
 E:\BTLDOTNET\BuffetStore\Buffet\obj\Debug\Buffet.pdb
+E:\BTLDOTNET\BuffetStore\Buffet\obj\Debug\Buffet.GUI.GUI_QuanLyHoaDon.GUI_ThanhToanHoaDon.resources

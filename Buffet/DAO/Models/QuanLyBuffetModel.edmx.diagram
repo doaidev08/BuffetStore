@@ -4,16 +4,16 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="3487d6c3bcb145d292a52603a73552a2" Name="Diagram1">
+      <Diagram DiagramId="07eb3ea922e1456da64fe1fcfa02a0de" Name="Diagram1">
         <EntityTypeShape EntityType="CuaHangBuffetModel.BANAN" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="CuaHangBuffetModel.DANHMUCDOUONG" Width="1.5" PointX="1.5" PointY="18" IsExpanded="true" />
-        <EntityTypeShape EntityType="CuaHangBuffetModel.DANHMUCMONAN" Width="1.5" PointX="5.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuaHangBuffetModel.DANHMUCMONAN" Width="1.5" PointX="5.75" PointY="2.375" IsExpanded="true" />
         <EntityTypeShape EntityType="CuaHangBuffetModel.DOANHTHU" Width="1.5" PointX="3" PointY="10" IsExpanded="true" />
         <EntityTypeShape EntityType="CuaHangBuffetModel.DOUONG" Width="1.5" PointX="3.75" PointY="17.5" IsExpanded="true" />
         <EntityTypeShape EntityType="CuaHangBuffetModel.HOADON" Width="1.5" PointX="6" PointY="8.625" IsExpanded="true" />
         <EntityTypeShape EntityType="CuaHangBuffetModel.KHO" Width="1.5" PointX="0.75" PointY="3.125" IsExpanded="true" />
         <EntityTypeShape EntityType="CuaHangBuffetModel.LOAISANPHAMKHO" Width="1.5" PointX="0.75" PointY="5.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="CuaHangBuffetModel.MONAN" Width="1.5" PointX="8" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuaHangBuffetModel.MONAN" Width="1.5" PointX="8" PointY="2" IsExpanded="true" />
         <EntityTypeShape EntityType="CuaHangBuffetModel.NHANVIEN" Width="1.5" PointX="0.75" PointY="10" IsExpanded="true" />
         <EntityTypeShape EntityType="CuaHangBuffetModel.PHANQUYEN" Width="1.5" PointX="0.75" PointY="20.625" IsExpanded="true" />
         <EntityTypeShape EntityType="CuaHangBuffetModel.QUANTRIVIEN" Width="1.5" PointX="0.75" PointY="13.875" IsExpanded="true" />

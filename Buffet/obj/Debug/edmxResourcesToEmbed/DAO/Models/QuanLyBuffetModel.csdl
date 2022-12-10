@@ -46,8 +46,8 @@
     </Key>
     <Property Name="MaDoUong" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="TenDoUong" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="LoaiDoUong" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="GiaDoUong" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="SoLuongDoUong" Type="Int32" Nullable="false" />
     <Property Name="TinhTrangDoUong" Type="Boolean" />
     <Property Name="MaDanhMucDoUong" Type="Int32" />
     <NavigationProperty Name="DANHMUCDOUONG" Relationship="Self.FK__DOUONG__MaDanhMu__45F365D3" FromRole="DOUONG" ToRole="DANHMUCDOUONG" />
@@ -65,10 +65,9 @@
     <Property Name="GiaSetBuffet" Type="Decimal" Precision="19" Scale="4" />
     <Property Name="SoLuongDoUong" Type="Int32" />
     <Property Name="TongPhiDoUong" Type="Decimal" Precision="19" Scale="4" />
-    <Property Name="PhiDuThua" Type="Decimal" Precision="19" Scale="4" />
     <Property Name="TongTien" Type="Decimal" Precision="19" Scale="4" />
     <Property Name="Thue" Type="Int32" />
-    <Property Name="GiamGIa" Type="Int32" />
+    <Property Name="GiamGia" Type="Int32" />
     <Property Name="TienThanhToan" Type="Decimal" Precision="19" Scale="4" />
     <Property Name="SoTienNhan" Type="Decimal" Precision="19" Scale="4" />
     <Property Name="SoTienTraKhach" Type="Decimal" Precision="19" Scale="4" />

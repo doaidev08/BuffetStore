@@ -45,17 +45,19 @@ namespace Buffet.BUS.BUSQuanLyBanAn
             
         }
         //Bàn ăn vừa được đặt 
-        public FlowLayoutPanel flowLayoutPanel2 = new FlowLayoutPanel();
+        public FlowLayoutPanel flowLayoutPanel = new FlowLayoutPanel();
         public List<string> tablePickers = new List<string>();
 
         public void BUS_DatBanPicker(object sender, EventArgs e)
         {
             BunifuButton btn = sender as BunifuButton;
+            btn.Enabled = false;
             Button btn2 = new Button();
             btn2.Text = btn.Name;
             btn2.Name = btn.Name;
-            flowLayoutPanel2.Controls.Add(btn2);
+            flowLayoutPanel.Controls.Add(btn2);
             tablePickers.Add(btn2.Name.ToString());
+            
         }
 
         //Đặt bàn tạo hóa đơn
@@ -64,9 +66,9 @@ namespace Buffet.BUS.BUSQuanLyBanAn
             daoDatBan.DAO_DatBan_TaoHoaDon(hoaDon);
             return true;
         }
-        public void BUS_CapNhatTTBan(int maBanAn)
+        public void BUS_CapNhatTTBan(BANAN banAn)
         {
-            daoDatBan.DAO_CapNhatTTBan(maBanAn);
+            daoDatBan.DAO_CapNhatTTBan(banAn);
         }
 
     }

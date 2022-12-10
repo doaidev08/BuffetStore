@@ -28,10 +28,9 @@ namespace Buffet.DAO.Models
         public Nullable<decimal> GiaSetBuffet { get; set; }
         public Nullable<int> SoLuongDoUong { get; set; }
         public Nullable<decimal> TongPhiDoUong { get; set; }
-        public Nullable<decimal> PhiDuThua { get; set; }
         public Nullable<decimal> TongTien { get; set; }
         public Nullable<int> Thue { get; set; }
-        public Nullable<int> GiamGIa { get; set; }
+        public Nullable<int> GiamGia { get; set; }
         public Nullable<decimal> TienThanhToan { get; set; }
         public Nullable<decimal> SoTienNhan { get; set; }
         public Nullable<decimal> SoTienTraKhach { get; set; }

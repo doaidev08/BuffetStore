@@ -331,6 +331,12 @@
     <Compile Include="DAO\Models\TAIKHOAN.cs">
       <DependentUpon>QuanLyBuffetModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="GUI\GUI_QuanLyHoaDon\GUI_ThanhToanHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_QuanLyHoaDon\GUI_ThanhToanHoaDon.Designer.cs">
+      <DependentUpon>GUI_ThanhToanHoaDon.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\home.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -350,6 +356,7 @@
       <DependentUpon>GUI_DatBan.cs</DependentUpon>
     </Compile>
     <Compile Include="Helper\DataBaseOrigin.cs" />
+    <Compile Include="Helper\ScrollVBar.cs" />
     <Compile Include="Helper\ThongBao.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -359,6 +366,9 @@
     <Compile Include="GUI\UserControlView\UC_MainView.Designer.cs">
       <DependentUpon>UC_MainView.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="GUI\GUI_QuanLyHoaDon\GUI_ThanhToanHoaDon.resx">
+      <DependentUpon>GUI_ThanhToanHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\home.resx">
       <DependentUpon>home.cs</DependentUpon>
     </EmbeddedResource>
@@ -377,6 +387,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="GUI\UserControlView\UC_MainView.resx">
       <DependentUpon>UC_MainView.cs</DependentUpon>
@@ -409,6 +420,8 @@
     <Folder Include="Assets\Icons\" />
     <Folder Include="Assets\Images\" />
     <Folder Include="Assets\SQL\" />
+    <Folder Include="BUS\BUS_QuanLyHoaDon\" />
+    <Folder Include="DAO\DAO_QuanLyHoaDon\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="DAO\Models\QuanLyBuffetModel.Context.tt">
@@ -421,6 +434,7 @@
       <DependentUpon>QuanLyBuffetModel.edmx</DependentUpon>
       <LastGenOutput>QuanLyBuffetModel.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\refreshIcon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Fody.4.0.2\build\Fody.targets" Condition="Exists('..\packages\Fody.4.0.2\build\Fody.targets')" />

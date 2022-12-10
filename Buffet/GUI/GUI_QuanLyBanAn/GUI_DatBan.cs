@@ -45,7 +45,7 @@ namespace Buffet.GUI.QuanLyBanAn
         //Hiển thị bàn vừa được đặt
         public void GUI_DatBanPicker()
         {
-            busDatBan.flowLayoutPanel2 = flowLayoutPanel2;
+            busDatBan.flowLayoutPanel = flowLayoutPanel2;
         }
         //Lấy thông tin đặt bàn và đặt bàn cho khách (tạo hóa đơn luôn cho khách)
         public void GUI_DatBan_TaoHoaDon()
@@ -56,14 +56,17 @@ namespace Buffet.GUI.QuanLyBanAn
                 HOADON hoaDon = new HOADON();
                 hoaDon.TenKhachHang = bunifuTextBox1.Text;
                 hoaDon.SoLuongKhach = (int)numericUpDown1.Value;
-                hoaDon.ThoiGianKhachVao = bunifuDatePicker1.Value;
-
+                hoaDon.ThoiGianKhachVao = bunifuDatePicker1.Value; 
                 string banKhachHang = String.Join(",", busDatBan.tablePickers);
                 hoaDon.BanKhachHang = banKhachHang;
 
                 if (busDatBan.BUS_DatBan_TaoHoaDon(hoaDon))
                 {
                     GUI_CapNhatTTBan();
+                    bunifuTextBox1.Clear();
+                    bunifuDatePicker1.Value = DateTime.Now;
+                    numericUpDown1.Value = default;
+                    flowLayoutPanel2.Controls.Clear();
                     thongBao.HienThiThongBao(
                         this,
                         bunifuSnackbar1,
@@ -127,10 +130,24 @@ namespace Buffet.GUI.QuanLyBanAn
         }
         public void GUI_CapNhatTTBan()
         {
+            BANAN banAn = new BANAN();
+
             foreach(var i in busDatBan.tablePickers)
             {
-                busDatBan.BUS_CapNhatTTBan(Int32.Parse(i.ToString()));
+                banAn.MaBanAn = Int32.Parse(i.ToString());
+                banAn.TinhTrangBanAn = true;
+                busDatBan.BUS_CapNhatTTBan(banAn);
             }
+        }
+
+        private void bunifuDropdown1_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuIconButton1_Click(object sender, EventArgs e)
+        {
+            bunifuDatePicker1.Value = DateTime.Now;
         }
     }
 }

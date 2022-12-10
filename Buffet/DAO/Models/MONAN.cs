@@ -18,7 +18,7 @@ namespace Buffet.DAO.Models
         public string TenMonAn { get; set; }
         public string LoaiMonAn { get; set; }
         public int SoLuongMonAn { get; set; }
-        public Nullable<bool> TinhTrangMonAn { get; set; }
+        public bool TinhTrangMonAn { get; set; }
         public Nullable<int> MaDanhMucMonAn { get; set; }
     
         public virtual DANHMUCMONAN DANHMUCMONAN { get; set; }

@@ -36,10 +36,10 @@ namespace Buffet.DAO.DAOQuanLyBanAn
             databaseOrigin.database.SaveChanges();
         }
         //Cập nhật trạng thái bàn, sau khi có người đặt bàn
-        public void DAO_CapNhatTTBan(int maBanAn)
+        public void DAO_CapNhatTTBan(BANAN banAn)
         {
-            var banAn = databaseOrigin.database.BANAN.Find(maBanAn);
-            banAn.TinhTrangBanAn = true;
+            var banAnFind = databaseOrigin.database.BANAN.Find(banAn.MaBanAn);
+            banAnFind.TinhTrangBanAn = banAn.TinhTrangBanAn;
             databaseOrigin.database.SaveChanges();
         }
     }

@@ -24,12 +24,7 @@ namespace Buffet.DAO.Models
         {
             throw new UnintentionalCodeFirstException();
         }
-
-        internal BANAN Find(int maBanAn)
-        {
-            throw new NotImplementedException();
-        }
-
+    
         public virtual DbSet<BANAN> BANAN { get; set; }
         public virtual DbSet<DANHMUCDOUONG> DANHMUCDOUONG { get; set; }
         public virtual DbSet<DANHMUCMONAN> DANHMUCMONAN { get; set; }

@@ -45,8 +45,8 @@
         <MappingFragment StoreEntitySet="DOUONG">
           <ScalarProperty Name="MaDoUong" ColumnName="MaDoUong" />
           <ScalarProperty Name="TenDoUong" ColumnName="TenDoUong" />
-          <ScalarProperty Name="LoaiDoUong" ColumnName="LoaiDoUong" />
           <ScalarProperty Name="GiaDoUong" ColumnName="GiaDoUong" />
+          <ScalarProperty Name="SoLuongDoUong" ColumnName="SoLuongDoUong" />
           <ScalarProperty Name="TinhTrangDoUong" ColumnName="TinhTrangDoUong" />
           <ScalarProperty Name="MaDanhMucDoUong" ColumnName="MaDanhMucDoUong" />
         </MappingFragment>
@@ -63,10 +63,9 @@
           <ScalarProperty Name="GiaSetBuffet" ColumnName="GiaSetBuffet" />
           <ScalarProperty Name="SoLuongDoUong" ColumnName="SoLuongDoUong" />
           <ScalarProperty Name="TongPhiDoUong" ColumnName="TongPhiDoUong" />
-          <ScalarProperty Name="PhiDuThua" ColumnName="PhiDuThua" />
           <ScalarProperty Name="TongTien" ColumnName="TongTien" />
           <ScalarProperty Name="Thue" ColumnName="Thue" />
-          <ScalarProperty Name="GiamGIa" ColumnName="GiamGIa" />
+          <ScalarProperty Name="GiamGia" ColumnName="GiamGia" />
           <ScalarProperty Name="TienThanhToan" ColumnName="TienThanhToan" />
           <ScalarProperty Name="SoTienNhan" ColumnName="SoTienNhan" />
           <ScalarProperty Name="SoTienTraKhach" ColumnName="SoTienTraKhach" />

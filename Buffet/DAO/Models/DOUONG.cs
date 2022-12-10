@@ -22,9 +22,9 @@ namespace Buffet.DAO.Models
     
         public int MaDoUong { get; set; }
         public string TenDoUong { get; set; }
-        public string LoaiDoUong { get; set; }
         public decimal GiaDoUong { get; set; }
-        public Nullable<bool> TinhTrangDoUong { get; set; }
+        public int SoLuongDoUong { get; set; }
+        public bool TinhTrangDoUong { get; set; }
         public Nullable<int> MaDanhMucDoUong { get; set; }
     
         public virtual DANHMUCDOUONG DANHMUCDOUONG { get; set; }

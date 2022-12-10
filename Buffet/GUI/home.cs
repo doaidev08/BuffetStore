@@ -122,6 +122,7 @@ namespace Buffet
         private void btnBillMngt_Click(object sender, EventArgs e)
         {
             hideSubMenu();
+            openChildForm(new Buffet.GUI.GUI_QuanLyHoaDon.GUI_ThanhToanHoaDon());
         }
         #endregion
 
@@ -155,6 +156,9 @@ namespace Buffet
 
         }
 
+        private void frmHome_Load(object sender, EventArgs e)
+        {
 
+        }
     }
 }
