@@ -17,7 +17,7 @@ namespace Buffet.DAO.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public QUANTRIVIEN()
         {
-            this.SANPHAMKHO = new HashSet<SANPHAMKHO>();
+            this.SANPHAMKHOes = new HashSet<SANPHAMKHO>();
         }
     
         public int MaQuanTriVien { get; set; }
@@ -25,6 +25,6 @@ namespace Buffet.DAO.Models
         public string MatKhau { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<SANPHAMKHO> SANPHAMKHO { get; set; }
+        public virtual ICollection<SANPHAMKHO> SANPHAMKHOes { get; set; }
     }
 }

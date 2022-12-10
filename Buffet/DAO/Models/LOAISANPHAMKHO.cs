@@ -17,13 +17,13 @@ namespace Buffet.DAO.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public LOAISANPHAMKHO()
         {
-            this.SANPHAMKHO = new HashSet<SANPHAMKHO>();
+            this.SANPHAMKHOes = new HashSet<SANPHAMKHO>();
         }
     
         public int MaLoaiSanPhamKho { get; set; }
         public string TenLoaiSanPhamKho { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<SANPHAMKHO> SANPHAMKHO { get; set; }
+        public virtual ICollection<SANPHAMKHO> SANPHAMKHOes { get; set; }
     }
 }

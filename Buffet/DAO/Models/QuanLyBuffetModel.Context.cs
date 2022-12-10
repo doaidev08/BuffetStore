@@ -24,25 +24,20 @@ namespace Buffet.DAO.Models
         {
             throw new UnintentionalCodeFirstException();
         }
-
-        internal BANAN Find(int maBanAn)
-        {
-            throw new NotImplementedException();
-        }
-
-        public virtual DbSet<BANAN> BANAN { get; set; }
-        public virtual DbSet<DANHMUCDOUONG> DANHMUCDOUONG { get; set; }
-        public virtual DbSet<DANHMUCMONAN> DANHMUCMONAN { get; set; }
-        public virtual DbSet<DOANHTHU> DOANHTHU { get; set; }
-        public virtual DbSet<DOUONG> DOUONG { get; set; }
-        public virtual DbSet<HOADON> HOADON { get; set; }
-        public virtual DbSet<KHO> KHO { get; set; }
-        public virtual DbSet<LOAISANPHAMKHO> LOAISANPHAMKHO { get; set; }
-        public virtual DbSet<MONAN> MONAN { get; set; }
-        public virtual DbSet<NHANVIEN> NHANVIEN { get; set; }
-        public virtual DbSet<PHANQUYEN> PHANQUYEN { get; set; }
-        public virtual DbSet<QUANTRIVIEN> QUANTRIVIEN { get; set; }
-        public virtual DbSet<SANPHAMKHO> SANPHAMKHO { get; set; }
-        public virtual DbSet<TAIKHOAN> TAIKHOAN { get; set; }
+    
+        public virtual DbSet<BANAN> BANANs { get; set; }
+        public virtual DbSet<DANHMUCDOUONG> DANHMUCDOUONGs { get; set; }
+        public virtual DbSet<DANHMUCMONAN> DANHMUCMONANs { get; set; }
+        public virtual DbSet<DOANHTHU> DOANHTHUs { get; set; }
+        public virtual DbSet<DOUONG> DOUONGs { get; set; }
+        public virtual DbSet<HOADON> HOADONs { get; set; }
+        public virtual DbSet<KHO> KHOes { get; set; }
+        public virtual DbSet<LOAISANPHAMKHO> LOAISANPHAMKHOes { get; set; }
+        public virtual DbSet<MONAN> MONANs { get; set; }
+        public virtual DbSet<NHANVIEN> NHANVIENs { get; set; }
+        public virtual DbSet<PHANQUYEN> PHANQUYENs { get; set; }
+        public virtual DbSet<QUANTRIVIEN> QUANTRIVIENs { get; set; }
+        public virtual DbSet<SANPHAMKHO> SANPHAMKHOes { get; set; }
+        public virtual DbSet<TAIKHOAN> TAIKHOANs { get; set; }
     }
 }

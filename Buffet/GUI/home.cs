@@ -1,4 +1,5 @@
-﻿using Buffet.UserControlView;
+﻿using Buffet.GUI.GUI_ThemTaiKhoan;
+using Buffet.UserControlView;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,6 +9,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Buffet.GUI.GUI_ThemTaiKhoan;
+using Buffet.GUI.GUI_DangNhap;
 
 namespace Buffet
 {
@@ -17,6 +20,8 @@ namespace Buffet
         {
             InitializeComponent();
             hideSubMenu();
+            this.FormBorderStyle = FormBorderStyle.Sizable;
+            UserName.Text = Properties.Settings.Default.tennguoidung;
         }
 
         public void hideSubMenu()
@@ -134,6 +139,7 @@ namespace Buffet
         private void btnStaffAdd_Click(object sender, EventArgs e)
         {
             hideSubMenu();
+            openChildForm(new Buffet.GUI.GUI_ThemTaiKhoan.GUI_ThemTaiKhoan());
         }
 
         private void btnStaffView_Click(object sender, EventArgs e)
@@ -147,6 +153,9 @@ namespace Buffet
         private void btnLogout_Click(object sender, EventArgs e)
         {
             hideSubMenu();
+            GUI_FormDangNHap formDN = new GUI_FormDangNHap();
+            this.Hide();
+            formDN.Show();
         }
         #endregion
 

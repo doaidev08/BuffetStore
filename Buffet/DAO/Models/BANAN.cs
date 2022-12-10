@@ -17,7 +17,7 @@ namespace Buffet.DAO.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public BANAN()
         {
-            this.HOADON = new HashSet<HOADON>();
+            this.HOADONs = new HashSet<HOADON>();
         }
     
         public int MaBanAn { get; set; }
@@ -26,6 +26,6 @@ namespace Buffet.DAO.Models
         public Nullable<bool> TinhTrangBanAn { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<HOADON> HOADON { get; set; }
+        public virtual ICollection<HOADON> HOADONs { get; set; }
     }
 }

@@ -106,10 +106,10 @@
             this.UserName.CursorType = System.Windows.Forms.Cursors.Default;
             this.UserName.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
             this.UserName.ForeColor = System.Drawing.Color.White;
-            this.UserName.Location = new System.Drawing.Point(677, 15);
+            this.UserName.Location = new System.Drawing.Point(665, 13);
             this.UserName.Name = "UserName";
             this.UserName.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.UserName.Size = new System.Drawing.Size(48, 17);
+            this.UserName.Size = new System.Drawing.Size(61, 19);
             this.UserName.TabIndex = 4;
             this.UserName.Text = "Sang Ha";
             this.UserName.TextAlignment = System.Drawing.ContentAlignment.MiddleRight;
@@ -1711,7 +1711,7 @@
             // 
             // frmHome
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(51)))), ((int)(((byte)(130)))));
             this.ClientSize = new System.Drawing.Size(849, 461);
