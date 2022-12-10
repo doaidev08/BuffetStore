@@ -17,13 +17,13 @@ namespace Buffet.DAO.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public DANHMUCMONAN()
         {
-            this.MONAN = new HashSet<MONAN>();
+            this.MONANs = new HashSet<MONAN>();
         }
     
         public int MaDanhMucMonAn { get; set; }
         public string TenDanhMucMonAn { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<MONAN> MONAN { get; set; }
+        public virtual ICollection<MONAN> MONANs { get; set; }
     }
 }

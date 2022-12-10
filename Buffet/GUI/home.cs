@@ -17,6 +17,7 @@ namespace Buffet
         {
             InitializeComponent();
             hideSubMenu();
+            this.FormBorderStyle = FormBorderStyle.Sizable;
         }
 
         public void hideSubMenu()
@@ -50,14 +51,15 @@ namespace Buffet
 
         private void btnTableAdd_Click(object sender, EventArgs e)
         {
-            /* hideSubMenu();*/
+            hideSubMenu();
             openChildForm(new Buffet.GUI.QuanLyBanAn.GUI_DatBan());
-            /*openChildForm(new Buffet.GUI.QuanLyBanAn.GUI_ChonMon());*/
+            
         }
 
         private void btnTableView_Click(object sender, EventArgs e)
         {
             hideSubMenu();
+            openChildForm(new Buffet.GUI.QuanLyBanAn.GUI_ChonMon());
         }
         #endregion
 
@@ -84,13 +86,20 @@ namespace Buffet
         private void btnFoodAdd_Click(object sender, EventArgs e)
         {
             hideSubMenu();
+            openChildForm(new Buffet.GUI.GUI_FoodManagement.fAddFood());
         }
 
         private void btnFoodView_Click(object sender, EventArgs e)
         {
+            openChildForm(new Buffet.GUI.GUI_FoodManagement.fFoodsView());
             hideSubMenu();
         }
 
+        private void btnAddCate_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
+            openChildForm(new Buffet.GUI.GUI_FoodManagement.fAddFoodCate());
+        }
         #endregion
 
         #region Warhourse management
@@ -148,12 +157,6 @@ namespace Buffet
             hideSubMenu();
         }
         #endregion
-
-        private void pnMainView_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
 
     }
 }

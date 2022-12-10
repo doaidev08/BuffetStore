@@ -17,13 +17,13 @@ namespace Buffet.DAO.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public PHANQUYEN()
         {
-            this.TAIKHOAN = new HashSet<TAIKHOAN>();
+            this.TAIKHOANs = new HashSet<TAIKHOAN>();
         }
     
         public int MaPhanQuyen { get; set; }
         public string VaiTroPhanQuyen { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<TAIKHOAN> TAIKHOAN { get; set; }
+        public virtual ICollection<TAIKHOAN> TAIKHOANs { get; set; }
     }
 }

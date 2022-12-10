@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="CuaHangBuffetModelStoreContainer" CdmEntityContainer="CuaHangBuffetEntities">
-    <EntitySetMapping Name="BANAN">
+    <EntitySetMapping Name="BANANs">
       <EntityTypeMapping TypeName="CuaHangBuffetModel.BANAN">
         <MappingFragment StoreEntitySet="BANAN">
           <ScalarProperty Name="MaBanAn" ColumnName="MaBanAn" />
@@ -11,7 +11,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="DANHMUCDOUONG">
+    <EntitySetMapping Name="DANHMUCDOUONGs">
       <EntityTypeMapping TypeName="CuaHangBuffetModel.DANHMUCDOUONG">
         <MappingFragment StoreEntitySet="DANHMUCDOUONG">
           <ScalarProperty Name="MaDanhMucDoUong" ColumnName="MaDanhMucDoUong" />
@@ -19,7 +19,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="DANHMUCMONAN">
+    <EntitySetMapping Name="DANHMUCMONANs">
       <EntityTypeMapping TypeName="CuaHangBuffetModel.DANHMUCMONAN">
         <MappingFragment StoreEntitySet="DANHMUCMONAN">
           <ScalarProperty Name="MaDanhMucMonAn" ColumnName="MaDanhMucMonAn" />
@@ -27,7 +27,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="DOANHTHU">
+    <EntitySetMapping Name="DOANHTHUs">
       <EntityTypeMapping TypeName="CuaHangBuffetModel.DOANHTHU">
         <MappingFragment StoreEntitySet="DOANHTHU">
           <ScalarProperty Name="MaDoanhThu" ColumnName="MaDoanhThu" />
@@ -40,7 +40,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="DOUONG">
+    <EntitySetMapping Name="DOUONGs">
       <EntityTypeMapping TypeName="CuaHangBuffetModel.DOUONG">
         <MappingFragment StoreEntitySet="DOUONG">
           <ScalarProperty Name="MaDoUong" ColumnName="MaDoUong" />
@@ -52,7 +52,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="HOADON">
+    <EntitySetMapping Name="HOADONs">
       <EntityTypeMapping TypeName="CuaHangBuffetModel.HOADON">
         <MappingFragment StoreEntitySet="HOADON">
           <ScalarProperty Name="MaHoaDon" ColumnName="MaHoaDon" />
@@ -78,7 +78,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="KHO">
+    <EntitySetMapping Name="KHOes">
       <EntityTypeMapping TypeName="CuaHangBuffetModel.KHO">
         <MappingFragment StoreEntitySet="KHO">
           <ScalarProperty Name="MaKho" ColumnName="MaKho" />
@@ -86,7 +86,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="LOAISANPHAMKHO">
+    <EntitySetMapping Name="LOAISANPHAMKHOes">
       <EntityTypeMapping TypeName="CuaHangBuffetModel.LOAISANPHAMKHO">
         <MappingFragment StoreEntitySet="LOAISANPHAMKHO">
           <ScalarProperty Name="MaLoaiSanPhamKho" ColumnName="MaLoaiSanPhamKho" />
@@ -94,7 +94,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="MONAN">
+    <EntitySetMapping Name="MONANs">
       <EntityTypeMapping TypeName="CuaHangBuffetModel.MONAN">
         <MappingFragment StoreEntitySet="MONAN">
           <ScalarProperty Name="MaMonAn" ColumnName="MaMonAn" />
@@ -106,7 +106,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="NHANVIEN">
+    <EntitySetMapping Name="NHANVIENs">
       <EntityTypeMapping TypeName="CuaHangBuffetModel.NHANVIEN">
         <MappingFragment StoreEntitySet="NHANVIEN">
           <ScalarProperty Name="MaNhanVien" ColumnName="MaNhanVien" />
@@ -117,7 +117,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="PHANQUYEN">
+    <EntitySetMapping Name="PHANQUYENs">
       <EntityTypeMapping TypeName="CuaHangBuffetModel.PHANQUYEN">
         <MappingFragment StoreEntitySet="PHANQUYEN">
           <ScalarProperty Name="MaPhanQuyen" ColumnName="MaPhanQuyen" />
@@ -125,7 +125,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="QUANTRIVIEN">
+    <EntitySetMapping Name="QUANTRIVIENs">
       <EntityTypeMapping TypeName="CuaHangBuffetModel.QUANTRIVIEN">
         <MappingFragment StoreEntitySet="QUANTRIVIEN">
           <ScalarProperty Name="MaQuanTriVien" ColumnName="MaQuanTriVien" />
@@ -134,7 +134,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="SANPHAMKHO">
+    <EntitySetMapping Name="SANPHAMKHOes">
       <EntityTypeMapping TypeName="CuaHangBuffetModel.SANPHAMKHO">
         <MappingFragment StoreEntitySet="SANPHAMKHO">
           <ScalarProperty Name="MaSanPhamKho" ColumnName="MaSanPhamKho" />
@@ -153,7 +153,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="TAIKHOAN">
+    <EntitySetMapping Name="TAIKHOANs">
       <EntityTypeMapping TypeName="CuaHangBuffetModel.TAIKHOAN">
         <MappingFragment StoreEntitySet="TAIKHOAN">
           <ScalarProperty Name="MaTaiKhoan" ColumnName="MaTaiKhoan" />

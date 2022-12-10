@@ -1,4 +1,5 @@
 ﻿using Buffet.DAO.Models;
+using Buffet.Helper;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,18 +8,20 @@ using System.Threading.Tasks;
 
 namespace Buffet.DAO.DAOQuanLyBanAn
 {
-    class DAO_DatBan
+    public class DAO_DatBan
     {
-        CuaHangBuffetEntities database;
+        DataBaseOrigin databaseOrigin;
+        
         public DAO_DatBan()
         {
-            database = new CuaHangBuffetEntities();
+            databaseOrigin = new DataBaseOrigin();
         }
         //Lấy danh sách bàn ăn
         public dynamic DAO_LayDSBanAn()
         {
-           
-            var listTable = database.BANAN.Select(x => new
+            
+
+            var listTable = databaseOrigin.database.BANANs.Select(x => new
             {
                 x.MaBanAn,
                 x.TenBanAn,
@@ -30,15 +33,16 @@ namespace Buffet.DAO.DAOQuanLyBanAn
         //Đặt bàn, tạo hóa đơn
         public void DAO_DatBan_TaoHoaDon(HOADON hoaDon)
         {
-            database.HOADON.Add(hoaDon);
-            database.SaveChanges();
+
+            databaseOrigin.database.HOADONs.Add(hoaDon);
+            databaseOrigin.database.SaveChanges();
         }
         //Cập nhật trạng thái bàn, sau khi có người đặt bàn
         public void DAO_CapNhatTTBan(int maBanAn)
         {
-            var banAn = database.BANAN.Find(maBanAn);
+            var banAn = databaseOrigin.database.BANANs.Find(maBanAn);
             banAn.TinhTrangBanAn = true;
-            database.SaveChanges();
+            databaseOrigin.database.SaveChanges();
         }
     }
 }
