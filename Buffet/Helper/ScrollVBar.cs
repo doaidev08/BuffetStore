@@ -11,9 +11,9 @@ namespace Buffet.Helper
     public class ScrollVBar
     {
         //V Scroll FlowLayoutPanel
-        public void ScrollLayoutPanel(BunifuVScrollBar bunifuV, dynamic flowLayoutPanel)
+        public void ScrollLayoutPanel(BunifuVScrollBar bunifuV, dynamic panel)
         {
-            bunifuV.BindTo(flowLayoutPanel);
+            bunifuV.BindTo(panel);
 
         }
     }

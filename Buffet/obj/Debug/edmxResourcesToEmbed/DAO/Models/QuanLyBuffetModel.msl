@@ -11,6 +11,17 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="CHITIETHOADON">
+      <EntityTypeMapping TypeName="CuaHangBuffetModel.CHITIETHOADON">
+        <MappingFragment StoreEntitySet="CHITIETHOADON">
+          <ScalarProperty Name="MaChiTietHoaDon" ColumnName="MaChiTietHoaDon" />
+          <ScalarProperty Name="SoLuongLay" ColumnName="SoLuongLay" />
+          <ScalarProperty Name="ThanhTien" ColumnName="ThanhTien" />
+          <ScalarProperty Name="MaDoUong" ColumnName="MaDoUong" />
+          <ScalarProperty Name="MaHoaDon" ColumnName="MaHoaDon" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="DANHMUCDOUONG">
       <EntityTypeMapping TypeName="CuaHangBuffetModel.DANHMUCDOUONG">
         <MappingFragment StoreEntitySet="DANHMUCDOUONG">
@@ -61,7 +72,6 @@
           <ScalarProperty Name="BanKhachHang" ColumnName="BanKhachHang" />
           <ScalarProperty Name="ThoiGianKhachVao" ColumnName="ThoiGianKhachVao" />
           <ScalarProperty Name="GiaSetBuffet" ColumnName="GiaSetBuffet" />
-          <ScalarProperty Name="SoLuongDoUong" ColumnName="SoLuongDoUong" />
           <ScalarProperty Name="TongPhiDoUong" ColumnName="TongPhiDoUong" />
           <ScalarProperty Name="TongTien" ColumnName="TongTien" />
           <ScalarProperty Name="Thue" ColumnName="Thue" />

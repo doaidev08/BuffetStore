@@ -51,14 +51,15 @@ namespace Buffet
         private void btnTableAdd_Click(object sender, EventArgs e)
         {
             hideSubMenu();
-            openChildForm(new Buffet.GUI.QuanLyBanAn.GUI_DatBan());
-            
+            openChildForm(new Buffet.GUI.GUI_QuanLyBanAn.GUI_DatBan());
+
         }
 
         private void btnTableView_Click(object sender, EventArgs e)
         {
             hideSubMenu();
-            openChildForm(new Buffet.GUI.QuanLyBanAn.GUI_ChonMon());
+            /*openChildForm(new Buffet.GUI.GUI_QuanLyBanAn.GUI_ChonMon());*/
+            openChildForm(new Buffet.GUI.GUI_QuanLyHoaDon.GUI_ThanhToanHoaDon());
         }
         #endregion
 

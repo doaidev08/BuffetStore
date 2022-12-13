@@ -427,8 +427,6 @@ E:\BTLDOTNET\BuffetStore\Buffet\bin\Debug\System.Threading.AccessControl.xml
 E:\BTLDOTNET\BuffetStore\Buffet\obj\Debug\Buffet.csproj.AssemblyReference.cache
 E:\BTLDOTNET\BuffetStore\Buffet\obj\Debug\Buffet.csproj.SuggestedBindingRedirects.cache
 E:\BTLDOTNET\BuffetStore\Buffet\obj\Debug\Buffet.frmHome.resources
-E:\BTLDOTNET\BuffetStore\Buffet\obj\Debug\Buffet.GUI.QuanLyBanAn.GUI_ChonMon.resources
-E:\BTLDOTNET\BuffetStore\Buffet\obj\Debug\Buffet.GUI.QuanLyBanAn.GUI_DatBan.resources
 E:\BTLDOTNET\BuffetStore\Buffet\obj\Debug\Buffet.Properties.Resources.resources
 E:\BTLDOTNET\BuffetStore\Buffet\obj\Debug\Buffet.UserControlView.UC_MainView.resources
 E:\BTLDOTNET\BuffetStore\Buffet\obj\Debug\Buffet.csproj.GenerateResource.cache
@@ -439,3 +437,5 @@ E:\BTLDOTNET\BuffetStore\Buffet\obj\Debug\Buffet.csproj.CopyComplete
 E:\BTLDOTNET\BuffetStore\Buffet\obj\Debug\Buffet.exe
 E:\BTLDOTNET\BuffetStore\Buffet\obj\Debug\Buffet.pdb
 E:\BTLDOTNET\BuffetStore\Buffet\obj\Debug\Buffet.GUI.GUI_QuanLyHoaDon.GUI_ThanhToanHoaDon.resources
+E:\BTLDOTNET\BuffetStore\Buffet\obj\Debug\Buffet.GUI.GUI_QuanLyBanAn.GUI_ChonMon.resources
+E:\BTLDOTNET\BuffetStore\Buffet\obj\Debug\Buffet.GUI.GUI_QuanLyBanAn.GUI_DatBan.resources

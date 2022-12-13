@@ -1,4 +1,5 @@
-﻿using Buffet.DAO.Models;
+﻿using Buffet.DAO.DAO_QuanLyBanAn;
+using Buffet.DAO.Models;
 using Buffet.Helper;
 using System;
 using System.Collections.Generic;
@@ -12,6 +13,7 @@ namespace Buffet.DAO.DAOQuanLyBanAn
     {
         DataBaseOrigin databaseOrigin;
         
+
         public DAO_DatBan()
         {
             databaseOrigin = new DataBaseOrigin();

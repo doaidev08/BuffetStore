@@ -12,18 +12,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Buffet.GUI.QuanLyBanAn
+namespace Buffet.GUI.GUI_QuanLyBanAn
 {
     public partial class GUI_ChonMon : Form
     {
         BUS_ChonMon busChonMon;
         ScrollVBar scrollVBar;
         ThongBao thongBao;
+        ChuyenPage chuyenPage;
         public GUI_ChonMon()
         {
             busChonMon = new BUS_ChonMon();
             scrollVBar = new ScrollVBar();
             thongBao = new ThongBao();
+            chuyenPage = new ChuyenPage();
             InitializeComponent();
             
 
@@ -58,21 +60,15 @@ namespace Buffet.GUI.QuanLyBanAn
         public void GUI_HienThiDoUong()
         {
             scrollVBar.ScrollLayoutPanel(bunifuVScrollBar1, flowLayoutPanel2);
-            scrollVBar.ScrollLayoutPanel(bunifuVScrollBar2, flowLayoutPanel3);
+           
             busChonMon.BUS_DanhSachDoUong(flowLayoutPanel2);
             
-        }
-        //Chuyển TabPage 
-        public void GUI_ChuyenPage(string page)
-        {
-
-            bunifuPages1.SetPage(page);
         }
 
         //Đồ uống được chọn
         public void GUI_DoUongPicker()
         {
-            busChonMon.flowLayoutPanel = flowLayoutPanel3;
+            
         }
 
 
@@ -103,18 +99,23 @@ namespace Buffet.GUI.QuanLyBanAn
             GUI_HienThiHoaDonBanAn();
             GUI_HienThiDoUong();
             GUI_DoUongPicker();
+            GUI_HienThiChiTietHoaDon();
 
 
+        }
+        public void GUI_HienThiChiTietHoaDon()
+        {
+            busChonMon.bunifuDataGridView = bunifuDataGridView1;
         }
 
         private void bunifuButton2_Click(object sender, EventArgs e)
         {
-            GUI_ChuyenPage("Đồ Uống");
+            chuyenPage.ChuyenPageBuni(bunifuPages1,"Đồ Uống");
         }
 
         private void bunifuButton3_Click(object sender, EventArgs e)
         {
-            GUI_ChuyenPage("Món Ăn");
+            chuyenPage.ChuyenPageBuni(bunifuPages1, "Món Ăn");
         }
 
         private void bunifuToggleSwitch1_CheckedChanged(object sender, BunifuToggleSwitch.CheckedChangedEventArgs e)

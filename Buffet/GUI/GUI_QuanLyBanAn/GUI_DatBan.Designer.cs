@@ -1,4 +1,4 @@
-﻿namespace Buffet.GUI.QuanLyBanAn
+﻿namespace Buffet.GUI.GUI_QuanLyBanAn
 {
     partial class GUI_DatBan
     {
@@ -277,11 +277,11 @@
             this.bunifuDatePicker1.BorderColor = System.Drawing.Color.Silver;
             this.bunifuDatePicker1.BorderRadius = 1;
             this.bunifuDatePicker1.Color = System.Drawing.Color.Silver;
-            this.bunifuDatePicker1.DateBorderThickness = Bunifu.UI.WinForms.BunifuDatePicker.BorderThickness.Thin;
+            this.bunifuDatePicker1.DateBorderThickness = Bunifu.UI.WinForms.BunifuDatePicker.BorderThickness.Thick;
             this.bunifuDatePicker1.DateTextAlign = Bunifu.UI.WinForms.BunifuDatePicker.TextAlign.Left;
             this.bunifuTransition1.SetDecoration(this.bunifuDatePicker1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.bunifuDatePicker1.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuDatePicker1.DisplayWeekNumbers = false;
+            this.bunifuDatePicker1.DisplayWeekNumbers = true;
             this.bunifuDatePicker1.DPHeight = 0;
             this.bunifuDatePicker1.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
             this.bunifuDatePicker1.FillDatePicker = false;

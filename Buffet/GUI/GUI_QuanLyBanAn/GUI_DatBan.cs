@@ -13,7 +13,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Buffet.GUI.QuanLyBanAn
+namespace Buffet.GUI.GUI_QuanLyBanAn
 {
     public partial class GUI_DatBan : Form
     {

@@ -26,6 +26,7 @@ namespace Buffet.DAO.Models
         }
     
         public virtual DbSet<BANAN> BANAN { get; set; }
+        public virtual DbSet<CHITIETHOADON> CHITIETHOADON { get; set; }
         public virtual DbSet<DANHMUCDOUONG> DANHMUCDOUONG { get; set; }
         public virtual DbSet<DANHMUCMONAN> DANHMUCMONAN { get; set; }
         public virtual DbSet<DOANHTHU> DOANHTHU { get; set; }
