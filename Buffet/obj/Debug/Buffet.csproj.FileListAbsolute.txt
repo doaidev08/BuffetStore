@@ -492,3 +492,4 @@ D:\.net1\RestaurantBuffet\BuffetStore\Buffet\obj\Debug\Buffet.exe
 D:\.net1\RestaurantBuffet\BuffetStore\Buffet\obj\Debug\Buffet.pdb
 D:\.net1\RestaurantBuffet\BuffetStore\Buffet\obj\Debug\Buffet.GUI.GUI_DangNhap.GUI_FormDangNHap.resources
 D:\.net1\RestaurantBuffet\BuffetStore\Buffet\obj\Debug\Buffet.GUI.GUI_ThemTaiKhoan.GUI_ThemTaiKhoan.resources
+D:\.net1\RestaurantBuffet\BuffetStore\Buffet\obj\Debug\Buffet.GUI.GUI_ThemTaiKhoan.GUI_QLiTaiKhoan.resources

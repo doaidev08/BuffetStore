@@ -21,8 +21,8 @@ namespace Buffet.BUS.BUS_XuLiDangNhap
             bool initLogin = daoXuLiDangNhap.DAO_LoGin(userName, password, saveAccount);
             if(initLogin == true)
             {
-                Properties.Settings.Default.tennguoidung = userName;
                 LuuTaiKhoan(saveAccount,userName,password);
+                Properties.Settings.Default.phanquyen = daoXuLiDangNhap.DAO_GetRule(userName);
                 form.Hide();
                 thongBao.HienThiThongBao(form, snack, "Đăng nhập thành công", "Success");
                 frmHome frmHome = new frmHome();
@@ -35,7 +35,7 @@ namespace Buffet.BUS.BUS_XuLiDangNhap
            // return initLogin == true ? true : false;
            
         }
-        private void LuuTaiKhoan(bool check,string username , string pw)
+        public void LuuTaiKhoan(bool check,string username , string pw)
         {
             if ( check == true)
             {
@@ -47,6 +47,8 @@ namespace Buffet.BUS.BUS_XuLiDangNhap
             {
                 Properties.Settings.Default.Reset();
             }
+
+            Properties.Settings.Default.tennguoidung = username;
         } 
     }
 }

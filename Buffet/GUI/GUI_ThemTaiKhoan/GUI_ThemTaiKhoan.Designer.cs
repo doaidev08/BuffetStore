@@ -35,6 +35,8 @@
             this.TextFieldUserName = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.TextFieldPassword = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.button1 = new System.Windows.Forms.Button();
+            this.comboBoxMaNV = new System.Windows.Forms.ComboBox();
+            this.materialFlatButton1 = new MaterialSkin.Controls.MaterialFlatButton();
             this.SuspendLayout();
             // 
             // materialLabel2
@@ -68,10 +70,11 @@
             // comboBoxVaitro
             // 
             this.comboBoxVaitro.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.comboBoxVaitro.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxVaitro.FormattingEnabled = true;
-            this.comboBoxVaitro.Location = new System.Drawing.Point(369, 131);
+            this.comboBoxVaitro.Location = new System.Drawing.Point(421, 131);
             this.comboBoxVaitro.Name = "comboBoxVaitro";
-            this.comboBoxVaitro.Size = new System.Drawing.Size(129, 24);
+            this.comboBoxVaitro.Size = new System.Drawing.Size(152, 30);
             this.comboBoxVaitro.TabIndex = 5;
             // 
             // materialLabel4
@@ -81,7 +84,7 @@
             this.materialLabel4.Depth = 0;
             this.materialLabel4.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel4.Location = new System.Drawing.Point(293, 129);
+            this.materialLabel4.Location = new System.Drawing.Point(285, 129);
             this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel4.Name = "materialLabel4";
             this.materialLabel4.Size = new System.Drawing.Size(70, 24);
@@ -132,12 +135,40 @@
             this.button1.TabIndex = 9;
             this.button1.Text = "Thêm";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // comboBoxMaNV
+            // 
+            this.comboBoxMaNV.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.comboBoxMaNV.FormattingEnabled = true;
+            this.comboBoxMaNV.Location = new System.Drawing.Point(421, 196);
+            this.comboBoxMaNV.Name = "comboBoxMaNV";
+            this.comboBoxMaNV.Size = new System.Drawing.Size(152, 24);
+            this.comboBoxMaNV.TabIndex = 10;
+            // 
+            // materialFlatButton1
+            // 
+            this.materialFlatButton1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.materialFlatButton1.AutoSize = true;
+            this.materialFlatButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialFlatButton1.Depth = 0;
+            this.materialFlatButton1.Location = new System.Drawing.Point(276, 189);
+            this.materialFlatButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialFlatButton1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialFlatButton1.Name = "materialFlatButton1";
+            this.materialFlatButton1.Primary = false;
+            this.materialFlatButton1.Size = new System.Drawing.Size(138, 36);
+            this.materialFlatButton1.TabIndex = 11;
+            this.materialFlatButton1.Text = "Mã nhân viên:";
+            this.materialFlatButton1.UseVisualStyleBackColor = true;
             // 
             // GUI_ThemTaiKhoan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.materialFlatButton1);
+            this.Controls.Add(this.comboBoxMaNV);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.TextFieldPassword);
             this.Controls.Add(this.TextFieldUserName);
@@ -145,8 +176,10 @@
             this.Controls.Add(this.comboBoxVaitro);
             this.Controls.Add(this.materialLabel3);
             this.Controls.Add(this.materialLabel2);
+            this.KeyPreview = true;
             this.Name = "GUI_ThemTaiKhoan";
-            this.Text = "GUI_ThemTaiKhoan";
+            this.Text = "Thêm tài khoản";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.GUI_ThemTaiKhoan_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -160,5 +193,7 @@
         private MaterialSkin.Controls.MaterialSingleLineTextField TextFieldUserName;
         private MaterialSkin.Controls.MaterialSingleLineTextField TextFieldPassword;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox comboBoxMaNV;
+        private MaterialSkin.Controls.MaterialFlatButton materialFlatButton1;
     }
 }

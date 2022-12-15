@@ -28,9 +28,9 @@ namespace Buffet.GUI.GUI_DangNhap
             //this.StartPosition = FormStartPosition.CenterScreen; form khoi tao giua man hinh
             if (Properties.Settings.Default.username != "")
             {
-
-            TextFieldUserName.Text = Properties.Settings.Default.username;
-            TextFieldPassword.Text = Properties.Settings.Default.password;
+                // neu username != "" set 2 value cho textfield de dang nhap
+                TextFieldUserName.Text = Properties.Settings.Default.username;
+                TextFieldPassword.Text = Properties.Settings.Default.password;
                 CheckBoxLogin.Checked = true;
             }
         }
@@ -42,13 +42,13 @@ namespace Buffet.GUI.GUI_DangNhap
             }
             else
             {
-                // goi ham xu li dang nhap khi da nhap username,password
+                // goi ham xu li dang nhap khi da nhap username,password day du
              busXuliDangNhap.XuliDangNhap(TextFieldUserName.Text, TextFieldPassword.Text, CheckBoxLogin.Checked,this);
             }
         }
         private void GUI_FormDangNHap_KeyDown(object sender, KeyEventArgs e)
         {
-            // change properties ( KeyPreview) of form = True will active events keyboard
+            // change   KeyPreview  = True will active events keyboard
             if(e.KeyCode == Keys.Enter)
             {
                 ShareLogin();
@@ -57,7 +57,6 @@ namespace Buffet.GUI.GUI_DangNhap
 
         private void ButtonLogin_Click(object sender, EventArgs e)
         {
-            // MessageBox.Show(TextFieldUserName.Text+ TextFieldPassword.Text);
             ShareLogin();
 
         }

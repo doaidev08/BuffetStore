@@ -270,7 +270,11 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BUS\BUS_QLiNhanVien\BUS_QliNhanVien.cs" />
+    <Compile Include="BUS\BUS_ThemTaiKhoan\BUS_ThemTaiKhoan.cs" />
     <Compile Include="BUS\BUS_XuLiDangNhap\BUS_XuLiDangNhap.cs" />
+    <Compile Include="DAO\DAO_QLiNhanVien\DAO_QLiNhanVien.cs" />
+    <Compile Include="DAO\DAO_ThemTaiKhoan\DAO_ThemTaiKHoan.cs" />
     <Compile Include="DAO\DAO_XuLiDangNhap\DAO_XuLiDangNhap.cs" />
     <Compile Include="DAO\Models\BANAN.cs">
       <DependentUpon>QuanLyBuffetModel.tt</DependentUpon>
@@ -296,6 +300,12 @@
     </Compile>
     <Compile Include="GUI\GUI_DangNhap\GUI_FormDangNHap.Designer.cs">
       <DependentUpon>GUI_FormDangNHap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_ThemTaiKhoan\GUI_QLiTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_ThemTaiKhoan\GUI_QLiTaiKhoan.Designer.cs">
+      <DependentUpon>GUI_QLiTaiKhoan.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\GUI_ThemTaiKhoan\GUI_ThemTaiKhoan.cs">
       <SubType>Form</SubType>
@@ -375,6 +385,9 @@
     </Compile>
     <EmbeddedResource Include="GUI\GUI_DangNhap\GUI_FormDangNHap.resx">
       <DependentUpon>GUI_FormDangNHap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_ThemTaiKhoan\GUI_QLiTaiKhoan.resx">
+      <DependentUpon>GUI_QLiTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\GUI_ThemTaiKhoan\GUI_ThemTaiKhoan.resx">
       <DependentUpon>GUI_ThemTaiKhoan.cs</DependentUpon>

@@ -109,9 +109,9 @@
             this.UserName.Location = new System.Drawing.Point(665, 13);
             this.UserName.Name = "UserName";
             this.UserName.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.UserName.Size = new System.Drawing.Size(61, 19);
+            this.UserName.Size = new System.Drawing.Size(76, 19);
             this.UserName.TabIndex = 4;
-            this.UserName.Text = "Sang Ha";
+            this.UserName.Text = "UserName";
             this.UserName.TextAlignment = System.Drawing.ContentAlignment.MiddleRight;
             this.UserName.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
