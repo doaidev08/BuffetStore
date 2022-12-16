@@ -19,8 +19,7 @@ namespace Buffet.DAO.DAOQuanLyBanAn
         //Lấy danh sách bàn ăn
         public dynamic DAO_LayDSBanAn()
         {
-            
-
+              
             var listTable = databaseOrigin.database.BANANs.Select(x => new
             {
                 x.MaBanAn,
@@ -33,7 +32,6 @@ namespace Buffet.DAO.DAOQuanLyBanAn
         //Đặt bàn, tạo hóa đơn
         public void DAO_DatBan_TaoHoaDon(HOADON hoaDon)
         {
-
             databaseOrigin.database.HOADONs.Add(hoaDon);
             databaseOrigin.database.SaveChanges();
         }

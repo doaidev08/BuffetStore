@@ -1,4 +1,5 @@
-﻿using Buffet.UserControlView;
+﻿using Buffet.GUI.GUI_ThemTaiKhoan;
+using Buffet.UserControlView;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,16 +9,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Buffet.GUI.GUI_ThemTaiKhoan;
+using Buffet.GUI.GUI_DangNhap;
+using Buffet.Helper;
+using Bunifu.UI.WinForms;
 
 namespace Buffet
 {
     public partial class frmHome : Form
     {
+        ThongBao thongBao = new ThongBao();
+        BunifuSnackbar snack = new BunifuSnackbar();
         public frmHome()
         {
             InitializeComponent();
             hideSubMenu();
             this.FormBorderStyle = FormBorderStyle.Sizable;
+            UserName.Text = Properties.Settings.Default.tennguoidung;
         }
 
         public void hideSubMenu()
@@ -138,14 +146,31 @@ namespace Buffet
         {
             toggleSubMenu(pnStaffSubMenu);
         }
-
         private void btnStaffAdd_Click(object sender, EventArgs e)
         {
+            // them tai khoan
+            if (Properties.Settings.Default.phanquyen == 4)
+            {
+                openChildForm(new Buffet.GUI.GUI_ThemTaiKhoan.GUI_ThemTaiKhoan());
+            }
+            else
+            {
+                thongBao.HienThiThongBao(this, snack, "Bạn không có quyền truy cập vào mục này", "Warning");
+            }
             hideSubMenu();
         }
 
         private void btnStaffView_Click(object sender, EventArgs e)
-        {
+        {   // quan li nhan vien
+            if (Properties.Settings.Default.phanquyen == 4)
+            {
+                openChildForm(new Buffet.GUI.GUI_ThemTaiKhoan.GUI_QLiTaiKhoan());
+            }
+            else
+            {
+                thongBao.HienThiThongBao(this, snack, "Bạn không có quyền truy cập vào mục này", "Warning");
+            }
+            hideSubMenu();
             hideSubMenu();
         }
 
@@ -155,6 +180,10 @@ namespace Buffet
         private void btnLogout_Click(object sender, EventArgs e)
         {
             hideSubMenu();
+            Properties.Settings.Default.tennguoidung = "";
+            GUI_FormDangNHap formDN = new GUI_FormDangNHap();
+            this.Hide();
+            formDN.Show();
         }
         #endregion
 
