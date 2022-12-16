@@ -44,9 +44,10 @@ E:\HUMG\HOC\DOTNET\SourceCode\DEV\BuffetStore\Buffet\obj\Debug\Buffet.GUI.GUI_Fo
 E:\HUMG\HOC\DOTNET\SourceCode\DEV\BuffetStore\Buffet\obj\Debug\Buffet.GUI.GUI_DangNhap.GUI_FormDangNHap.resources
 E:\HUMG\HOC\DOTNET\SourceCode\DEV\BuffetStore\Buffet\obj\Debug\Buffet.GUI.GUI_ThemTaiKhoan.GUI_QLiTaiKhoan.resources
 E:\HUMG\HOC\DOTNET\SourceCode\DEV\BuffetStore\Buffet\obj\Debug\Buffet.GUI.GUI_ThemTaiKhoan.GUI_ThemTaiKhoan.resources
+E:\HUMG\HOC\DOTNET\SourceCode\DEV\BuffetStore\Buffet\obj\Debug\Buffet.GUI.GUI_QuanLyHoaDon.GUI_ThanhToanHoaDon.resources
 E:\HUMG\HOC\DOTNET\SourceCode\DEV\BuffetStore\Buffet\obj\Debug\Buffet.frmHome.resources
-E:\HUMG\HOC\DOTNET\SourceCode\DEV\BuffetStore\Buffet\obj\Debug\Buffet.GUI.QuanLyBanAn.GUI_ChonMon.resources
-E:\HUMG\HOC\DOTNET\SourceCode\DEV\BuffetStore\Buffet\obj\Debug\Buffet.GUI.QuanLyBanAn.GUI_DatBan.resources
+E:\HUMG\HOC\DOTNET\SourceCode\DEV\BuffetStore\Buffet\obj\Debug\Buffet.GUI.GUI_QuanLyBanAn.GUI_ChonMon.resources
+E:\HUMG\HOC\DOTNET\SourceCode\DEV\BuffetStore\Buffet\obj\Debug\Buffet.GUI.GUI_QuanLyBanAn.GUI_DatBan.resources
 E:\HUMG\HOC\DOTNET\SourceCode\DEV\BuffetStore\Buffet\obj\Debug\Buffet.Properties.Resources.resources
 E:\HUMG\HOC\DOTNET\SourceCode\DEV\BuffetStore\Buffet\obj\Debug\Buffet.UserControlView.UC_MainView.resources
 E:\HUMG\HOC\DOTNET\SourceCode\DEV\BuffetStore\Buffet\obj\Debug\Buffet.csproj.GenerateResource.cache

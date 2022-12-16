@@ -1,4 +1,6 @@
 ﻿using Buffet.BUS.BUS_QuanLyBanAn;
+using Buffet.DAO.Models;
+using Buffet.Helper;
 using Bunifu.UI.WinForms;
 using System;
 using System.Collections.Generic;
@@ -10,16 +12,23 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Buffet.GUI.QuanLyBanAn
+namespace Buffet.GUI.GUI_QuanLyBanAn
 {
     public partial class GUI_ChonMon : Form
     {
         BUS_ChonMon busChonMon;
+        ScrollVBar scrollVBar;
+        ThongBao thongBao;
+        ChuyenPage chuyenPage;
         public GUI_ChonMon()
         {
             busChonMon = new BUS_ChonMon();
+            scrollVBar = new ScrollVBar();
+            thongBao = new ThongBao();
+            chuyenPage = new ChuyenPage();
             InitializeComponent();
             
+
         }
 
 
@@ -30,14 +39,43 @@ namespace Buffet.GUI.QuanLyBanAn
         {
             busChonMon.BUS_LayDSBanDangAn(flowLayoutPanel1);
         }
-        //Chuyển TabPage 
-        public void GUI_ChuyenPage(string page)
+        //Hiển thị hóa đơn của bàn
+        public void GUI_HienThiHoaDonBanAn()
         {
+            List<BunifuTextBox> bunifuTextBoxList = new List<BunifuTextBox>();
+            bunifuTextBoxList.Add(bunifuTextBox1);
+            bunifuTextBoxList.Add(bunifuTextBox2);
+            bunifuTextBoxList.Add(bunifuTextBox3);
+            bunifuTextBoxList.Add(bunifuTextBox4);
 
-            bunifuPages1.SetPage(page);
+            foreach(var buttonIndex in bunifuTextBoxList)
+            {
+                buttonIndex.Enabled = false;
+            }
+
+            busChonMon.bunifuTextBoxes = bunifuTextBoxList;
+        }
+        //Hiển thị danh sách món ăn 
+        public void GUI_HienThiMonAn()
+        {
+            busChonMon.BUS_DanhSachMonAn(flowLayoutPanel4);
         }
 
+        
+        //Hiển thị danh sách đồ uống
+        public void GUI_HienThiDoUong()
+        {
+          
+           
+            busChonMon.BUS_DanhSachDoUong(flowLayoutPanel2);
+            
+        }
 
+        //Đồ uống được chọn
+        public void GUI_DoUongPicker()
+        {
+            
+        }
 
 
 
@@ -64,21 +102,38 @@ namespace Buffet.GUI.QuanLyBanAn
         private void GUI_ChonMon_Load(object sender, EventArgs e)
         {
             GUI_LayDSBanDangAn();
+            GUI_HienThiHoaDonBanAn();
+            GUI_HienThiDoUong();
+            GUI_HienThiMonAn();
+            GUI_DoUongPicker();
+            GUI_HienThiChiTietHoaDon();
+
+
+        }
+        public void GUI_HienThiChiTietHoaDon()
+        {
+            busChonMon.bunifuDataGridView = bunifuDataGridView1;
         }
 
         private void bunifuButton2_Click(object sender, EventArgs e)
         {
-            GUI_ChuyenPage("Món Ăn");
+            chuyenPage.ChuyenPageBuni(bunifuPages1,"Đồ Uống");
         }
 
         private void bunifuButton3_Click(object sender, EventArgs e)
         {
-            GUI_ChuyenPage("Đồ uống");
+            chuyenPage.ChuyenPageBuni(bunifuPages1, "Món Ăn");
         }
 
         private void bunifuToggleSwitch1_CheckedChanged(object sender, BunifuToggleSwitch.CheckedChangedEventArgs e)
         {
 
         }
+
+        private void tabPage2_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

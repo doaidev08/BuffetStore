@@ -17,18 +17,18 @@ namespace Buffet.DAO.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public DOUONG()
         {
-            this.HOADONs = new HashSet<HOADON>();
+            this.CHITIETHOADONs = new HashSet<CHITIETHOADON>();
         }
     
         public int MaDoUong { get; set; }
         public string TenDoUong { get; set; }
-        public string LoaiDoUong { get; set; }
         public decimal GiaDoUong { get; set; }
-        public Nullable<bool> TinhTrangDoUong { get; set; }
+        public int SoLuongDoUong { get; set; }
+        public bool TinhTrangDoUong { get; set; }
         public Nullable<int> MaDanhMucDoUong { get; set; }
     
-        public virtual DANHMUCDOUONG DANHMUCDOUONG { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<HOADON> HOADONs { get; set; }
+        public virtual ICollection<CHITIETHOADON> CHITIETHOADONs { get; set; }
+        public virtual DANHMUCDOUONG DANHMUCDOUONG { get; set; }
     }
 }

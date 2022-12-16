@@ -24,7 +24,6 @@ namespace Buffet.BUS.BUS_FoodManagement
             MONAN food = new MONAN()
             {
                 TenMonAn = name.Text,
-                LoaiMonAn = foodCate.Text.ToString(),
                 MaDanhMucMonAn = int.Parse(foodCate.SelectedValue.ToString()),
                 SoLuongMonAn = Convert.ToInt32(count.Value)
             };
@@ -90,7 +89,6 @@ namespace Buffet.BUS.BUS_FoodManagement
             MONAN food = new MONAN()
             {
                 TenMonAn = txb.Text,
-                LoaiMonAn = foodCate.Text,
                 MaDanhMucMonAn = (int)foodCate.SelectedValue,
                 SoLuongMonAn = Convert.ToInt32(foodCount.Value)
         };

@@ -1,12 +1,18 @@
 ﻿using Buffet.DAO.DAO_QuanLyBanAn;
 using Buffet.DAO.DAOQuanLyBanAn;
+using Buffet.DAO.Models;
+using Bunifu.UI.WinForms;
 using Bunifu.UI.WinForms.BunifuButton;
+using Bunifu.UI.WinForms.Renderers.Snackbar;
 using System;
 using System.Collections.Generic;
+using System.DirectoryServices.ActiveDirectory;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BunifuButton = Bunifu.UI.WinForms.BunifuButton.BunifuButton;
 
 namespace Buffet.BUS.BUS_QuanLyBanAn
 {
@@ -20,7 +26,7 @@ namespace Buffet.BUS.BUS_QuanLyBanAn
             daoChonMon = new DAO_ChonMon();
             daoDatBan = new DAO_DatBan();
         }
-
+        //Lấy danh sách các bàn đang ăn 
         public void BUS_LayDSBanDangAn(FlowLayoutPanel flowLayoutPanel)
         {
             var listTable = daoDatBan.DAO_LayDSBanAn();
@@ -29,7 +35,7 @@ namespace Buffet.BUS.BUS_QuanLyBanAn
                 BunifuButton bunifuButton = new BunifuButton();
                 bunifuButton.Text = ls.TenBanAn.ToString() + " (Sức chứa: " + ls.SucChua.ToString() + ")";
                 bunifuButton.Name = ls.MaBanAn.ToString();
-               /* bunifuButton.Click += new System.EventHandler(BUS_DatBanPicker);*/
+                bunifuButton.Click += new System.EventHandler(BUS_LayMaBanAn);
                 if (!ls.TinhTrangBanAn)   //Mặc định bàn ăn là 0 (false)- chưa có người ngồi 
                 {
                     bunifuButton.Enabled = false;
@@ -41,5 +47,201 @@ namespace Buffet.BUS.BUS_QuanLyBanAn
                 flowLayoutPanel.Controls.Add(bunifuButton);
             }
         }
+       
+        public string maBanAn;
+        public int maHoaDon;
+        public List<BunifuTextBox> bunifuTextBoxes;
+        public BunifuDataGridView bunifuDataGridView = new BunifuDataGridView();
+        
+        //Lấy mã của bàn ăn được chọn
+        public void BUS_LayMaBanAn(object sender, EventArgs e)
+        {
+            BunifuButton btn = sender as BunifuButton;
+            btn.OnPressedState.FillColor = Color.Green;
+            btn.OnPressedState.ForeColor = Color.Black;
+            maBanAn = btn.Name.ToString();
+            HOADON hoaDon = new HOADON();
+            hoaDon.BanKhachHang = maBanAn;
+            var hoaDonTim = daoChonMon.DAO_HoaDonBanAn(hoaDon);
+            foreach(var hoaDonIndex in hoaDonTim)
+            {
+                bunifuTextBoxes[0].Text = hoaDonIndex.TenKhachHang.ToString();
+                bunifuTextBoxes[1].Text = hoaDonIndex.SoLuongKhach.ToString();
+                bunifuTextBoxes[2].Text = hoaDonIndex.BanKhachHang.ToString();
+                bunifuTextBoxes[3].Text = hoaDonIndex.ThoiGianKhachVao.ToString();
+
+                maHoaDon = hoaDonIndex.MaHoaDon;
+
+                //Hiển thị hóa chi tiết hóa đơn
+
+                var chiTietHDTim = daoChonMon.DAO_ChiTietHoaDon(maHoaDon);
+                BUS_DataGridViewEdit(bunifuDataGridView, chiTietHDTim);
+
+            }
+        }
+
+        //Danh sách các đồ uống 
+        public void BUS_DanhSachDoUong(FlowLayoutPanel flowLayoutPanel)
+        {
+            var doUong = daoChonMon.DAO_DanhSachDoUong();
+            flowLayoutPanel.Controls.Clear();
+            foreach (var i in doUong)
+            {
+                BunifuButton doUongButton = new BunifuButton();
+                doUongButton.Font = new Font("Times New Roman", 9);
+                doUongButton.TextPadding = new Padding(8, 0, 0, 0);
+                doUongButton.IconLeft = Properties.Resources._3700460_cafe_coffee_cup_drink_hot_mug_shop_108752; 
+                doUongButton.Name = i.MaDoUong.ToString();
+                doUongButton.Text = String.Format("{0} (Kho: {1})", i.TenDoUong.ToString(), i.SoLuongDoUong.ToString());
+                doUongButton.Click += new System.EventHandler(BUS_DoUongPicker);  
+                flowLayoutPanel.Controls.Add(doUongButton);
+            }
+        }
+
+        //Danh sách các món ăn
+        public void BUS_DanhSachMonAn(FlowLayoutPanel flowLayoutPanel)
+        {
+            var danhMucMonAn = daoChonMon.DAO_DanhMucMonAn();
+            flowLayoutPanel.Controls.Clear();
+            foreach(var danhMucIndex in danhMucMonAn)
+            {
+                BunifuTextBox buniText = new BunifuTextBox();
+                buniText.Enabled = false;
+                buniText.Name = danhMucIndex.MaDanhMucMonAn.ToString();
+                buniText.Text = danhMucIndex.TenDanhMucMonAn.ToString();
+                flowLayoutPanel.Controls.Add(buniText);
+                var monAn = daoChonMon.DAO_DanhSachMonAn(danhMucIndex.MaDanhMucMonAn);
+                FlowLayoutPanel flowChild = new FlowLayoutPanel();
+                flowChild.AutoScroll = true;
+                flowChild.AutoSize = true;
+                flowChild.FlowDirection = FlowDirection.LeftToRight;
+                flowLayoutPanel.Controls.Add(flowChild);
+                flowChild.Controls.Clear();
+                foreach(var monAnIndex in monAn)
+                {
+                    BunifuButton buniButton = new BunifuButton();
+                    buniButton.Name = monAnIndex.MaMonAn.ToString();
+                    buniButton.Text = monAnIndex.TenMonAn.ToString();
+                    buniButton.TextPadding = new Padding(5, 0, 0, 0);
+                    buniButton.IconLeft = Properties.Resources._meal_89750;
+                    flowChild.Controls.Add(buniButton);
+                }
+            }
+        }
+
+
+
+
+
+        public FlowLayoutPanel flowLayoutPanel;
+        public int maDoUong;
+        
+        //Xử lý thêm đồ uống vào hóa đơn của bàn ăn 
+
+        public void BUS_DoUongPicker(object sender, EventArgs e)
+        { 
+            BunifuButton btn = sender as BunifuButton;
+            maDoUong = Int32.Parse(btn.Name.ToString());
+            //Tăng SL_Lấy trong Hóa đơn - Giảm SL trong kho
+            if (BUS_KiemTraDoUongTonTai(maHoaDon,maDoUong)==true)
+            {   
+              
+                daoChonMon.DAO_CapNhatSLDoUong(maDoUong);
+                daoChonMon.DAO_CapNhatSlLayCTHD(maHoaDon, maDoUong);
+                ///////////////////////////////////////
+                dynamic hoaDonChon1 = daoChonMon.DAO_ChiTietHoaDon(maHoaDon);
+                BUS_DataGridViewEdit(bunifuDataGridView, hoaDonChon1);
+                var doUongFind = daoChonMon.DAO_DoUongTheoMa(maDoUong);
+                foreach(var doUongIndex in doUongFind)
+                {
+                    btn.Text = String.Format("{0} (Kho: {1})", doUongIndex.TenDoUong.ToString(), doUongIndex.SoLuongDoUong.ToString());
+                }
+            }
+            else //Khởi tạo  1 đồ uống vào chi tiết hóa đơn nếu đồ uống chưa từng được chọn
+            {
+                CHITIETHOADON chiTietHoaDon = new CHITIETHOADON();
+                chiTietHoaDon.MaHoaDon = maHoaDon;
+                chiTietHoaDon.MaDoUong = Int32.Parse(btn.Name.ToString());
+                chiTietHoaDon.SoLuongLay = 1;
+                //SL -1
+                daoChonMon.DAO_CapNhatSLDoUong(maDoUong);
+
+                var doUongFind = daoChonMon.DAO_DoUongTheoMa(maDoUong);
+                foreach(var doUongIndex in doUongFind)
+                {
+                    chiTietHoaDon.ThanhTien = doUongIndex.GiaDoUong;
+                    btn.Text = String.Format("{0} (Kho: {1})", doUongIndex.TenDoUong.ToString(), doUongIndex.SoLuongDoUong.ToString());
+                }
+
+                daoChonMon.DAO_ThemChiTietHoaDon(chiTietHoaDon);
+                dynamic hoaDonChon1 = daoChonMon.DAO_ChiTietHoaDon(maHoaDon);
+                BUS_DataGridViewEdit(bunifuDataGridView, hoaDonChon1);
+                
+
+            }
+        }
+        public void BUS_DataGridViewEdit(BunifuDataGridView bunifuDataGridViewEdit, dynamic chiTietHoaDonChon)
+        {
+            bunifuDataGridViewEdit.Rows.Clear();
+            bunifuDataGridViewEdit.Columns.Clear();
+            
+            bunifuDataGridViewEdit.DataSource = null;
+            bunifuDataGridViewEdit.Columns.AddRange(
+                new DataGridViewTextBoxColumn()
+                {
+                    HeaderText = "STT",
+                    Name = "STT"
+                },
+                new DataGridViewTextBoxColumn()
+                {
+                    HeaderText = "Tên đồ uống",
+                    Name = "TenDoUong"
+                },
+                new DataGridViewTextBoxColumn()
+                {
+                    HeaderText = "Đơn giá",
+                    Name = "DonGiaDoUong"
+                },
+                new DataGridViewTextBoxColumn()
+                {
+                    HeaderText = "Số lượng",
+                    Name = "SoLuongLay"
+                },
+                new DataGridViewTextBoxColumn()
+                {
+                    HeaderText = "Thành tiền",
+                    Name = "ThanhTien"
+                }
+            );
+           
+            var i = 0;
+            foreach (var chiTietIndex in chiTietHoaDonChon)
+            {
+                i++;
+                bunifuDataGridViewEdit.Rows.Add(
+                    i,
+                    chiTietIndex.TenDoUong,
+                    chiTietIndex.GiaDoUong,
+                    chiTietIndex.SoLuongLay,
+                    chiTietIndex.ThanhTien
+                );
+
+            }
+
+        }
+        //Kiểm tra đồ uống đã được khởi tạo trong hóa đơn hiện tại chưa
+        public bool BUS_KiemTraDoUongTonTai(int maHoaDon, int maDoUong)
+        {
+            //Đã tồn tại
+            if (daoChonMon.DAO_KiemTraDoUongTonTai(maHoaDon, maDoUong)){
+                return true;
+            }
+           
+            else
+            {
+                return false;
+            }
+        } 
+   
     }
 }

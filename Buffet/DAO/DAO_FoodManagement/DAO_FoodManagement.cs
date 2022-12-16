@@ -61,7 +61,6 @@ namespace Buffet.DAO.DAO_FoodManagement
             {
                 x.MaMonAn,
                 x.TenMonAn, 
-                x.LoaiMonAn,
                 x.SoLuongMonAn,
                 x.MaDanhMucMonAn
             }).ToList();
@@ -72,8 +71,6 @@ namespace Buffet.DAO.DAO_FoodManagement
         {
             if(columnName == "TenMonAn")
                 dataBaseOrigin.database.MONANs.Find(primaryKey).TenMonAn = editedValue;
-            else if(columnName == "LoaiMonAn")
-                dataBaseOrigin.database.MONANs.Find(primaryKey).LoaiMonAn = editedValue;
             else if(columnName == "SoLuongMonAn")
                 dataBaseOrigin.database.MONANs.Find(primaryKey).SoLuongMonAn = int.Parse(editedValue);
             else
@@ -89,7 +86,6 @@ namespace Buffet.DAO.DAO_FoodManagement
         {
             var foodNew = dataBaseOrigin.database.MONANs.Find(primaryKey);
             foodNew.TenMonAn = food.TenMonAn;
-            foodNew.LoaiMonAn = food.LoaiMonAn;
             foodNew.SoLuongMonAn = food.SoLuongMonAn;
             foodNew.MaDanhMucMonAn = food.MaDanhMucMonAn;
             dataBaseOrigin.database.SaveChanges();

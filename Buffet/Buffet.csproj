@@ -271,29 +271,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAO\Models\BANAN.cs">
-      <DependentUpon>BuffetStoreModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DAO\Models\BuffetStoreModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BuffetStoreModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DAO\Models\BuffetStoreModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BuffetStoreModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DAO\Models\BuffetStoreModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BuffetStoreModel.edmx</DependentUpon>
+      <DependentUpon>QuanLyBuffetModel.tt</DependentUpon>
     </Compile>
     <Compile Include="BUS\BUS_FoodManagement\BUS_FoodManagement.cs" />
+    <Compile Include="DAO\Models\CHITIETHOADON.cs">
+      <DependentUpon>QuanLyBuffetModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="DAO\Models\DANHMUCDOUONG.cs">
-      <DependentUpon>BuffetStoreModel.tt</DependentUpon>
+      <DependentUpon>QuanLyBuffetModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DAO\Models\DANHMUCMONAN.cs">
-      <DependentUpon>BuffetStoreModel.tt</DependentUpon>
+      <DependentUpon>QuanLyBuffetModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DAO\DAO_FoodManagement\DAO_FoodManagement.cs" />
     <Compile Include="BUS\BUS_QLiNhanVien\BUS_QliNhanVien.cs" />
@@ -304,13 +292,15 @@
     <Compile Include="DAO\DAO_XuLiDangNhap\DAO_XuLiDangNhap.cs" />
     <Compile Include="BUS\BUS_QuanLyBanAn\BUS_ChonMon.cs" />
     <Compile Include="BUS\BUS_QuanLyBanAn\BUS_DatBan.cs" />
+    <Compile Include="BUS\BUS_QuanLyHoaDon\BUS_ThanhToanHoaDon.cs" />
     <Compile Include="DAO\DAO_QuanLyBanAn\DAO_ChonMon.cs" />
     <Compile Include="DAO\DAO_QuanLyBanAn\DAO_DatBan.cs" />
+    <Compile Include="DAO\DAO_QuanLyHoaDon\DAO_ThanhToanHoaDon.cs" />
     <Compile Include="DAO\Models\DOANHTHU.cs">
-      <DependentUpon>BuffetStoreModel.tt</DependentUpon>
+      <DependentUpon>QuanLyBuffetModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DAO\Models\DOUONG.cs">
-      <DependentUpon>BuffetStoreModel.tt</DependentUpon>
+      <DependentUpon>QuanLyBuffetModel.tt</DependentUpon>
     </Compile>
     <Compile Include="GUI\GUI_FoodManagement\fAddFood.cs">
       <SubType>Form</SubType>
@@ -348,6 +338,12 @@
     <Compile Include="GUI\GUI_ThemTaiKhoan\GUI_ThemTaiKhoan.Designer.cs">
       <DependentUpon>GUI_ThemTaiKhoan.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\GUI_QuanLyHoaDon\GUI_ThanhToanHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_QuanLyHoaDon\GUI_ThanhToanHoaDon.Designer.cs">
+      <DependentUpon>GUI_ThanhToanHoaDon.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\home.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -366,25 +362,27 @@
     <Compile Include="GUI\GUI_QuanLyBanAn\GUI_DatBan.Designer.cs">
       <DependentUpon>GUI_DatBan.cs</DependentUpon>
     </Compile>
+    <Compile Include="Helper\ChuyenPage.cs" />
     <Compile Include="Helper\DataBaseOrigin.cs" />
+    <Compile Include="Helper\ScrollVBar.cs" />
     <Compile Include="Helper\ThongBao.cs" />
     <Compile Include="DAO\Models\HOADON.cs">
-      <DependentUpon>BuffetStoreModel.tt</DependentUpon>
+      <DependentUpon>QuanLyBuffetModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DAO\Models\KHO.cs">
-      <DependentUpon>BuffetStoreModel.tt</DependentUpon>
+      <DependentUpon>QuanLyBuffetModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DAO\Models\LOAISANPHAMKHO.cs">
-      <DependentUpon>BuffetStoreModel.tt</DependentUpon>
+      <DependentUpon>QuanLyBuffetModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DAO\Models\MONAN.cs">
-      <DependentUpon>BuffetStoreModel.tt</DependentUpon>
+      <DependentUpon>QuanLyBuffetModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DAO\Models\NHANVIEN.cs">
-      <DependentUpon>BuffetStoreModel.tt</DependentUpon>
+      <DependentUpon>QuanLyBuffetModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DAO\Models\PHANQUYEN.cs">
-      <DependentUpon>BuffetStoreModel.tt</DependentUpon>
+      <DependentUpon>QuanLyBuffetModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -394,14 +392,29 @@
     <Compile Include="GUI\UserControlView\UC_MainView.Designer.cs">
       <DependentUpon>UC_MainView.cs</DependentUpon>
     </Compile>
+    <Compile Include="DAO\Models\QuanLyBuffetModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyBuffetModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAO\Models\QuanLyBuffetModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyBuffetModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAO\Models\QuanLyBuffetModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyBuffetModel.edmx</DependentUpon>
+    </Compile>
     <Compile Include="DAO\Models\QUANTRIVIEN.cs">
-      <DependentUpon>BuffetStoreModel.tt</DependentUpon>
+      <DependentUpon>QuanLyBuffetModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DAO\Models\SANPHAMKHO.cs">
-      <DependentUpon>BuffetStoreModel.tt</DependentUpon>
+      <DependentUpon>QuanLyBuffetModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DAO\Models\TAIKHOAN.cs">
-      <DependentUpon>BuffetStoreModel.tt</DependentUpon>
+      <DependentUpon>QuanLyBuffetModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Util\common.cs" />
     <EmbeddedResource Include="GUI\GUI_FoodManagement\fAddFood.resx">
@@ -422,6 +435,9 @@
     <EmbeddedResource Include="GUI\GUI_ThemTaiKhoan\GUI_ThemTaiKhoan.resx">
       <DependentUpon>GUI_ThemTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_QuanLyHoaDon\GUI_ThanhToanHoaDon.resx">
+      <DependentUpon>GUI_ThanhToanHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\home.resx">
       <DependentUpon>home.cs</DependentUpon>
     </EmbeddedResource>
@@ -433,9 +449,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -445,18 +461,16 @@
     <EmbeddedResource Include="GUI\UserControlView\UC_MainView.resx">
       <DependentUpon>UC_MainView.cs</DependentUpon>
     </EmbeddedResource>
-    <EntityDeploy Include="DAO\Models\BuffetStoreModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>BuffetStoreModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="DAO\Models\BuffetStoreModel.edmx.diagram">
-      <DependentUpon>BuffetStoreModel.edmx</DependentUpon>
-    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -475,19 +489,37 @@
     <Folder Include="Assets\SQL\" />
   </ItemGroup>
   <ItemGroup>
+    <EntityDeploy Include="DAO\Models\QuanLyBuffetModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>QuanLyBuffetModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="DAO\Models\QuanLyBuffetModel.edmx.diagram">
+      <DependentUpon>QuanLyBuffetModel.edmx</DependentUpon>
+    </None>
     <None Include="Resources\LogoLogin.jpg" />
     <None Include="Resources\ImagesLoginForm.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DAO\Models\BuffetStoreModel.Context.tt">
+    <None Include="Resources\-meal_89750.ico" />
+    <None Include="Resources\3700460-cafe-coffee-cup-drink-hot-mug-shop_108752.ico" />
+    <None Include="Resources\-cancel_90204.ico" />
+    <None Include="Resources\dinner_meal_food_eat_table_icon_209871.ico" />
+    <None Include="Resources\Icon1.ico" />
+    <None Include="Resources\tasks_113292.ico" />
+    <None Include="Resources\29_1048671.ico" />
+    <None Include="Resources\receipt_cancel_icon_177356.ico" />
+    <None Include="Resources\29_104867.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DAO\Models\QuanLyBuffetModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>BuffetStoreModel.edmx</DependentUpon>
-      <LastGenOutput>BuffetStoreModel.Context.cs</LastGenOutput>
+      <DependentUpon>QuanLyBuffetModel.edmx</DependentUpon>
+      <LastGenOutput>QuanLyBuffetModel.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="DAO\Models\BuffetStoreModel.tt">
+    <Content Include="DAO\Models\QuanLyBuffetModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>BuffetStoreModel.edmx</DependentUpon>
-      <LastGenOutput>BuffetStoreModel.cs</LastGenOutput>
+      <DependentUpon>QuanLyBuffetModel.edmx</DependentUpon>
+      <LastGenOutput>QuanLyBuffetModel.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

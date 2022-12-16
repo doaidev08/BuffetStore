@@ -19,6 +19,8 @@ CREATE TABLE NHANVIEN (
 	DienThoai CHAR(10) NOT NULL UNIQUE,
 );
 GO
+
+
 CREATE TABLE PHANQUYEN(
 	MaPhanQuyen INT PRIMARY KEY NOT NULL IDENTITY,
 	VaiTroPhanQuyen NVARCHAR(255) NOT NULL,
@@ -79,7 +81,6 @@ GO
 CREATE TABLE MONAN (
     MaMonAn INT PRIMARY KEY NOT NULL IDENTITY,
 	TenMonAn NVARCHAR(255) NOT NULL,
-	LoaiMonAn NVARCHAR(255) NOT NULL,
 	SoLuongMonAn INT NOT NULL,
 	TinhTrangMonAn BIT DEFAULT 1,
 	MaDanhMucMonAn INT,
@@ -102,8 +103,8 @@ GO
 CREATE TABLE DOUONG (
     MaDoUong INT PRIMARY KEY NOT NULL IDENTITY,
 	TenDoUong NVARCHAR(255) NOT NULL,
-	LoaiDoUong NVARCHAR(255) NOT NULL,
 	GiaDoUong MONEY NOT NULL,
+	SoLuongDoUong INT NOT NULL,
 	TinhTrangDoUong BIT DEFAULT 1,
 	MaDanhMucDoUong INT,
 	FOREIGN KEY(MaDanhMucDoUong) REFERENCES dbo.DANHMUCDOUONG(MaDanhMucDoUong)
@@ -116,25 +117,39 @@ CREATE TABLE HOADON (
 	SoLuongKhach INT NOT NULL,
 	BanKhachHang NVARCHAR(255) NOT NULL,
 	ThoiGianKhachVao DATETIME,
-	GiaSetBuffet MONEY,
-	SoLuongDoUong INT,
-	TongPhiDoUong MONEY,
-	PhiDuThua MONEY,
-	TongTien MONEY,
-	Thue INT, --Thuế giá theo %
-	GiamGIa	INT, --Giảm giá theo %
-	TienThanhToan MONEY,
-	SoTienNhan MONEY,
-	SoTienTraKhach MONEY,
+	GiaSetBuffet MONEY DEFAULT 0,
+	TongPhiDoUong MONEY	DEFAULT 0,
+	TongTien MONEY DEFAULT 0,
+	Thue INT DEFAULT 0, --Thuế giá theo %
+	GiamGia	INT DEFAULT 0, --Giảm giá theo %
+	TienThanhToan MONEY DEFAULT 0,
+	SoTienNhan MONEY DEFAULT 0,
+	SoTienTraKhach MONEY DEFAULT 0,
 	ThoiGianHoaDon DATETIME,
 	TinhTrangHoaDon BIT DEFAULT 0,
 	MaBanAn INT,
-	MaDoUong INT,
+
 	MaNhanVien INT,
 	FOREIGN KEY(MaBanAn) REFERENCES dbo.BANAN(MaBanAn),
-	FOREIGN KEY(MaDoUong) REFERENCES dbo.DOUONG(MaDoUong),
+	
 	FOREIGN KEY(MaNhanVien) REFERENCES dbo.NHANVIEN(MaNhanVien),
+	
+	
 );
+GO
+
+CREATE TABLE CHITIETHOADON(
+	MaChiTietHoaDon INT PRIMARY KEY NOT NULL IDENTITY,
+	SoLuongLay INT DEFAULT 0,
+	ThanhTien MONEY DEFAULT 0,
+
+	MaDoUong INT,
+	MaHoaDon INT,
+	FOREIGN KEY(MaDoUong) REFERENCES dbo.DOUONG(MaDoUong),
+	FOREIGN KEY(MaHoaDon) REFERENCES dbo.HOADON(MaHoaDon)
+	
+)
+
 GO
 
 CREATE TABLE DOANHTHU (
@@ -159,6 +174,7 @@ INSERT INTO QUANTRIVIEN(
 	'admin',
 	'admin'
 );
+
 
 -- Thêm dữ liệu PHÂN QUYỀN
 INSERT INTO PHANQUYEN(
@@ -267,7 +283,7 @@ INSERT INTO BANAN(
 )VALUES(
 	N'Bàn 7',
 	7,
-	1
+	0
 );
 -- Thêm dữ liệu DANH MỤC MÓN ĂN 
 INSERT INTO DANHMUCMONAN(
@@ -290,6 +306,72 @@ INSERT INTO DANHMUCMONAN(
 VALUES(
 	N'Tráng miệng'
 );
+--Thêm món ăn
+INSERT INTO MONAN(
+	TenMonAn,
+	SoLuongMonAn,
+	MaDanhMucMonAn
+)
+VALUES(
+	N'Cai blah',
+	40,
+	2
+);
+
+INSERT INTO MONAN(
+	TenMonAn,
+	SoLuongMonAn,
+	MaDanhMucMonAn
+)
+VALUES(
+	N'Ga Quay',
+	40,
+	2
+)
+
+INSERT INTO MONAN(
+	TenMonAn,
+	SoLuongMonAn,
+	MaDanhMucMonAn
+)
+VALUES(
+	N'Vit Quay',
+	40,
+	2
+)
+
+INSERT INTO MONAN(
+	TenMonAn,
+	SoLuongMonAn,
+	MaDanhMucMonAn
+)
+VALUES(
+	N'Dua Hau',
+	40,
+	3
+)
+
+INSERT INTO MONAN(
+	TenMonAn,
+	SoLuongMonAn,
+	MaDanhMucMonAn
+)
+VALUES(
+	N'Thanh Long',
+	40,
+	3
+)
+
+INSERT INTO MONAN(
+	TenMonAn,
+	SoLuongMonAn,
+	MaDanhMucMonAn
+)
+VALUES(
+	N'Cam',
+	40,
+	3
+)
 -- Thêm dữ liệu DANH MỤC ĐỒ UỐNG
 INSERT INTO DANHMUCDOUONG(
 	TenDanhMucDoUong
@@ -311,6 +393,133 @@ INSERT INTO DANHMUCDOUONG(
 VALUES(
 	N'RƯỢU'
 );
+
+--
+INSERT INTO DOUONG(
+	TenDoUong,
+	GiaDoUong,
+	SoLuongDoUong,
+	MaDanhMucDoUong
+)
+VALUES(
+	'Nước cam',
+	10000,
+	500,
+	1
+);
+
+INSERT INTO DOUONG(
+	TenDoUong,
+	GiaDoUong,
+	SoLuongDoUong,
+	MaDanhMucDoUong
+)
+VALUES(
+	'Nước chanh leo',
+	10000,
+	500,
+	1
+);
+INSERT INTO DOUONG(
+	TenDoUong,
+	GiaDoUong,
+	SoLuongDoUong,
+	MaDanhMucDoUong
+)
+VALUES(
+	'Nước Bí đao',
+	10000,
+	500,
+	1
+);
+INSERT INTO DOUONG(
+	TenDoUong,
+	GiaDoUong,
+	SoLuongDoUong,
+	MaDanhMucDoUong
+)
+VALUES(
+	'Nước nuti táo',
+	10000,
+	500,
+	1
+);
+INSERT INTO DOUONG(
+	TenDoUong,
+	GiaDoUong,
+	SoLuongDoUong,
+	MaDanhMucDoUong
+)
+VALUES(
+	'Nước nuti xoài',
+	10000,
+	500,
+	1
+);
+INSERT INTO DOUONG(
+	TenDoUong,
+	GiaDoUong,
+	SoLuongDoUong,
+	MaDanhMucDoUong
+)
+VALUES(
+	'Nước dâu',
+	10000,
+	500,
+	1
+);
+INSERT INTO DOUONG(
+	TenDoUong,
+	GiaDoUong,
+	SoLuongDoUong,
+	MaDanhMucDoUong
+)
+VALUES(
+	'Nước điện giải',
+	10000,
+	500,
+	1
+);
+
+INSERT INTO DOUONG(
+	TenDoUong,
+	GiaDoUong,
+	SoLuongDoUong,
+	MaDanhMucDoUong
+)
+VALUES(
+	'Bia 333',
+	10000,
+	500,
+	1
+);
+
+INSERT INTO DOUONG(
+	TenDoUong,
+	GiaDoUong,
+	SoLuongDoUong,
+	MaDanhMucDoUong
+)
+VALUES(
+	'Bia HaNoi',
+	10000,
+	500,
+	1
+);
+
+INSERT INTO DOUONG(
+	TenDoUong,
+	GiaDoUong,
+	SoLuongDoUong,
+	MaDanhMucDoUong
+)
+VALUES(
+	'Bia SaiGon',
+	10000,
+	500,
+	1
+);
+
 
 -- Thêm dữ liệu KHO
 INSERT INTO KHO(
@@ -335,5 +544,3 @@ VALUES(
 	N'Vật tư'
 );
 
-select * from BANAN
-select * from HOADON

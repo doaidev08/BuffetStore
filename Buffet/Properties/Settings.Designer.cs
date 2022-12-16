@@ -70,5 +70,13 @@ namespace Buffet.Properties {
                 this["phanquyen"] = value;
             }
         }
+        public string ten1 {
+            get {
+                return ((string)(this["ten1"]));
+            }
+            set {
+                this["ten1"] = value;
+            }
+        }
     }
 }

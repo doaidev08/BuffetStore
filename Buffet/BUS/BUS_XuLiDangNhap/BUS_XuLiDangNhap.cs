@@ -7,14 +7,14 @@ using Buffet.DAO.DAO_XuLiDangNhap;
 using Buffet.Helper;
 using Bunifu.UI.WinForms;
 using System.Windows.Forms;
-using Buffet.GUI.QuanLyBanAn;
+using Buffet.GUI.GUI_QuanLyBanAn;
 namespace Buffet.BUS.BUS_XuLiDangNhap
 {
     public class BUS_XuLiDangNhap
     {
         DAO_XuLiDangNhap daoXuLiDangNhap = new DAO_XuLiDangNhap();
         ThongBao thongBao = new ThongBao();
-        GUI_DatBan formTest = new GUI.QuanLyBanAn.GUI_DatBan();
+        GUI_DatBan formTest = new GUI.GUI_QuanLyBanAn.GUI_DatBan();
         BunifuSnackbar snack = new BunifuSnackbar();
         public void XuliDangNhap(string userName, string password, bool saveAccount,Form form )
         {

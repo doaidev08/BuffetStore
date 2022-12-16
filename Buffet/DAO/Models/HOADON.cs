@@ -17,6 +17,7 @@ namespace Buffet.DAO.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public HOADON()
         {
+            this.CHITIETHOADONs = new HashSet<CHITIETHOADON>();
             this.DOANHTHUs = new HashSet<DOANHTHU>();
         }
     
@@ -26,25 +27,23 @@ namespace Buffet.DAO.Models
         public string BanKhachHang { get; set; }
         public Nullable<System.DateTime> ThoiGianKhachVao { get; set; }
         public Nullable<decimal> GiaSetBuffet { get; set; }
-        public Nullable<int> SoLuongDoUong { get; set; }
         public Nullable<decimal> TongPhiDoUong { get; set; }
-        public Nullable<decimal> PhiDuThua { get; set; }
         public Nullable<decimal> TongTien { get; set; }
         public Nullable<int> Thue { get; set; }
-        public Nullable<int> GiamGIa { get; set; }
+        public Nullable<int> GiamGia { get; set; }
         public Nullable<decimal> TienThanhToan { get; set; }
         public Nullable<decimal> SoTienNhan { get; set; }
         public Nullable<decimal> SoTienTraKhach { get; set; }
         public Nullable<System.DateTime> ThoiGianHoaDon { get; set; }
-        public Nullable<bool> TinhTrangHoaDon { get; set; }
+        public bool TinhTrangHoaDon { get; set; }
         public Nullable<int> MaBanAn { get; set; }
-        public Nullable<int> MaDoUong { get; set; }
         public Nullable<int> MaNhanVien { get; set; }
     
         public virtual BANAN BANAN { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<CHITIETHOADON> CHITIETHOADONs { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DOANHTHU> DOANHTHUs { get; set; }
-        public virtual DOUONG DOUONG { get; set; }
         public virtual NHANVIEN NHANVIEN { get; set; }
     }
 }

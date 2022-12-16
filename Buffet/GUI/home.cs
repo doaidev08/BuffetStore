@@ -60,14 +60,15 @@ namespace Buffet
         private void btnTableAdd_Click(object sender, EventArgs e)
         {
             hideSubMenu();
-            openChildForm(new Buffet.GUI.QuanLyBanAn.GUI_DatBan());
-            
+            openChildForm(new Buffet.GUI.GUI_QuanLyBanAn.GUI_DatBan());
+
         }
 
         private void btnTableView_Click(object sender, EventArgs e)
         {
             hideSubMenu();
-            openChildForm(new Buffet.GUI.QuanLyBanAn.GUI_ChonMon());
+            /*openChildForm(new Buffet.GUI.GUI_QuanLyBanAn.GUI_ChonMon());*/
+            openChildForm(new Buffet.GUI.GUI_QuanLyHoaDon.GUI_ThanhToanHoaDon());
         }
         #endregion
 
@@ -118,6 +119,7 @@ namespace Buffet
         private void btnWarhourseAdd_Click(object sender, EventArgs e)
         {
             hideSubMenu();
+            openChildForm(new Buffet.GUI.GUI_QuanLyBanAn.GUI_ChonMon());
         }
 
         private void btnWarhourseView_Click(object sender, EventArgs e)
@@ -138,6 +140,7 @@ namespace Buffet
         private void btnBillMngt_Click(object sender, EventArgs e)
         {
             hideSubMenu();
+            openChildForm(new Buffet.GUI.GUI_QuanLyHoaDon.GUI_ThanhToanHoaDon());
         }
         #endregion
 

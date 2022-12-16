@@ -1,4 +1,5 @@
-﻿using Buffet.DAO.Models;
+﻿using Buffet.DAO.DAO_QuanLyBanAn;
+using Buffet.DAO.Models;
 using Buffet.Helper;
 using System;
 using System.Collections.Generic;
@@ -12,6 +13,7 @@ namespace Buffet.DAO.DAOQuanLyBanAn
     {
         DataBaseOrigin databaseOrigin;
         
+
         public DAO_DatBan()
         {
             databaseOrigin = new DataBaseOrigin();
@@ -36,10 +38,10 @@ namespace Buffet.DAO.DAOQuanLyBanAn
             databaseOrigin.database.SaveChanges();
         }
         //Cập nhật trạng thái bàn, sau khi có người đặt bàn
-        public void DAO_CapNhatTTBan(int maBanAn)
+        public void DAO_CapNhatTTBan(BANAN banAn)
         {
-            var banAn = databaseOrigin.database.BANANs.Find(maBanAn);
-            banAn.TinhTrangBanAn = true;
+            var banAnFind = databaseOrigin.database.BANANs.Find(banAn.MaBanAn);
+            banAnFind.TinhTrangBanAn = banAn.TinhTrangBanAn;
             databaseOrigin.database.SaveChanges();
         }
     }
