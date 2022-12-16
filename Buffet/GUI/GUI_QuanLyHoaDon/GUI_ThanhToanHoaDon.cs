@@ -50,6 +50,7 @@ namespace Buffet.GUI.GUI_QuanLyHoaDon
             GUI_DSHDChuaThanhToan();
             GUI_DSHDDaThanhToan();
             GUI_DisableInPut(true);
+            timer1.Start();
         }
         //Vô hiệu hóa thông tin nhập liệu nếu chưa được chọn hóa đơn cụ thể
         public void GUI_DisableInPut(bool disa)
@@ -358,7 +359,7 @@ namespace Buffet.GUI.GUI_QuanLyHoaDon
         //Thanh Toán
         private void bunifuButton23_Click(object sender, EventArgs e)
         {
-          /*  if (GUI_KiemTraThongTinTT()==true)
+            if (GUI_KiemTraThongTinTT() == true)
             {
                 GUI_ThanhToanHoaDonFinal();
             }
@@ -370,8 +371,8 @@ namespace Buffet.GUI.GUI_QuanLyHoaDon
                     "Mời kiểm tra lại thông tin thanh toán!",
                     "Warning"
                 );
-            }*/
-            
+            }
+
         }
         //Tính tổng tiền 
         public int GUI_TinhTongTien()
@@ -453,6 +454,16 @@ namespace Buffet.GUI.GUI_QuanLyHoaDon
         private void numericUpDown7_ValueChanged(object sender, EventArgs e)
         {
             GUI_MacDinhThanhToan();
+        }
+
+        private void bunifuLabel16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            bunifuLabel16.Text = DateTime.Now.ToString();
         }
     }
 }

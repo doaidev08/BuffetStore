@@ -178,5 +178,29 @@ namespace Buffet.GUI.GUI_QuanLyBanAn
         {
             MessageBox.Show(Properties.Settings.Default.ten1);
         }
+
+        private void bunifuButton1_Click_3(object sender, EventArgs e)
+        {
+            //Nếu thông tin đặt bàn nhập vào đầy đủ
+            if (bunifuTextBox1.Text != "" && (int)numericUpDown1.Value != 0 && busDatBan.tablePickers.Any())
+            {
+                GUI_DatBan_TaoHoaDon();
+                busDatBan.tablePickers.Clear();
+            }
+            else
+            {
+                thongBao.HienThiThongBao(
+                    this,
+                    bunifuSnackbar1,
+                    "Mời nhập đủ thông tin!",
+                    "Warning"
+                );
+            }
+        }
+
+        private void bunifuLabel4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
