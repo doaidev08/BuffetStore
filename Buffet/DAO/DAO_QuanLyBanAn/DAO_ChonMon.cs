@@ -21,7 +21,7 @@ namespace Buffet.DAO.DAO_QuanLyBanAn
         public dynamic DAO_HoaDonBanAn(HOADON hoaDon)
         {
             var hoaDonFind = databaseOrigin.database.HOADON
-                             .Where(s => s.BanKhachHang.Contains(hoaDon.BanKhachHang))
+                             .Where(s => s.BanKhachHang.Contains(hoaDon.BanKhachHang) && s.TinhTrangHoaDon==false)
                              .ToList();
 
             return hoaDonFind;
@@ -56,6 +56,9 @@ namespace Buffet.DAO.DAO_QuanLyBanAn
                             .Where(s => s.MaDoUong == maDoUong)
                              .Select(s => new
                              {
+                                 s.MaDoUong,
+                                 s.TenDoUong,
+                                 s.SoLuongDoUong,
                                  s.GiaDoUong
                              }).ToList();
             return doUongFind;
@@ -136,6 +139,30 @@ namespace Buffet.DAO.DAO_QuanLyBanAn
             {
                 return false;
             }
+        }
+        //Danh mục món ăn
+        public dynamic DAO_DanhMucMonAn() {
+            var loaiMonAn = databaseOrigin.database.DANHMUCMONAN
+                            .Select(s => new
+                            {
+                                s.MaDanhMucMonAn,
+                                s.TenDanhMucMonAn
+                            })
+                            .ToList();
+            return loaiMonAn;
+        }
+        //Danh sách Món ăn
+        public dynamic DAO_DanhSachMonAn(int danhMucMonAn)
+        {
+
+            var monAn = databaseOrigin.database.MONAN
+                         .Where(s => s.MaDanhMucMonAn == danhMucMonAn)
+                         .Select(s => new
+                         {
+                             s.MaMonAn,
+                             s.TenMonAn
+                         }).ToList();
+            return monAn;
         }
     }
 }

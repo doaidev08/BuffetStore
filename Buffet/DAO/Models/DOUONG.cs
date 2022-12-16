@@ -18,7 +18,6 @@ namespace Buffet.DAO.Models
         public DOUONG()
         {
             this.CHITIETHOADON = new HashSet<CHITIETHOADON>();
-            this.HOADON = new HashSet<HOADON>();
         }
     
         public int MaDoUong { get; set; }
@@ -31,7 +30,5 @@ namespace Buffet.DAO.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CHITIETHOADON> CHITIETHOADON { get; set; }
         public virtual DANHMUCDOUONG DANHMUCDOUONG { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<HOADON> HOADON { get; set; }
     }
 }

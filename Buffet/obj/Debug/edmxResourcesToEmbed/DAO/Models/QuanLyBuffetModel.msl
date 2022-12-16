@@ -82,7 +82,6 @@
           <ScalarProperty Name="ThoiGianHoaDon" ColumnName="ThoiGianHoaDon" />
           <ScalarProperty Name="TinhTrangHoaDon" ColumnName="TinhTrangHoaDon" />
           <ScalarProperty Name="MaBanAn" ColumnName="MaBanAn" />
-          <ScalarProperty Name="MaDoUong" ColumnName="MaDoUong" />
           <ScalarProperty Name="MaNhanVien" ColumnName="MaNhanVien" />
         </MappingFragment>
       </EntityTypeMapping>

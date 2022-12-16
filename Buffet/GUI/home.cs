@@ -103,6 +103,7 @@ namespace Buffet
         private void btnWarhourseAdd_Click(object sender, EventArgs e)
         {
             hideSubMenu();
+            openChildForm(new Buffet.GUI.GUI_QuanLyBanAn.GUI_ChonMon());
         }
 
         private void btnWarhourseView_Click(object sender, EventArgs e)

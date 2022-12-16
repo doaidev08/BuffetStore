@@ -55,11 +55,17 @@ namespace Buffet.GUI.GUI_QuanLyBanAn
 
             busChonMon.bunifuTextBoxes = bunifuTextBoxList;
         }
+        //Hiển thị danh sách món ăn 
+        public void GUI_HienThiMonAn()
+        {
+            busChonMon.BUS_DanhSachMonAn(flowLayoutPanel4);
+        }
 
-        //Hiển thị danh mục đồ uống
+        
+        //Hiển thị danh sách đồ uống
         public void GUI_HienThiDoUong()
         {
-            scrollVBar.ScrollLayoutPanel(bunifuVScrollBar1, flowLayoutPanel2);
+          
            
             busChonMon.BUS_DanhSachDoUong(flowLayoutPanel2);
             
@@ -98,6 +104,7 @@ namespace Buffet.GUI.GUI_QuanLyBanAn
             GUI_LayDSBanDangAn();
             GUI_HienThiHoaDonBanAn();
             GUI_HienThiDoUong();
+            GUI_HienThiMonAn();
             GUI_DoUongPicker();
             GUI_HienThiChiTietHoaDon();
 

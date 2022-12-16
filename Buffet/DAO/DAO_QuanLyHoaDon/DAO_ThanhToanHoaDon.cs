@@ -52,6 +52,29 @@ namespace Buffet.DAO.DAO_QuanLyHoaDon
             databaseOrigin.database.SaveChanges();
 
         }
+        //Sau khi thanh toán, cập nhật lại trạng thái bàn (bàn được mở chọn)
+        public void DAO_XuLySauThanhToan(BANAN banAn)
+        {
+            var banAnFind = databaseOrigin.database.BANAN.Find(banAn.MaBanAn);
+            banAnFind.TinhTrangBanAn = false;
+            databaseOrigin.database.SaveChanges();
 
+        }
+        //Tìm kiếm nhân viên thanh toán hoá đơn
+        public dynamic DAO_NhanVienHoaDon(int maHoaDon)
+        {
+            var nhanVienThanhToan = databaseOrigin.database.HOADON
+                                    .Where(s => s.MaHoaDon == maHoaDon)
+                                    .Join(databaseOrigin.database.NHANVIEN,
+                                        p => p.MaNhanVien,
+                                        e => e.MaNhanVien,
+                                        (p, e) => new
+                                        {
+                                            e.MaNhanVien,
+                                            e.HoTenNhanVien
+                                        })
+                                    .ToList();
+            return nhanVienThanhToan;
+        }
     }
 }

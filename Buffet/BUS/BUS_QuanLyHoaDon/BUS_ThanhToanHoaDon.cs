@@ -24,8 +24,11 @@ namespace Buffet.BUS.BUS_QuanLyHoaDon
         //Lấy danh sách hóa đơn thanh toán
         public void BUS_DSThanhToan(BunifuDataGridView bunifuDataGridView, bool tinhTrangHoaDon)
         {
-
+            bunifuDataGridView.Rows.Clear();
+            bunifuDataGridView.Columns.Clear();
+            bunifuDataGridView.DataSource = null;
             bunifuDataGridView.Columns.AddRange(
+
                 new DataGridViewTextBoxColumn()
                 {
                     HeaderText = "STT",
@@ -57,19 +60,41 @@ namespace Buffet.BUS.BUS_QuanLyHoaDon
                     Name = "ThoiGianKhachVao"
                 }
 
+
             );
+            if (tinhTrangHoaDon)
+            {
+                bunifuDataGridView.Columns.Add(
+                    new DataGridViewTextBoxColumn()
+                    {
+                        HeaderText = "Tgian Thanh Toán",
+                        Name = "BanKH"
+                    }
+                );
+
+            }
             var dsHD = daoThanhToanHoaDon.DAO_DSHDThanhToan(tinhTrangHoaDon);
             var i = 0;
+
+
+
             foreach (var hoaDon in dsHD)
             {
                 i++;
+                DateTime thoiGianThanhToan = DateTime.Now;
+                if (tinhTrangHoaDon)
+                {
+                    thoiGianThanhToan = hoaDon.ThoiGianHoaDon;
+                }
+                
                 bunifuDataGridView.Rows.Add(
                     i,
                     hoaDon.MaHoaDon,
                     hoaDon.TenKhachHang,
                     hoaDon.SoLuongKhach,
                     hoaDon.BanKhachHang,
-                    hoaDon.ThoiGianKhachVao
+                    hoaDon.ThoiGianKhachVao,
+                    thoiGianThanhToan
                 );
             }
         }
@@ -79,29 +104,61 @@ namespace Buffet.BUS.BUS_QuanLyHoaDon
             int tongPhiDoUong = 0;
             var hoaDonChon = daoThanhToanHoaDon.DAO_DSHD(maHoaDon);
             var chiTietHoaDonChon = daoChonMon.DAO_ChiTietHoaDon(maHoaDon);
+            bool tinhTrangHoaDonFind = false;
             foreach (var hoaDon in hoaDonChon)
-            {
-                bunifuTextboxes[0].Text = hoaDon.ThoiGianKhachVao.ToString(); // Thời gian vào
-                bunifuTextboxes[1].Text = hoaDon.MaHoaDon.ToString(); //Mã hóa đơn
-                bunifuTextboxes[2].Text = hoaDon.TenKhachHang.ToString(); //Tên khách hàng
-                numers[0].Value = hoaDon.SoLuongKhach;
+            {              
+                    bunifuTextboxes[0].Text = hoaDon.ThoiGianKhachVao.ToString(); // Thời gian vào
+                    bunifuTextboxes[1].Text = hoaDon.MaHoaDon.ToString(); //Mã hóa đơn
+                    bunifuTextboxes[2].Text = hoaDon.TenKhachHang.ToString(); //Tên khách hàng
+                    bunifuTextboxes[3].Text = hoaDon.BanKhachHang.ToString();   
+                    numers[0].Value = (int)hoaDon.SoLuongKhach;
 
+                if (hoaDon.TinhTrangHoaDon)
+                {
+                    tinhTrangHoaDonFind = true;
+                    numers[1].Value = (int)hoaDon.GiaSetBuffet;
+                    numers[3].Value = (int)hoaDon.TongTien;
+                    numers[4].Value = (int)hoaDon.Thue;
+                    numers[5].Value = (int)hoaDon.GiamGia;
+                    numers[6].Value = (int)hoaDon.TienThanhToan;
+                    numers[7].Value = (int)hoaDon.SoTienNhan;
+                    numers[8].Value = (int)hoaDon.SoTienTraKhach;
+                    var nhanVienHoaDon = daoThanhToanHoaDon.DAO_NhanVienHoaDon(hoaDon.MaHoaDon);
+                    bunifuDropDown.DataSource = nhanVienHoaDon;
+                    bunifuDropDown.ValueMember = "MaNhanVien";
+                    bunifuDropDown.DisplayMember = "HoTenNhanVien";
+
+
+                }
             }
             foreach (var chiTietHoaDon in chiTietHoaDonChon)
             {
                 tongPhiDoUong += chiTietHoaDon.ThanhTien;//Tổng tiền phí đồ uống
             }
-            numers[1].Value = tongPhiDoUong;
-            var nhanVien = daoThanhToanHoaDon.DAO_DSNV();
-            bunifuDropDown.DataSource = nhanVien;
-            bunifuDropDown.DisplayMember = "HoTenNhanVien";
-            bunifuDropDown.ValueMember = "MaNhanVien";
+            numers[2].Value = tongPhiDoUong;
+            if (tinhTrangHoaDonFind)
+            {
+
+            }
+            else
+            {
+                var nhanVien = daoThanhToanHoaDon.DAO_DSNV();
+                bunifuDropDown.DataSource = nhanVien;
+                bunifuDropDown.DisplayMember = "HoTenNhanVien";
+                bunifuDropDown.ValueMember = "MaNhanVien";
+            }
+
+
+
 
         }
 
         //Lấy chi tiết đồ uống của hóa đơn được chọn
         public void BUS_ChiTietDoUongHoaDon(BunifuDataGridView bunifuDataGridView, int maHoaDon)
         {
+            bunifuDataGridView.Rows.Clear();
+            bunifuDataGridView.Columns.Clear();
+            bunifuDataGridView.DataSource = null;
             bunifuDataGridView.Columns.AddRange(
                 new DataGridViewTextBoxColumn()
                 {
@@ -150,11 +207,11 @@ namespace Buffet.BUS.BUS_QuanLyHoaDon
             daoThanhToanHoaDon.DAO_ThanhToanHoaDonFinal(hoaDon);
             return true;
         }
-
-        //Xử lý sau khi thanh toán
-        public void BUS_XuLySauThanhToan()
+        public void BUS_XuLySauThanhToan(int maBanAn)
         {
-           
+            BANAN banAn = new BANAN();
+            banAn.MaBanAn = maBanAn;
+            daoThanhToanHoaDon.DAO_XuLySauThanhToan(banAn);
         }
     }
 }

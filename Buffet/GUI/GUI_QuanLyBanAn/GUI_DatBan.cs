@@ -31,6 +31,7 @@ namespace Buffet.GUI.GUI_QuanLyBanAn
         {
             GUI_HienThiDSBanAn();
             GUI_DatBanPicker();
+            timer1.Start();
         }
         
         private void bunifuDropdown1_SelectedIndexChanged(object sender, EventArgs e)
@@ -47,56 +48,12 @@ namespace Buffet.GUI.GUI_QuanLyBanAn
         {
             busDatBan.flowLayoutPanel = flowLayoutPanel2;
         }
-        //Lấy thông tin đặt bàn và đặt bàn cho khách (tạo hóa đơn luôn cho khách)
-        public void GUI_DatBan_TaoHoaDon()
+       
+        private void GUI_ResetInputDatBan()
         {
-            //Nếu thông tin đặt bàn nhập vào đầy đủ
-            if (bunifuTextBox1.Text != "" && (int)numericUpDown1.Value != 0)
-            {
-                HOADON hoaDon = new HOADON();
-                hoaDon.TenKhachHang = bunifuTextBox1.Text;
-                hoaDon.SoLuongKhach = (int)numericUpDown1.Value;
-                hoaDon.ThoiGianKhachVao = bunifuDatePicker1.Value; 
-                string banKhachHang = String.Join(",", busDatBan.tablePickers);
-                hoaDon.BanKhachHang = banKhachHang;
-
-                if (busDatBan.BUS_DatBan_TaoHoaDon(hoaDon))
-                {
-                    GUI_CapNhatTTBan();
-                    bunifuTextBox1.Clear();
-                    bunifuDatePicker1.Value = DateTime.Now;
-                    numericUpDown1.Value = default;
-                    flowLayoutPanel2.Controls.Clear();
-                    thongBao.HienThiThongBao(
-                        this,
-                        bunifuSnackbar1,
-                        "Đặt bàn thành công!",
-                        "Success"
-                    );
-
-                }
-                else
-                {
-                    thongBao.HienThiThongBao(
-                        this,
-                        bunifuSnackbar1,
-                        "Đặt bàn không thành công!",
-                        "Error"
-                    );
-                }
-            }
-            else
-            {
-                thongBao.HienThiThongBao(
-                    this,
-                    bunifuSnackbar1,
-                    "Mời nhập đủ thông tin!",
-                    "Warning"
-                );
-            }
-
-
-
+            bunifuTextBox1.Clear();
+            numericUpDown1.Value = default;
+            flowLayoutPanel2.Controls.Clear();
         }
         //Ấn nút đặt bàn
         private void bunifuButton1_Click(object sender, EventArgs e)
@@ -145,9 +102,81 @@ namespace Buffet.GUI.GUI_QuanLyBanAn
 
         }
 
-        private void bunifuIconButton1_Click(object sender, EventArgs e)
+        private void timer1_Tick(object sender, EventArgs e)
         {
-            bunifuDatePicker1.Value = DateTime.Now;
+            bunifuLabel4.Text = DateTime.Now.ToString();
+        }
+
+        private void flowLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        private void bunifuButton21_Click(object sender, EventArgs e)
+        {
+            //Nếu thông tin đặt bàn nhập vào đầy đủ
+            if (bunifuTextBox1.Text != "" && (int)numericUpDown1.Value != 0 && busDatBan.tablePickers.Any())
+            {
+                GUI_DatBan_TaoHoaDon();
+                busDatBan.tablePickers.Clear();
+            }
+            else
+            {
+                thongBao.HienThiThongBao(
+                    this,
+                    bunifuSnackbar1,
+                    "Mời nhập đủ thông tin!",
+                    "Warning"
+                );
+            }    
+        }
+        //Lấy thông tin đặt bàn và đặt bàn cho khách (tạo hóa đơn luôn cho khách)
+        public void GUI_DatBan_TaoHoaDon()
+        {
+            HOADON hoaDon = new HOADON();
+            hoaDon.TenKhachHang = bunifuTextBox1.Text;
+            hoaDon.SoLuongKhach = (int)numericUpDown1.Value;
+            hoaDon.ThoiGianKhachVao = DateTime.Now;
+            string banKhachHang = String.Join(",", busDatBan.tablePickers);
+            hoaDon.BanKhachHang = banKhachHang;
+            hoaDon.GiaSetBuffet = 0;
+            hoaDon.TongPhiDoUong = 0;
+            hoaDon.TongTien = 0;
+            hoaDon.Thue = 0;
+            hoaDon.GiamGia = 0;
+            hoaDon.TienThanhToan = 0;
+            hoaDon.SoTienTraKhach = 0;
+            hoaDon.SoTienNhan = 0;
+
+            if (busDatBan.BUS_DatBan_TaoHoaDon(hoaDon))
+            {
+                GUI_CapNhatTTBan();
+                GUI_ResetInputDatBan();
+                thongBao.HienThiThongBao(
+                    this,
+                    bunifuSnackbar1,
+                    "Đặt bàn thành công!",
+                    "Success"
+                );
+
+            }
+        }
+
+        private void bunifuButton1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        {
+            busDatBan.tablePickers.Clear();
+            flowLayoutPanel2.Controls.Clear();
+            flowLayoutPanel1.Controls.Clear();
+            GUI_HienThiDSBanAn();
+        }
+
+        private void bunifuButton1_Click_2(object sender, EventArgs e)
+        {
+            MessageBox.Show(Properties.Settings.Default.ten1);
         }
     }
 }

@@ -37,7 +37,6 @@ namespace Buffet.DAO.Models
         public Nullable<System.DateTime> ThoiGianHoaDon { get; set; }
         public bool TinhTrangHoaDon { get; set; }
         public Nullable<int> MaBanAn { get; set; }
-        public Nullable<int> MaDoUong { get; set; }
         public Nullable<int> MaNhanVien { get; set; }
     
         public virtual BANAN BANAN { get; set; }
@@ -45,7 +44,6 @@ namespace Buffet.DAO.Models
         public virtual ICollection<CHITIETHOADON> CHITIETHOADON { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DOANHTHU> DOANHTHU { get; set; }
-        public virtual DOUONG DOUONG { get; set; }
         public virtual NHANVIEN NHANVIEN { get; set; }
     }
 }

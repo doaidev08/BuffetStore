@@ -4,9 +4,11 @@ using Buffet.DAO.Models;
 using Bunifu.UI.WinForms;
 using Bunifu.UI.WinForms.BunifuButton;
 using Bunifu.UI.WinForms.Renderers.Snackbar;
+using DevExpress.Pdf.Native.BouncyCastle.Utilities;
 using DevExpress.Utils.Extensions;
 using System;
 using System.Collections.Generic;
+using System.DirectoryServices.ActiveDirectory;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -75,24 +77,63 @@ namespace Buffet.BUS.BUS_QuanLyBanAn
                 //Hiển thị hóa chi tiết hóa đơn
 
                 var chiTietHDTim = daoChonMon.DAO_ChiTietHoaDon(maHoaDon);
-                bunifuDataGridView.DataSource = chiTietHDTim;
+                BUS_DataGridViewEdit(bunifuDataGridView, chiTietHDTim);
 
             }
         }
-      
+
         //Danh sách các đồ uống 
         public void BUS_DanhSachDoUong(FlowLayoutPanel flowLayoutPanel)
         {
             var doUong = daoChonMon.DAO_DanhSachDoUong();
+            flowLayoutPanel.Controls.Clear();
             foreach (var i in doUong)
             {
                 BunifuButton doUongButton = new BunifuButton();
+                doUongButton.Font = new Font("Times New Roman", 9);
+                doUongButton.TextPadding = new Padding(8, 0, 0, 0);
+                doUongButton.IconLeft = Properties.Resources._3700460_cafe_coffee_cup_drink_hot_mug_shop_108752; 
                 doUongButton.Name = i.MaDoUong.ToString();
-                doUongButton.Text = i.TenDoUong.ToString() +"(Kho:" + i.SoLuongDoUong.ToString() +")";
-                doUongButton.Click += new System.EventHandler(BUS_DoUongPicker);
-                flowLayoutPanel.Controls.Add(doUongButton);      
+                doUongButton.Text = String.Format("{0} (Kho: {1})", i.TenDoUong.ToString(), i.SoLuongDoUong.ToString());
+                doUongButton.Click += new System.EventHandler(BUS_DoUongPicker);  
+                flowLayoutPanel.Controls.Add(doUongButton);
             }
         }
+
+        //Danh sách các món ăn
+        public void BUS_DanhSachMonAn(FlowLayoutPanel flowLayoutPanel)
+        {
+            var danhMucMonAn = daoChonMon.DAO_DanhMucMonAn();
+            flowLayoutPanel.Controls.Clear();
+            foreach(var danhMucIndex in danhMucMonAn)
+            {
+                BunifuTextBox buniText = new BunifuTextBox();
+                buniText.Enabled = false;
+                buniText.Name = danhMucIndex.MaDanhMucMonAn.ToString();
+                buniText.Text = danhMucIndex.TenDanhMucMonAn.ToString();
+                flowLayoutPanel.Controls.Add(buniText);
+                var monAn = daoChonMon.DAO_DanhSachMonAn(danhMucIndex.MaDanhMucMonAn);
+                FlowLayoutPanel flowChild = new FlowLayoutPanel();
+                flowChild.AutoScroll = true;
+                flowChild.AutoSize = true;
+                flowChild.FlowDirection = FlowDirection.LeftToRight;
+                flowLayoutPanel.Controls.Add(flowChild);
+                flowChild.Controls.Clear();
+                foreach(var monAnIndex in monAn)
+                {
+                    BunifuButton buniButton = new BunifuButton();
+                    buniButton.Name = monAnIndex.MaMonAn.ToString();
+                    buniButton.Text = monAnIndex.TenMonAn.ToString();
+                    buniButton.TextPadding = new Padding(5, 0, 0, 0);
+                    buniButton.IconLeft = Properties.Resources._meal_89750;
+                    flowChild.Controls.Add(buniButton);
+                }
+            }
+        }
+
+
+
+
 
         public FlowLayoutPanel flowLayoutPanel;
         public int maDoUong;
@@ -105,10 +146,18 @@ namespace Buffet.BUS.BUS_QuanLyBanAn
             maDoUong = Int32.Parse(btn.Name.ToString());
             //Tăng SL_Lấy trong Hóa đơn - Giảm SL trong kho
             if (BUS_KiemTraDoUongTonTai(maHoaDon,maDoUong)==true)
-            {       
+            {   
+              
                 daoChonMon.DAO_CapNhatSLDoUong(maDoUong);
                 daoChonMon.DAO_CapNhatSlLayCTHD(maHoaDon, maDoUong);
-                bunifuDataGridView.DataSource = daoChonMon.DAO_ChiTietHoaDon(maHoaDon);
+                ///////////////////////////////////////
+                dynamic hoaDonChon1 = daoChonMon.DAO_ChiTietHoaDon(maHoaDon);
+                BUS_DataGridViewEdit(bunifuDataGridView, hoaDonChon1);
+                var doUongFind = daoChonMon.DAO_DoUongTheoMa(maDoUong);
+                foreach(var doUongIndex in doUongFind)
+                {
+                    btn.Text = String.Format("{0} (Kho: {1})", doUongIndex.TenDoUong.ToString(), doUongIndex.SoLuongDoUong.ToString());
+                }
             }
             else //Khởi tạo  1 đồ uống vào chi tiết hóa đơn nếu đồ uống chưa từng được chọn
             {
@@ -123,12 +172,64 @@ namespace Buffet.BUS.BUS_QuanLyBanAn
                 foreach(var doUongIndex in doUongFind)
                 {
                     chiTietHoaDon.ThanhTien = doUongIndex.GiaDoUong;
+                    btn.Text = String.Format("{0} (Kho: {1})", doUongIndex.TenDoUong.ToString(), doUongIndex.SoLuongDoUong.ToString());
                 }
 
                 daoChonMon.DAO_ThemChiTietHoaDon(chiTietHoaDon);
+                dynamic hoaDonChon1 = daoChonMon.DAO_ChiTietHoaDon(maHoaDon);
+                BUS_DataGridViewEdit(bunifuDataGridView, hoaDonChon1);
+                
 
-                bunifuDataGridView.DataSource = daoChonMon.DAO_ChiTietHoaDon(maHoaDon);
             }
+        }
+        public void BUS_DataGridViewEdit(BunifuDataGridView bunifuDataGridViewEdit, dynamic chiTietHoaDonChon)
+        {
+            bunifuDataGridViewEdit.Rows.Clear();
+            bunifuDataGridViewEdit.Columns.Clear();
+            
+            bunifuDataGridViewEdit.DataSource = null;
+            bunifuDataGridViewEdit.Columns.AddRange(
+                new DataGridViewTextBoxColumn()
+                {
+                    HeaderText = "STT",
+                    Name = "STT"
+                },
+                new DataGridViewTextBoxColumn()
+                {
+                    HeaderText = "Tên đồ uống",
+                    Name = "TenDoUong"
+                },
+                new DataGridViewTextBoxColumn()
+                {
+                    HeaderText = "Đơn giá",
+                    Name = "DonGiaDoUong"
+                },
+                new DataGridViewTextBoxColumn()
+                {
+                    HeaderText = "Số lượng",
+                    Name = "SoLuongLay"
+                },
+                new DataGridViewTextBoxColumn()
+                {
+                    HeaderText = "Thành tiền",
+                    Name = "ThanhTien"
+                }
+            );
+           
+            var i = 0;
+            foreach (var chiTietIndex in chiTietHoaDonChon)
+            {
+                i++;
+                bunifuDataGridViewEdit.Rows.Add(
+                    i,
+                    chiTietIndex.TenDoUong,
+                    chiTietIndex.GiaDoUong,
+                    chiTietIndex.SoLuongLay,
+                    chiTietIndex.ThanhTien
+                );
+
+            }
+
         }
         //Kiểm tra đồ uống đã được khởi tạo trong hóa đơn hiện tại chưa
         public bool BUS_KiemTraDoUongTonTai(int maHoaDon, int maDoUong)
