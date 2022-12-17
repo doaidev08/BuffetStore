@@ -118,37 +118,73 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="ImagesLoginForm" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ImagesLoginForm.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="top-view-colorful-italian-pizza-with-various-ingredients" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\top-view-colorful-italian-pizza-with-various-ingredients.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="-meal_89750" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\-meal_89750.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LogoLogin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LogoLogin.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  <data name="29_104867" type="System.Resources.ResXFileRef, System.Windows.Forms">
-  </data>
-    <value>..\Resources\29_104867.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="receipt_cancel_icon_177356" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\receipt_cancel_icon_177356.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="dinner_meal_food_eat_table_icon_209871" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dinner_meal_food_eat_table_icon_209871.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="3700460-cafe-coffee-cup-drink-hot-mug-shop_108752" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\3700460-cafe-coffee-cup-drink-hot-mug-shop_108752.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="-cancel_90204" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\-cancel_90204.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="dinner_meal_food_eat_table_icon_2098711" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dinner_meal_food_eat_table_icon_209871.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tasks_113292" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tasks_113292.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="29_1048671" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\29_1048671.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="-meal_89750" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\-meal_89750.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="food2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\food2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="12000002" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\12000002.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dinner_meal_food_eat_table_icon_209871" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dinner_meal_food_eat_table_icon_209871.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="food" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\food.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="white-teapot-chopsticks_1220-206" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\white-teapot-chopsticks_1220-206.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImagesLoginForm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ImagesLoginForm.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="receipt_cancel_icon_177356" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\receipt_cancel_icon_177356.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tasks_113292" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tasks_113292.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3700460-cafe-coffee-cup-drink-hot-mug-shop_108752" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3700460-cafe-coffee-cup-drink-hot-mug-shop_108752.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="food3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\food3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="restau2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\restau2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="restau" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\restau.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="-cancel_90204" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\-cancel_90204.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="drink1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\drink1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pngtree-natural-wooden-background-image_551570" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pngtree-natural-wooden-background-image_551570.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="background1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\background1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dinner_meal_food_eat_table_icon_2098711" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dinner_meal_food_eat_table_icon_209871.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="board-black-series-texture-background-wood-wallpaper-wood-texture-wallpapers-476-1536x960" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\board-black-series-texture-background-wood-wallpaper-wood-texture-wallpapers-476-1536x960.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="order3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\order3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -113,21 +113,7 @@ namespace Buffet.GUI.GUI_QuanLyBanAn
         }
         private void bunifuButton21_Click(object sender, EventArgs e)
         {
-            //Nếu thông tin đặt bàn nhập vào đầy đủ
-            if (bunifuTextBox1.Text != "" && (int)numericUpDown1.Value != 0 && busDatBan.tablePickers.Any())
-            {
-                GUI_DatBan_TaoHoaDon();
-                busDatBan.tablePickers.Clear();
-            }
-            else
-            {
-                thongBao.HienThiThongBao(
-                    this,
-                    bunifuSnackbar1,
-                    "Mời nhập đủ thông tin!",
-                    "Warning"
-                );
-            }    
+
         }
         //Lấy thông tin đặt bàn và đặt bàn cho khách (tạo hóa đơn luôn cho khách)
         public void GUI_DatBan_TaoHoaDon()
@@ -201,6 +187,57 @@ namespace Buffet.GUI.GUI_QuanLyBanAn
         private void bunifuLabel4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void bunifuButton2_Click(object sender, EventArgs e)
+        {
+            busDatBan.tablePickers.Clear();
+            flowLayoutPanel2.Controls.Clear();
+            flowLayoutPanel1.Controls.Clear();
+            GUI_HienThiDSBanAn();
+        }
+
+        private void bunifuButton21_Click_1(object sender, EventArgs e)
+        {
+            //Nếu thông tin đặt bàn nhập vào đầy đủ
+            if (bunifuTextBox1.Text != "" && (int)numericUpDown1.Value != 0 && busDatBan.tablePickers.Any())
+            {
+                GUI_DatBan_TaoHoaDon();
+                busDatBan.tablePickers.Clear();
+            }
+            else
+            {
+                thongBao.HienThiThongBao(
+                    this,
+                    bunifuSnackbar1,
+                    "Mời nhập đủ thông tin!",
+                    "Warning"
+                );
+            }
+        }
+
+        private void bunifuTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuButton1_Click_4(object sender, EventArgs e)
+        {
+            //Nếu thông tin đặt bàn nhập vào đầy đủ
+            if (bunifuTextBox1.Text != "" && (int)numericUpDown1.Value != 0 && busDatBan.tablePickers.Any())
+            {
+                GUI_DatBan_TaoHoaDon();
+                busDatBan.tablePickers.Clear();
+            }
+            else
+            {
+                thongBao.HienThiThongBao(
+                    this,
+                    bunifuSnackbar1,
+                    "Mời nhập đủ thông tin!",
+                    "Warning"
+                );
+            }
         }
     }
 }

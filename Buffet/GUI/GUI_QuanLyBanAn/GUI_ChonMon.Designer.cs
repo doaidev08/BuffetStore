@@ -1662,6 +1662,8 @@ namespace Buffet.GUI.GUI_QuanLyBanAn
             // flowLayoutPanel2
             // 
             this.flowLayoutPanel2.AutoScroll = true;
+            this.flowLayoutPanel2.BackgroundImage = global::Buffet.Properties.Resources.drink1;
+            this.flowLayoutPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.flowLayoutPanel2.Location = new System.Drawing.Point(6, 30);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(255, 335);
@@ -1698,6 +1700,8 @@ namespace Buffet.GUI.GUI_QuanLyBanAn
             // flowLayoutPanel4
             // 
             this.flowLayoutPanel4.AutoScroll = true;
+            this.flowLayoutPanel4.BackgroundImage = global::Buffet.Properties.Resources.food3;
+            this.flowLayoutPanel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.flowLayoutPanel4.Location = new System.Drawing.Point(6, 41);
             this.flowLayoutPanel4.Name = "flowLayoutPanel4";
             this.flowLayoutPanel4.Size = new System.Drawing.Size(255, 324);
@@ -1742,9 +1746,11 @@ namespace Buffet.GUI.GUI_QuanLyBanAn
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 24);
+            this.flowLayoutPanel1.BackgroundImage = global::Buffet.Properties.Resources.restau2;
+            this.flowLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 45);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(236, 373);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(236, 352);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // bunifuPanel1
@@ -2181,14 +2187,15 @@ namespace Buffet.GUI.GUI_QuanLyBanAn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.bunifuDataGridView1);
             this.Controls.Add(this.bunifuPanel3);
             this.Controls.Add(this.bunifuPanel2);
             this.Controls.Add(this.bunifuPanel1);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "GUI_ChonMon";
-            this.Text = "ChonMon";
             this.Load += new System.EventHandler(this.GUI_ChonMon_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridView1)).EndInit();
             this.bunifuPanel3.ResumeLayout(false);
