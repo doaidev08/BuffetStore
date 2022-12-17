@@ -1,6 +1,6 @@
-﻿namespace Buffet.GUI.GUI_FoodManagement
+﻿namespace Buffet.GUI.GUI_QuanLyKho
 {
-    partial class fAddFoodCate
+    partial class GUI_DanhMucKho
     {
         /// <summary>
         /// Required designer variable.
@@ -29,28 +29,90 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fAddFoodCate));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GUI_DanhMucKho));
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            this.ProductCateGridView = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.lbFoodCate = new Bunifu.UI.WinForms.BunifuLabel();
-            this.FoodCateGridView = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.bunifuSnackbar1 = new Bunifu.UI.WinForms.BunifuSnackbar(this.components);
             this.bunifuPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
             this.btnDelete = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnUpdate = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnAdd = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
-            this.txbFoodCate = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.txbProductCate = new Bunifu.UI.WinForms.BunifuTextBox();
             this.lbCateName = new Bunifu.UI.WinForms.BunifuLabel();
-            ((System.ComponentModel.ISupportInitialize)(this.FoodCateGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ProductCateGridView)).BeginInit();
             this.bunifuPanel2.SuspendLayout();
             this.bunifuPanel1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // ProductCateGridView
+            // 
+            this.ProductCateGridView.AllowCustomTheming = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.ProductCateGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.ProductCateGridView.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ProductCateGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.ProductCateGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ProductCateGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.ProductCateGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ProductCateGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.ProductCateGridView.ColumnHeadersHeight = 40;
+            this.ProductCateGridView.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            this.ProductCateGridView.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.ProductCateGridView.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.ProductCateGridView.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.ProductCateGridView.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.ProductCateGridView.CurrentTheme.BackColor = System.Drawing.Color.White;
+            this.ProductCateGridView.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.ProductCateGridView.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue;
+            this.ProductCateGridView.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            this.ProductCateGridView.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.ProductCateGridView.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            this.ProductCateGridView.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.ProductCateGridView.CurrentTheme.Name = null;
+            this.ProductCateGridView.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.ProductCateGridView.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.ProductCateGridView.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.ProductCateGridView.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.ProductCateGridView.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.ProductCateGridView.DefaultCellStyle = dataGridViewCellStyle3;
+            this.ProductCateGridView.EnableHeadersVisualStyles = false;
+            this.ProductCateGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.ProductCateGridView.HeaderBackColor = System.Drawing.Color.DodgerBlue;
+            this.ProductCateGridView.HeaderBgColor = System.Drawing.Color.Empty;
+            this.ProductCateGridView.HeaderForeColor = System.Drawing.Color.White;
+            this.ProductCateGridView.Location = new System.Drawing.Point(30, 98);
+            this.ProductCateGridView.Name = "ProductCateGridView";
+            this.ProductCateGridView.RowHeadersVisible = false;
+            this.ProductCateGridView.RowTemplate.Height = 40;
+            this.ProductCateGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.ProductCateGridView.Size = new System.Drawing.Size(346, 318);
+            this.ProductCateGridView.TabIndex = 6;
+            this.ProductCateGridView.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            this.ProductCateGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ProductCateGridView_CellClick);
             // 
             // lbFoodCate
             // 
@@ -61,77 +123,15 @@
             this.lbFoodCate.CursorType = System.Windows.Forms.Cursors.Default;
             this.lbFoodCate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.lbFoodCate.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.lbFoodCate.Location = new System.Drawing.Point(313, 30);
+            this.lbFoodCate.Location = new System.Drawing.Point(307, 35);
             this.lbFoodCate.Name = "lbFoodCate";
             this.lbFoodCate.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lbFoodCate.Size = new System.Drawing.Size(197, 21);
-            this.lbFoodCate.TabIndex = 1;
-            this.lbFoodCate.Text = "Quản lí danh mục món ăn";
+            this.lbFoodCate.Size = new System.Drawing.Size(199, 21);
+            this.lbFoodCate.TabIndex = 5;
+            this.lbFoodCate.Text = "Quản lí loại sản phẩm kho";
             this.lbFoodCate.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.lbFoodCate.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // FoodCateGridView
-            // 
-            this.FoodCateGridView.AllowCustomTheming = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            this.FoodCateGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.FoodCateGridView.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.FoodCateGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.FoodCateGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.FoodCateGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.FoodCateGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.FoodCateGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.FoodCateGridView.ColumnHeadersHeight = 40;
-            this.FoodCateGridView.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
-            this.FoodCateGridView.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.FoodCateGridView.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.FoodCateGridView.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            this.FoodCateGridView.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            this.FoodCateGridView.CurrentTheme.BackColor = System.Drawing.Color.White;
-            this.FoodCateGridView.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.FoodCateGridView.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue;
-            this.FoodCateGridView.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            this.FoodCateGridView.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.FoodCateGridView.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
-            this.FoodCateGridView.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.FoodCateGridView.CurrentTheme.Name = null;
-            this.FoodCateGridView.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.FoodCateGridView.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.FoodCateGridView.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.FoodCateGridView.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            this.FoodCateGridView.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.FoodCateGridView.DefaultCellStyle = dataGridViewCellStyle6;
-            this.FoodCateGridView.EnableHeadersVisualStyles = false;
-            this.FoodCateGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
-            this.FoodCateGridView.HeaderBackColor = System.Drawing.Color.DodgerBlue;
-            this.FoodCateGridView.HeaderBgColor = System.Drawing.Color.Empty;
-            this.FoodCateGridView.HeaderForeColor = System.Drawing.Color.White;
-            this.FoodCateGridView.Location = new System.Drawing.Point(36, 93);
-            this.FoodCateGridView.Name = "FoodCateGridView";
-            this.FoodCateGridView.RowHeadersVisible = false;
-            this.FoodCateGridView.RowTemplate.Height = 40;
-            this.FoodCateGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.FoodCateGridView.Size = new System.Drawing.Size(346, 318);
-            this.FoodCateGridView.TabIndex = 2;
-            this.FoodCateGridView.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
-            this.FoodCateGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.FoodCateGridView_CellClick);
-            this.FoodCateGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.FoodCateGridView_CellContentClick);
+            this.lbFoodCate.Click += new System.EventHandler(this.lbFoodCate_Click);
             // 
             // bunifuSnackbar1
             // 
@@ -215,11 +215,11 @@
             this.bunifuPanel2.Controls.Add(this.btnDelete);
             this.bunifuPanel2.Controls.Add(this.btnUpdate);
             this.bunifuPanel2.Controls.Add(this.btnAdd);
-            this.bunifuPanel2.Location = new System.Drawing.Point(443, 287);
+            this.bunifuPanel2.Location = new System.Drawing.Point(437, 292);
             this.bunifuPanel2.Name = "bunifuPanel2";
             this.bunifuPanel2.ShowBorders = true;
             this.bunifuPanel2.Size = new System.Drawing.Size(333, 63);
-            this.bunifuPanel2.TabIndex = 4;
+            this.bunifuPanel2.TabIndex = 8;
             // 
             // btnDelete
             // 
@@ -311,91 +311,89 @@
             this.bunifuPanel1.BorderColor = System.Drawing.Color.Transparent;
             this.bunifuPanel1.BorderRadius = 3;
             this.bunifuPanel1.BorderThickness = 1;
-            this.bunifuPanel1.Controls.Add(this.txbFoodCate);
+            this.bunifuPanel1.Controls.Add(this.txbProductCate);
             this.bunifuPanel1.Controls.Add(this.lbCateName);
-            this.bunifuPanel1.Location = new System.Drawing.Point(443, 97);
+            this.bunifuPanel1.Location = new System.Drawing.Point(437, 102);
             this.bunifuPanel1.Name = "bunifuPanel1";
             this.bunifuPanel1.ShowBorders = true;
             this.bunifuPanel1.Size = new System.Drawing.Size(333, 82);
-            this.bunifuPanel1.TabIndex = 3;
-            this.bunifuPanel1.Click += new System.EventHandler(this.bunifuPanel1_Click);
+            this.bunifuPanel1.TabIndex = 7;
             // 
-            // txbFoodCate
+            // txbProductCate
             // 
-            this.txbFoodCate.AcceptsReturn = false;
-            this.txbFoodCate.AcceptsTab = false;
-            this.txbFoodCate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txbFoodCate.AnimationSpeed = 200;
-            this.txbFoodCate.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txbFoodCate.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txbFoodCate.AutoSizeHeight = true;
-            this.txbFoodCate.BackColor = System.Drawing.Color.Transparent;
-            this.txbFoodCate.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txbFoodCate.BackgroundImage")));
-            this.txbFoodCate.BorderColorActive = System.Drawing.Color.DodgerBlue;
-            this.txbFoodCate.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.txbFoodCate.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.txbFoodCate.BorderColorIdle = System.Drawing.Color.Silver;
-            this.txbFoodCate.BorderRadius = 1;
-            this.txbFoodCate.BorderThickness = 1;
-            this.txbFoodCate.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txbFoodCate.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txbFoodCate.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
-            this.txbFoodCate.DefaultText = "";
-            this.txbFoodCate.FillColor = System.Drawing.Color.White;
-            this.txbFoodCate.HideSelection = true;
-            this.txbFoodCate.IconLeft = null;
-            this.txbFoodCate.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txbFoodCate.IconPadding = 10;
-            this.txbFoodCate.IconRight = null;
-            this.txbFoodCate.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txbFoodCate.Lines = new string[0];
-            this.txbFoodCate.Location = new System.Drawing.Point(85, 3);
-            this.txbFoodCate.MaxLength = 32767;
-            this.txbFoodCate.MinimumSize = new System.Drawing.Size(1, 1);
-            this.txbFoodCate.Modified = false;
-            this.txbFoodCate.Multiline = false;
-            this.txbFoodCate.Name = "txbFoodCate";
-            stateProperties5.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties5.FillColor = System.Drawing.Color.Empty;
-            stateProperties5.ForeColor = System.Drawing.Color.Empty;
-            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txbFoodCate.OnActiveState = stateProperties5;
-            stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties6.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txbFoodCate.OnDisabledState = stateProperties6;
-            stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties7.FillColor = System.Drawing.Color.Empty;
-            stateProperties7.ForeColor = System.Drawing.Color.Empty;
-            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txbFoodCate.OnHoverState = stateProperties7;
-            stateProperties8.BorderColor = System.Drawing.Color.Silver;
-            stateProperties8.FillColor = System.Drawing.Color.White;
-            stateProperties8.ForeColor = System.Drawing.Color.Empty;
-            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txbFoodCate.OnIdleState = stateProperties8;
-            this.txbFoodCate.Padding = new System.Windows.Forms.Padding(3);
-            this.txbFoodCate.PasswordChar = '\0';
-            this.txbFoodCate.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txbFoodCate.PlaceholderText = "Mời nhập loại món ăn";
-            this.txbFoodCate.ReadOnly = false;
-            this.txbFoodCate.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txbFoodCate.SelectedText = "";
-            this.txbFoodCate.SelectionLength = 0;
-            this.txbFoodCate.SelectionStart = 0;
-            this.txbFoodCate.ShortcutsEnabled = true;
-            this.txbFoodCate.Size = new System.Drawing.Size(228, 39);
-            this.txbFoodCate.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.txbFoodCate.TabIndex = 1;
-            this.txbFoodCate.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txbFoodCate.TextMarginBottom = 0;
-            this.txbFoodCate.TextMarginLeft = 3;
-            this.txbFoodCate.TextMarginTop = 1;
-            this.txbFoodCate.TextPlaceholder = "Mời nhập loại món ăn";
-            this.txbFoodCate.UseSystemPasswordChar = false;
-            this.txbFoodCate.WordWrap = true;
-            this.txbFoodCate.TextChanged += new System.EventHandler(this.txbFoodCate_TextChanged);
+            this.txbProductCate.AcceptsReturn = false;
+            this.txbProductCate.AcceptsTab = false;
+            this.txbProductCate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txbProductCate.AnimationSpeed = 200;
+            this.txbProductCate.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txbProductCate.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txbProductCate.AutoSizeHeight = true;
+            this.txbProductCate.BackColor = System.Drawing.Color.Transparent;
+            this.txbProductCate.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txbProductCate.BackgroundImage")));
+            this.txbProductCate.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.txbProductCate.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.txbProductCate.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.txbProductCate.BorderColorIdle = System.Drawing.Color.Silver;
+            this.txbProductCate.BorderRadius = 1;
+            this.txbProductCate.BorderThickness = 1;
+            this.txbProductCate.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txbProductCate.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txbProductCate.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
+            this.txbProductCate.DefaultText = "";
+            this.txbProductCate.FillColor = System.Drawing.Color.White;
+            this.txbProductCate.HideSelection = true;
+            this.txbProductCate.IconLeft = null;
+            this.txbProductCate.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txbProductCate.IconPadding = 10;
+            this.txbProductCate.IconRight = null;
+            this.txbProductCate.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txbProductCate.Lines = new string[0];
+            this.txbProductCate.Location = new System.Drawing.Point(85, 3);
+            this.txbProductCate.MaxLength = 32767;
+            this.txbProductCate.MinimumSize = new System.Drawing.Size(1, 1);
+            this.txbProductCate.Modified = false;
+            this.txbProductCate.Multiline = false;
+            this.txbProductCate.Name = "txbProductCate";
+            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties1.FillColor = System.Drawing.Color.Empty;
+            stateProperties1.ForeColor = System.Drawing.Color.Empty;
+            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txbProductCate.OnActiveState = stateProperties1;
+            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txbProductCate.OnDisabledState = stateProperties2;
+            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties3.FillColor = System.Drawing.Color.Empty;
+            stateProperties3.ForeColor = System.Drawing.Color.Empty;
+            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txbProductCate.OnHoverState = stateProperties3;
+            stateProperties4.BorderColor = System.Drawing.Color.Silver;
+            stateProperties4.FillColor = System.Drawing.Color.White;
+            stateProperties4.ForeColor = System.Drawing.Color.Empty;
+            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txbProductCate.OnIdleState = stateProperties4;
+            this.txbProductCate.Padding = new System.Windows.Forms.Padding(3);
+            this.txbProductCate.PasswordChar = '\0';
+            this.txbProductCate.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txbProductCate.PlaceholderText = "Mời nhập loại sản phẩm";
+            this.txbProductCate.ReadOnly = false;
+            this.txbProductCate.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txbProductCate.SelectedText = "";
+            this.txbProductCate.SelectionLength = 0;
+            this.txbProductCate.SelectionStart = 0;
+            this.txbProductCate.ShortcutsEnabled = true;
+            this.txbProductCate.Size = new System.Drawing.Size(228, 39);
+            this.txbProductCate.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.txbProductCate.TabIndex = 1;
+            this.txbProductCate.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txbProductCate.TextMarginBottom = 0;
+            this.txbProductCate.TextMarginLeft = 3;
+            this.txbProductCate.TextMarginTop = 1;
+            this.txbProductCate.TextPlaceholder = "Mời nhập loại sản phẩm";
+            this.txbProductCate.UseSystemPasswordChar = false;
+            this.txbProductCate.WordWrap = true;
             // 
             // lbCateName
             // 
@@ -415,19 +413,19 @@
             this.lbCateName.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.lbCateName.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // fAddFoodCate
+            // GUI_DanhMucKho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.ProductCateGridView);
+            this.Controls.Add(this.lbFoodCate);
             this.Controls.Add(this.bunifuPanel2);
             this.Controls.Add(this.bunifuPanel1);
-            this.Controls.Add(this.FoodCateGridView);
-            this.Controls.Add(this.lbFoodCate);
-            this.Name = "fAddFoodCate";
-            this.Text = "fAddFoodCate";
-            this.Load += new System.EventHandler(this.fAddFoodCate_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.FoodCateGridView)).EndInit();
+            this.Name = "GUI_DanhMucKho";
+            this.Text = "DanhMucKho";
+            this.Load += new System.EventHandler(this.GUI_DanhMucKho_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.ProductCateGridView)).EndInit();
             this.bunifuPanel2.ResumeLayout(false);
             this.bunifuPanel1.ResumeLayout(false);
             this.bunifuPanel1.PerformLayout();
@@ -437,15 +435,16 @@
         }
 
         #endregion
+
+        private Bunifu.UI.WinForms.BunifuDataGridView ProductCateGridView;
         private Bunifu.UI.WinForms.BunifuLabel lbFoodCate;
-        private Bunifu.UI.WinForms.BunifuDataGridView FoodCateGridView;
-        private Bunifu.UI.WinForms.BunifuPanel bunifuPanel1;
-        private Bunifu.UI.WinForms.BunifuLabel lbCateName;
+        private Bunifu.UI.WinForms.BunifuSnackbar bunifuSnackbar1;
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel2;
-        private Bunifu.UI.WinForms.BunifuTextBox txbFoodCate;
         private Bunifu.Framework.UI.BunifuThinButton2 btnDelete;
         private Bunifu.Framework.UI.BunifuThinButton2 btnUpdate;
         private Bunifu.Framework.UI.BunifuThinButton2 btnAdd;
-        private Bunifu.UI.WinForms.BunifuSnackbar bunifuSnackbar1;
+        private Bunifu.UI.WinForms.BunifuPanel bunifuPanel1;
+        private Bunifu.UI.WinForms.BunifuTextBox txbProductCate;
+        private Bunifu.UI.WinForms.BunifuLabel lbCateName;
     }
 }

@@ -130,5 +130,25 @@ namespace Buffet.GUI.GUI_FoodManagement
                 );
             }
         }
+
+        private void FoodCateGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void bunifuPanel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txbFoodCate_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fAddFoodCate_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -271,11 +271,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BUS\BUS_FoodManagement\BUS_FoodManagement.cs" />
+    <Compile Include="BUS\BUS_QuanLyKho\BUS_DanhMucKho.cs" />
     <Compile Include="DAO\DAO_FoodManagement\DAO_FoodManagement.cs" />
     <Compile Include="BUS\BUS_QLiNhanVien\BUS_QliNhanVien.cs" />
     <Compile Include="BUS\BUS_ThemTaiKhoan\BUS_ThemTaiKhoan.cs" />
     <Compile Include="BUS\BUS_XuLiDangNhap\BUS_XuLiDangNhap.cs" />
     <Compile Include="DAO\DAO_QLiNhanVien\DAO_QLiNhanVien.cs" />
+    <Compile Include="DAO\DAO_QuanLyKho\DAO_DanhMucKho.cs" />
     <Compile Include="DAO\DAO_ThemTaiKhoan\DAO_ThemTaiKHoan.cs" />
     <Compile Include="DAO\DAO_XuLiDangNhap\DAO_XuLiDangNhap.cs" />
     <Compile Include="BUS\BUS_QuanLyBanAn\BUS_ChonMon.cs" />
@@ -368,6 +370,12 @@
     <Compile Include="GUI\GUI_DangNhap\GUI_FormDangNHap.Designer.cs">
       <DependentUpon>GUI_FormDangNHap.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\GUI_QuanLyKho\GUI_DanhMucKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_QuanLyKho\GUI_DanhMucKho.Designer.cs">
+      <DependentUpon>GUI_DanhMucKho.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\GUI_ThemTaiKhoan\GUI_QLiTaiKhoan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -428,6 +436,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\GUI_DangNhap\GUI_FormDangNHap.resx">
       <DependentUpon>GUI_FormDangNHap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_QuanLyKho\GUI_DanhMucKho.resx">
+      <DependentUpon>GUI_DanhMucKho.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\GUI_ThemTaiKhoan\GUI_QLiTaiKhoan.resx">
       <DependentUpon>GUI_QLiTaiKhoan.cs</DependentUpon>

@@ -1081,7 +1081,7 @@
             this.btnWarhourseAdd.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(197)))), ((int)(((byte)(153)))));
             this.btnWarhourseAdd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnWarhourseAdd.BackgroundImage")));
             this.btnWarhourseAdd.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.btnWarhourseAdd.ButtonText = "Thêm vật phẩm";
+            this.btnWarhourseAdd.ButtonText = "Thêm loại sản phẩm kho";
             this.btnWarhourseAdd.ButtonTextMarginLeft = 0;
             this.btnWarhourseAdd.ColorContrastOnClick = 45;
             this.btnWarhourseAdd.ColorContrastOnHover = 45;

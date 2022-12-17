@@ -141,8 +141,6 @@ _TeamCity*
 *.coverage
 *.coveragexml
 Buffet/DAO/Models/
-Buffet/bin/Debug/Buffet.exe
-Buffet/obj/Debug/Buffet.exe
 
 .vs/
 # NCrunch
