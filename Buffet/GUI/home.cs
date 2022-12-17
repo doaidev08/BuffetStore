@@ -9,7 +9,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Buffet.GUI.GUI_ThemTaiKhoan;
 using Buffet.GUI.GUI_DangNhap;
 using Buffet.Helper;
 using Bunifu.UI.WinForms;
@@ -132,6 +131,7 @@ namespace Buffet
         private void btnRevenueMngt_Click(object sender, EventArgs e)
         {
             hideSubMenu();
+            openChildForm(new Buffet.GUI.GUI_RevenueManagement.fRevenue());
         }
 
         #endregion

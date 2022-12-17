@@ -28,5 +28,30 @@ namespace Buffet.Util
             //comboBox.Items.Add(item);
             return item;
         }
+
+        public String getDateTime(string type)
+        {
+            DateTime today = DateTime.Now;
+            if (type == "day")
+            {
+                string day = today.Day.ToString();
+                return day;
+            }
+            else if (type == "month")
+            {
+                string month = today.Month.ToString();
+                return month;
+            }
+            else if (type == "year")
+            {
+                string year = today.Year.ToString();
+                return year;
+            }
+            else
+            {
+                string date = today.Year.ToString();
+                return date;
+            }
+        }
     }
 }

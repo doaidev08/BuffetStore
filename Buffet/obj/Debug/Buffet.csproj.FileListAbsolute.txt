@@ -57,3 +57,4 @@ E:\HUMG\HOC\DOTNET\SourceCode\DEV\BuffetStore\Buffet\obj\Debug\Buffet.csproj.Fod
 E:\HUMG\HOC\DOTNET\SourceCode\DEV\BuffetStore\Buffet\obj\Debug\Buffet.csproj.CopyComplete
 E:\HUMG\HOC\DOTNET\SourceCode\DEV\BuffetStore\Buffet\obj\Debug\Buffet.exe
 E:\HUMG\HOC\DOTNET\SourceCode\DEV\BuffetStore\Buffet\obj\Debug\Buffet.pdb
+E:\HUMG\HOC\DOTNET\SourceCode\DEV\BuffetStore\Buffet\obj\Debug\Buffet.GUI.GUI_RevenueManagement.fRevenue.resources
