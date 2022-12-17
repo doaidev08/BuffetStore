@@ -49,8 +49,8 @@
             this.bunifuLabel5 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuTextBox1 = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuButton2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -83,7 +83,7 @@
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.Padding = new System.Windows.Forms.Padding(3);
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel2.Size = new System.Drawing.Size(27, 24);
+            this.bunifuLabel2.Size = new System.Drawing.Size(27, 26);
             this.bunifuLabel2.TabIndex = 3;
             this.bunifuLabel2.Text = "Bàn";
             this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -101,7 +101,7 @@
             this.bunifuLabel3.Name = "bunifuLabel3";
             this.bunifuLabel3.Padding = new System.Windows.Forms.Padding(3);
             this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel3.Size = new System.Drawing.Size(54, 24);
+            this.bunifuLabel3.Size = new System.Drawing.Size(54, 26);
             this.bunifuLabel3.TabIndex = 5;
             this.bunifuLabel3.Text = "Số lượng";
             this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -266,7 +266,7 @@
             this.bunifuLabel5.Name = "bunifuLabel5";
             this.bunifuLabel5.Padding = new System.Windows.Forms.Padding(3);
             this.bunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel5.Size = new System.Drawing.Size(91, 24);
+            this.bunifuLabel5.Size = new System.Drawing.Size(91, 26);
             this.bunifuLabel5.TabIndex = 14;
             this.bunifuLabel5.Text = "Tên khách hàng";
             this.bunifuLabel5.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -285,7 +285,7 @@
             this.bunifuTextBox1.BorderColorActive = System.Drawing.Color.DodgerBlue;
             this.bunifuTextBox1.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.bunifuTextBox1.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.bunifuTextBox1.BorderColorIdle = System.Drawing.Color.Transparent;
+            this.bunifuTextBox1.BorderColorIdle = System.Drawing.Color.White;
             this.bunifuTextBox1.BorderRadius = 9;
             this.bunifuTextBox1.BorderThickness = 0;
             this.bunifuTextBox1.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
@@ -322,7 +322,7 @@
             stateProperties3.ForeColor = System.Drawing.Color.Empty;
             stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.bunifuTextBox1.OnHoverState = stateProperties3;
-            stateProperties4.BorderColor = System.Drawing.Color.Transparent;
+            stateProperties4.BorderColor = System.Drawing.Color.White;
             stateProperties4.FillColor = System.Drawing.Color.White;
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
@@ -442,10 +442,6 @@
             this.bunifuButton2.UseDefaultRadiusAndThickness = true;
             this.bunifuButton2.Click += new System.EventHandler(this.bunifuButton2_Click);
             // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // bunifuButton1
             // 
             this.bunifuButton1.AllowAnimations = true;
@@ -538,6 +534,10 @@
             this.bunifuButton1.TextPadding = new System.Windows.Forms.Padding(0);
             this.bunifuButton1.UseDefaultRadiusAndThickness = true;
             this.bunifuButton1.Click += new System.EventHandler(this.bunifuButton1_Click_4);
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // GUI_DatBan
             // 

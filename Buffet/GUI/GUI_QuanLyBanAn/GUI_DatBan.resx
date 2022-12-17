@@ -159,10 +159,10 @@
 </value>
   </data>
   <data name="bunifuLabel2.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; margin: auto; padding-top: 3px;font-family: 'Times New Roman'; font-size: 9pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: center; }</value>
+    <value>#bunifu-label { padding: 0px; margin: auto; padding-top: 5px;font-family: 'Times New Roman'; font-size: 9pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: center; }</value>
   </data>
   <data name="bunifuLabel3.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; margin: auto; padding-top: 3px;font-family: 'Times New Roman'; font-size: 9pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: center; }</value>
+    <value>#bunifu-label { padding: 0px; margin: auto; padding-top: 5px;font-family: 'Times New Roman'; font-size: 9pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: center; }</value>
   </data>
   <metadata name="bunifuSnackbar1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>199, 17</value>
@@ -236,16 +236,17 @@
     <value>#bunifu-label { padding: 0px; font-family: 'Anklepants'; font-size: 8,25pt; width: 100%; height: 100%; font-style: italic; font-weight: normal; text-decoration: none; color: rgb(144, 238, 144); text-align: left; }</value>
   </data>
   <data name="bunifuLabel5.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; margin: auto; padding-top: 3px;font-family: 'Times New Roman'; font-size: 9pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: center; }</value>
+    <value>#bunifu-label { padding: 0px; margin: auto; padding-top: 5px;font-family: 'Times New Roman'; font-size: 9pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: center; }</value>
   </data>
   <data name="bunifuTextBox1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAASQAAAAZCAYAAACYalMrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADqSURBVHhe7d2xccJAFEVRhYQKCQkpQyWoBJdASEhGGQ5d
-        AiVQkqOV+Cutx3YBSD84Z+aNFim/IxLo/prn+RAbYjczszevtqZv+fkvHlxLKd9xBdhMdOcel0NL0RKj
-        WiuAXUSUPn9idPRmBCRwrkEa1zPAfqZpuvi6BmRxEyQgC0EC0hAkIA1BAtIQJCANQQLSECQgDUEC0hAk
-        IA1BAtIQJCANQQLSECQgDUEC0liC9LGeAXZ1rUE6r2eAXQ3Lz9iWUr7aDYDNRYOeS4yq+NzHjcf6CGA7
-        NUZxObUc/Yqb/pPNzLbc2PITuu4F4uwYqe+aNXAAAAAASUVORK5CYII=
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEDSURBVHhe7d29TcNQFIZhj0CZESgpKSmp2IeeAago2CNz
+        ZIO0SBBERxPZ5rv+GQH7FM8jHeXea9ev7MbpVuM43gzD8JI5ZQ3wr1prMm9ZHpYMzXLwkAufmet0J8BG
+        0p1L5mmN0SGbj/kSwPbSoO/83HZZvPd978kI2FVadGxBOi97gN2kRb/tlQ2gBEECyhAkoAxBAsoQJKAM
+        QQLKECSgDEECyhAkoAxBAsoQJKAMQQLKECSgDEECyhAkoIz2PaSvZQ2wm7To2oJ0XPYAu0mLTu2V7a7v
+        +8t8BLC9xOgn8zh96D+L53awXAPYzBKj1ylGqxzcZ/wnG7CZNOecmZ+Muq77AxtaZ8aGIptgAAAAAElF
+        TkSuQmCC
 </value>
   </data>
   <data name="bunifuButton2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -266,9 +267,6 @@
         rkJggg==
 </value>
   </data>
-  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>489, 17</value>
-  </metadata>
   <data name="bunifuButton1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAJYAAAAnCAYAAADtl7EyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -289,4 +287,7 @@
         L2HLDWZdaifo0GT1Id8ObZqlf/ZWP4qiqP+sgYHfqDFKE4CYkasAAAAASUVORK5CYII=
 </value>
   </data>
+  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>489, 17</value>
+  </metadata>
 </root>

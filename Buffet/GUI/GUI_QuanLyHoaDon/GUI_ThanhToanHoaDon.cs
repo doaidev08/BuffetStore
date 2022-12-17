@@ -294,10 +294,9 @@ namespace Buffet.GUI.GUI_QuanLyHoaDon
         {
 
         }
-
+        //Chưa thanh toán 
         private void bunifuDataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            
             if (e.RowIndex >= 0 && e.RowIndex < bunifuDataGridView2.Rows.Count - 1)
             {
                 int maHoaDonChon1 = Int32.Parse(bunifuDataGridView2.Rows[e.RowIndex].Cells["MaHoaDon"].Value.ToString());
@@ -308,25 +307,28 @@ namespace Buffet.GUI.GUI_QuanLyHoaDon
                 numericUpDown4.Value = GUI_TinhTongTien();
                 numericUpDown4.Enabled = false;
             }
-        }
-
-
-        private void bunifuDataGridView3_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
 
         }
         //Đã thanh toán
         private void bunifuDataGridView3_CellClick_1(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0 && e.RowIndex < bunifuDataGridView3.Rows.Count - 1)
-            {    
+            {
+                GUI_ResetAllInFor();
                 int maHoaDonChon2 = Int32.Parse(bunifuDataGridView3.Rows[e.RowIndex].Cells["MaHoaDon"].Value.ToString());
                 GUI_HoaDonChon(maHoaDonChon2);
                 GUI_ChiTietDoUong(maHoaDonChon2);
                 GUI_DisableInPut(true);
 
             }
+
         }
+
+        private void bunifuDataGridView3_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
 
         private void bunifuButton21_Click(object sender, EventArgs e)
         {
@@ -345,7 +347,7 @@ namespace Buffet.GUI.GUI_QuanLyHoaDon
         //Kiểm tra thông tin trước khi thanh toán
         public bool GUI_KiemTraThongTinTT()
         {
-            if (numericUpDown2.Value == 0 && numericUpDown7.Value == 0 && numericUpDown8.Value == 0)
+            if (numericUpDown2.Value == 0 || numericUpDown7.Value == 0 || numericUpDown8.Value == 0)
             {
                 return false;
             }
