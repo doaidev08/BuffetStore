@@ -511,16 +511,6 @@
     <None Include="Resources\29_104867.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DAO\Models\QuanLyBuffetModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>QuanLyBuffetModel.edmx</DependentUpon>
-      <LastGenOutput>QuanLyBuffetModel.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="DAO\Models\QuanLyBuffetModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>QuanLyBuffetModel.edmx</DependentUpon>
-      <LastGenOutput>QuanLyBuffetModel.cs</LastGenOutput>
-    </Content>
     <None Include="Resources\order3.png" />
     <None Include="Resources\restau2.png" />
     <None Include="Resources\restau.png" />
@@ -534,6 +524,18 @@
     <None Include="Resources\board-black-series-texture-background-wood-wallpaper-wood-texture-wallpapers-476-1536x960.jpg" />
     <None Include="Resources\12000002.jpg" />
     <None Include="Resources\pngtree-natural-wooden-background-image_551570.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DAO\Models\QuanLyBuffetModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>QuanLyBuffetModel.edmx</DependentUpon>
+      <LastGenOutput>QuanLyBuffetModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="DAO\Models\QuanLyBuffetModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>QuanLyBuffetModel.edmx</DependentUpon>
+      <LastGenOutput>QuanLyBuffetModel.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Fody.4.0.2\build\Fody.targets" Condition="Exists('..\packages\Fody.4.0.2\build\Fody.targets')" />

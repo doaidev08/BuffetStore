@@ -221,7 +221,7 @@
 </value>
   </data>
   <data name="bunifuLabel16.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Anklepants'; font-size: 8,25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(144, 238, 144); text-align: left; }</value>
+    <value>#bunifu-label { padding: 0px; font-family: 'Microsoft Sans Serif'; font-size: 8,25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(144, 238, 144); text-align: left; }</value>
   </data>
   <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>160, 17</value>
@@ -367,15 +367,15 @@
   </data>
   <data name="bunifuButton21.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAANQAAAAbCAYAAAAEYKF5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADzSURBVHhe7dMxbgNRDENB3/+0uYGTgoAoQ0CcVC6G2Km0
-        v3wPMzOzz97z5wP+JxnNXn8A3peMZq8/AO9LRrM+fj2fwC+6mWQ06+P1GNi6mWQ06+P1GNi6mWQ06+P1
-        GNi6mWQ06+P1GNi6mWQ06+P1GNi6mWQ06+P1GNi6mWQ06+P1GNi6mWQ06+P1GNi6mWQ06+P1GNi6mWQ0
-        6+P1GNi6mWQ06+P1GNi6mWQ06+P1GNi6mWQ06+P1GNi6mWQ06+P1GNi6mWQ06+P1GNi6mWQ06+P1GNi6
-        mWQ06yPwN8lo9voD8L5kNHv9AXhfMjIzM/vIPR7fDOEuSAZNm6kAAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAAM4AAAAbCAYAAAA07LBYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADxSURBVHhe7dMxDsNADMRA//+1+YGTYoElzkJKN+LCU8lX
+        8nLOOefe3f37JP2XXLrzB0lPyaU7f5D0lFw6Hj/3LSnYRnLpeJweS1uxjeTS8Tg9lrZiG8ml43F6LG3F
+        NpJLx+P0WNqKbSSXjsfpsbQV20guHY/TY2krtpFcOh6nx9JWbCO5dDxOj6Wt2EZy6XicHktbsY3k0vE4
+        PZa2YhvJpeNxeixtxTaSS8fj9Fjaim0kl47H6bG0FdtILh2P02NpK7aRXDoep8fSVmwjuXQ8To+lrdhG
+        cul4lDRLLt35g6Sn5NKdP0h6Si7OOefcK7uuL5DoVgSGFMO5AAAAAElFTkSuQmCC
 </value>
   </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>65</value>
+    <value>25</value>
   </metadata>
 </root>
