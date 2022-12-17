@@ -343,6 +343,9 @@
     <Compile Include="DAO\Models\SANPHAMKHO.cs">
       <DependentUpon>QuanLyBuffetModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="DAO\Models\sysdiagram.cs">
+      <DependentUpon>QuanLyBuffetModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="DAO\Models\TAIKHOAN.cs">
       <DependentUpon>QuanLyBuffetModel.tt</DependentUpon>
     </Compile>
