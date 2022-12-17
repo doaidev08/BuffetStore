@@ -36,5 +36,25 @@ namespace Buffet.DAO.DAO_RevenueManagement
             dataBaseOrigin.database.DOANHTHUs.Add(doanhthu);
             dataBaseOrigin.database.SaveChanges();
         }
+
+        public dynamic getRevenueSummary()
+        {
+            var listRevenues = dataBaseOrigin.database.DOANHTHUs.Select(x => new
+            {
+                x.MaDoanhThu,
+                x.TenDoanhThu,
+                x.TongDoanhThu,
+                x.NgayDoanhThu,
+                x.NhanVienDoanhThu
+            }).ToList();
+            return listRevenues;
+        }
+
+        public void DAO_deleteRevenue(DOANHTHU revenue)
+        {
+            dataBaseOrigin.database.DOANHTHUs.Attach(revenue);
+            dataBaseOrigin.database.DOANHTHUs.Remove(revenue);
+            dataBaseOrigin.database.SaveChanges();
+        }
     }
 }

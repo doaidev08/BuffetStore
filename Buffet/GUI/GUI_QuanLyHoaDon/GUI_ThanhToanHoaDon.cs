@@ -50,6 +50,7 @@ namespace Buffet.GUI.GUI_QuanLyHoaDon
             GUI_DSHDChuaThanhToan();
             GUI_DSHDDaThanhToan();
             GUI_DisableInPut(true);
+            timer1.Start();
         }
         //Vô hiệu hóa thông tin nhập liệu nếu chưa được chọn hóa đơn cụ thể
         public void GUI_DisableInPut(bool disa)
@@ -293,10 +294,9 @@ namespace Buffet.GUI.GUI_QuanLyHoaDon
         {
 
         }
-
+        //Chưa thanh toán 
         private void bunifuDataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            
             if (e.RowIndex >= 0 && e.RowIndex < bunifuDataGridView2.Rows.Count - 1)
             {
                 int maHoaDonChon1 = Int32.Parse(bunifuDataGridView2.Rows[e.RowIndex].Cells["MaHoaDon"].Value.ToString());
@@ -307,25 +307,28 @@ namespace Buffet.GUI.GUI_QuanLyHoaDon
                 numericUpDown4.Value = GUI_TinhTongTien();
                 numericUpDown4.Enabled = false;
             }
-        }
-
-
-        private void bunifuDataGridView3_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
 
         }
         //Đã thanh toán
         private void bunifuDataGridView3_CellClick_1(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0 && e.RowIndex < bunifuDataGridView3.Rows.Count - 1)
-            {    
+            {
+                GUI_ResetAllInFor();
                 int maHoaDonChon2 = Int32.Parse(bunifuDataGridView3.Rows[e.RowIndex].Cells["MaHoaDon"].Value.ToString());
                 GUI_HoaDonChon(maHoaDonChon2);
                 GUI_ChiTietDoUong(maHoaDonChon2);
                 GUI_DisableInPut(true);
 
             }
+
         }
+
+        private void bunifuDataGridView3_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
 
         private void bunifuButton21_Click(object sender, EventArgs e)
         {
@@ -344,7 +347,7 @@ namespace Buffet.GUI.GUI_QuanLyHoaDon
         //Kiểm tra thông tin trước khi thanh toán
         public bool GUI_KiemTraThongTinTT()
         {
-            if (numericUpDown2.Value == 0 && numericUpDown7.Value == 0 && numericUpDown8.Value == 0)
+            if (numericUpDown2.Value == 0 || numericUpDown7.Value == 0 || numericUpDown8.Value == 0)
             {
                 return false;
             }
@@ -358,7 +361,7 @@ namespace Buffet.GUI.GUI_QuanLyHoaDon
         //Thanh Toán
         private void bunifuButton23_Click(object sender, EventArgs e)
         {
-          /*  if (GUI_KiemTraThongTinTT()==true)
+            if (GUI_KiemTraThongTinTT() == true)
             {
                 GUI_ThanhToanHoaDonFinal();
             }
@@ -370,8 +373,8 @@ namespace Buffet.GUI.GUI_QuanLyHoaDon
                     "Mời kiểm tra lại thông tin thanh toán!",
                     "Warning"
                 );
-            }*/
-            
+            }
+
         }
         //Tính tổng tiền 
         public int GUI_TinhTongTien()
@@ -453,6 +456,16 @@ namespace Buffet.GUI.GUI_QuanLyHoaDon
         private void numericUpDown7_ValueChanged(object sender, EventArgs e)
         {
             GUI_MacDinhThanhToan();
+        }
+
+        private void bunifuLabel16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            bunifuLabel16.Text = DateTime.Now.ToString();
         }
     }
 }

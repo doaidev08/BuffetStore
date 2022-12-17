@@ -33,6 +33,7 @@ namespace Buffet
             pnFoodSubMenu.Visible = false;  
             pnWarhourseSubMenu.Visible = false;
             pnStaffSubMenu.Visible = false;
+            pnRevenueSubMenu.Visible = false;
         }
 
         public void toggleSubMenu( Panel SubMenu)
@@ -66,8 +67,8 @@ namespace Buffet
         private void btnTableView_Click(object sender, EventArgs e)
         {
             hideSubMenu();
-            /*openChildForm(new Buffet.GUI.GUI_QuanLyBanAn.GUI_ChonMon());*/
-            openChildForm(new Buffet.GUI.GUI_QuanLyHoaDon.GUI_ThanhToanHoaDon());
+            openChildForm(new Buffet.GUI.GUI_QuanLyBanAn.GUI_ChonMon());
+            
         }
         #endregion
 
@@ -118,26 +119,38 @@ namespace Buffet
         private void btnWarhourseAdd_Click(object sender, EventArgs e)
         {
             hideSubMenu();
-            openChildForm(new Buffet.GUI.GUI_QuanLyBanAn.GUI_ChonMon());
+            openChildForm(new Buffet.GUI.GUI_QuanLyKho.GUI_DanhMucKho());
+
         }
 
         private void btnWarhourseView_Click(object sender, EventArgs e)
         {
             hideSubMenu();
+            openChildForm(new Buffet.GUI.GUI_QuanLyKho.GUI_VatPham());
         }
         #endregion
 
         #region Revenue management
         private void btnRevenueMngt_Click(object sender, EventArgs e)
         {
+            toggleSubMenu(pnRevenueSubMenu);
+        }
+
+        private void btnRevenueAdd_Click(object sender, EventArgs e)
+        {
             hideSubMenu();
             openChildForm(new Buffet.GUI.GUI_RevenueManagement.fRevenue());
         }
 
+        private void btnRevenueView_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
+            openChildForm(new Buffet.GUI.GUI_RevenueManagement.fRevenueSummary());
+        }
         #endregion
 
         #region Bill Management
-        private void btnBillMngt_Click(object sender, EventArgs e)
+        private void btnBillMngt_Click_1(object sender, EventArgs e)
         {
             hideSubMenu();
             openChildForm(new Buffet.GUI.GUI_QuanLyHoaDon.GUI_ThanhToanHoaDon());
@@ -145,11 +158,13 @@ namespace Buffet
         #endregion
 
         #region Staff management
-        private void btnStaffMngt_Click(object sender, EventArgs e)
+
+        private void btnStaffMngt_Click_1(object sender, EventArgs e)
         {
             toggleSubMenu(pnStaffSubMenu);
         }
-        private void btnStaffAdd_Click(object sender, EventArgs e)
+
+        private void btnStaffAdd_Click_1(object sender, EventArgs e)
         {
             // them tai khoan
             if (Properties.Settings.Default.phanquyen == 4)
@@ -163,8 +178,9 @@ namespace Buffet
             hideSubMenu();
         }
 
-        private void btnStaffView_Click(object sender, EventArgs e)
-        {   // quan li nhan vien
+        private void btnStaffView_Click_1(object sender, EventArgs e)
+        {
+            // quan li nhan vien
             if (Properties.Settings.Default.phanquyen == 4)
             {
                 openChildForm(new Buffet.GUI.GUI_ThemTaiKhoan.GUI_QLiTaiKhoan());
@@ -176,11 +192,10 @@ namespace Buffet
             hideSubMenu();
             hideSubMenu();
         }
-
         #endregion
 
         #region logout
-        private void btnLogout_Click(object sender, EventArgs e)
+        private void btnLogout_Click_1(object sender, EventArgs e)
         {
             hideSubMenu();
             Properties.Settings.Default.tennguoidung = "";
@@ -189,6 +204,5 @@ namespace Buffet
             formDN.Show();
         }
         #endregion
-
     }
 }

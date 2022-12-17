@@ -145,6 +145,16 @@
     <Property Name="MaQuanTriVien" Type="int" />
     <Property Name="MaNhanVien" Type="int" />
   </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
   <EntityType Name="TAIKHOAN">
     <Key>
       <PropertyRef Name="MaTaiKhoan" />
@@ -339,6 +349,7 @@
     <EntitySet Name="PHANQUYEN" EntityType="Self.PHANQUYEN" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="QUANTRIVIEN" EntityType="Self.QUANTRIVIEN" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="SANPHAMKHO" EntityType="Self.SANPHAMKHO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TAIKHOAN" EntityType="Self.TAIKHOAN" Schema="dbo" store:Type="Tables" />
     <AssociationSet Name="FK__CHITIETHO__MaDoU__571DF1D5" Association="Self.FK__CHITIETHO__MaDoU__571DF1D5">
       <End Role="DOUONG" EntitySet="DOUONG" />

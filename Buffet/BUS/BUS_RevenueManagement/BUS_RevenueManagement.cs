@@ -39,5 +39,20 @@ namespace Buffet.BUS.BUS_RevenueManagement
             daoRevenueManagement.DAO_AddRevenue(revenue);
             return true;
         }
+
+        public void BUS_loadRevenues(BunifuDataGridView table)
+        {
+            table.DataSource = daoRevenueManagement.getRevenueSummary();
+        }
+
+        public bool BUS_deleteFoodCate(int primaryKey)
+        {
+            DOANHTHU Revenue = new DOANHTHU()
+            {
+                MaDoanhThu = primaryKey,
+            };
+            daoRevenueManagement.DAO_deleteRevenue(Revenue);
+            return true;
+        }
     }
 }

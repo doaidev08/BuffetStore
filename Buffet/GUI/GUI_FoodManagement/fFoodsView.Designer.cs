@@ -29,55 +29,56 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fFoodsView));
-            Bunifu.UI.WinForms.BunifuFormCaptionButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuFormCaptionButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuFormCaptionButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuFormCaptionButton.BorderEdges();
             this.tableMainDish = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.lbFoodList = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuFormCaptionButton1 = new Bunifu.UI.WinForms.BunifuFormCaptionButton();
-            this.bunifuPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
-            this.btnUpdate = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuSnackbar1 = new Bunifu.UI.WinForms.BunifuSnackbar(this.components);
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.txbFoodCount = new System.Windows.Forms.NumericUpDown();
+            this.bunifuPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.btnAddFood = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnDelete = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnUpdate = new Bunifu.Framework.UI.BunifuThinButton2();
             this.selectFoodCate = new Bunifu.UI.WinForms.BunifuDropdown();
             this.txbFoodName = new Bunifu.UI.WinForms.BunifuTextBox();
             this.labelCount = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
             this.labelFoodName = new Bunifu.UI.WinForms.BunifuLabel();
-            this.btnAddFood = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnDelete = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.bunifuFormCaptionButton1 = new Bunifu.UI.WinForms.BunifuFormCaptionButton();
             ((System.ComponentModel.ISupportInitialize)(this.tableMainDish)).BeginInit();
-            this.bunifuPanel2.SuspendLayout();
             this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txbFoodCount)).BeginInit();
+            this.bunifuPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableMainDish
             // 
             this.tableMainDish.AllowCustomTheming = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            this.tableMainDish.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.tableMainDish.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.tableMainDish.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.tableMainDish.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.tableMainDish.BackgroundColor = System.Drawing.SystemColors.Control;
             this.tableMainDish.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tableMainDish.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.tableMainDish.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tableMainDish.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tableMainDish.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.tableMainDish.ColumnHeadersHeight = 40;
             this.tableMainDish.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             this.tableMainDish.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
@@ -97,14 +98,14 @@
             this.tableMainDish.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
             this.tableMainDish.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
             this.tableMainDish.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.tableMainDish.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.tableMainDish.DefaultCellStyle = dataGridViewCellStyle3;
             this.tableMainDish.EnableHeadersVisualStyles = false;
             this.tableMainDish.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.tableMainDish.HeaderBackColor = System.Drawing.Color.DodgerBlue;
@@ -138,93 +139,6 @@
             this.lbFoodList.Text = "Danh sách món ăn";
             this.lbFoodList.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.lbFoodList.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // bunifuFormCaptionButton1
-            // 
-            this.bunifuFormCaptionButton1.AllowAnimations = true;
-            this.bunifuFormCaptionButton1.AllowBorderColorChanges = true;
-            this.bunifuFormCaptionButton1.AllowDefaults = true;
-            this.bunifuFormCaptionButton1.AllowMouseEffects = true;
-            this.bunifuFormCaptionButton1.AnimationSpeed = 200;
-            this.bunifuFormCaptionButton1.AutoSizeCaptions = true;
-            this.bunifuFormCaptionButton1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuFormCaptionButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(233)))));
-            this.bunifuFormCaptionButton1.BackHoverColor = System.Drawing.Color.LightGray;
-            this.bunifuFormCaptionButton1.BackPressedColor = System.Drawing.Color.Silver;
-            this.bunifuFormCaptionButton1.BorderColor = System.Drawing.Color.LightGray;
-            this.bunifuFormCaptionButton1.BorderHoverColor = System.Drawing.Color.DarkGray;
-            this.bunifuFormCaptionButton1.BorderPressedColor = System.Drawing.Color.DarkGray;
-            this.bunifuFormCaptionButton1.BorderRadius = 1;
-            this.bunifuFormCaptionButton1.BorderStyle = Bunifu.UI.WinForms.BunifuFormCaptionButton.BorderStyles.Solid;
-            this.bunifuFormCaptionButton1.BorderThickness = 1;
-            this.bunifuFormCaptionButton1.CaptionType = Bunifu.UI.WinForms.BunifuFormCaptionButton.CaptionTypes.Minimize;
-            this.bunifuFormCaptionButton1.ColorContrastOnClick = 30;
-            this.bunifuFormCaptionButton1.ColorContrastOnHover = 30;
-            this.bunifuFormCaptionButton1.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.bunifuFormCaptionButton1.CustomizableEdges = borderEdges2;
-            this.bunifuFormCaptionButton1.DefaultBorderColor = System.Drawing.Color.Silver;
-            this.bunifuFormCaptionButton1.DefaultColor = System.Drawing.Color.Gainsboro;
-            this.bunifuFormCaptionButton1.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.bunifuFormCaptionButton1.IconColor = System.Drawing.Color.Black;
-            this.bunifuFormCaptionButton1.IconHoverColor = System.Drawing.Color.Black;
-            this.bunifuFormCaptionButton1.IconPressedColor = System.Drawing.Color.Black;
-            this.bunifuFormCaptionButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuFormCaptionButton1.Image")));
-            this.bunifuFormCaptionButton1.ImageMargin = new System.Windows.Forms.Padding(1, 1, 0, 0);
-            this.bunifuFormCaptionButton1.ImageSize = new System.Drawing.Size(20, 20);
-            this.bunifuFormCaptionButton1.Location = new System.Drawing.Point(820, 12);
-            this.bunifuFormCaptionButton1.Name = "bunifuFormCaptionButton1";
-            this.bunifuFormCaptionButton1.ShowBorders = true;
-            this.bunifuFormCaptionButton1.Size = new System.Drawing.Size(24, 21);
-            this.bunifuFormCaptionButton1.TabIndex = 4;
-            // 
-            // bunifuPanel2
-            // 
-            this.bunifuPanel2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.bunifuPanel2.BackgroundColor = System.Drawing.Color.Transparent;
-            this.bunifuPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel2.BackgroundImage")));
-            this.bunifuPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuPanel2.BorderColor = System.Drawing.Color.Transparent;
-            this.bunifuPanel2.BorderRadius = 3;
-            this.bunifuPanel2.BorderThickness = 1;
-            this.bunifuPanel2.Controls.Add(this.btnAddFood);
-            this.bunifuPanel2.Controls.Add(this.btnDelete);
-            this.bunifuPanel2.Controls.Add(this.btnUpdate);
-            this.bunifuPanel2.Location = new System.Drawing.Point(3, 272);
-            this.bunifuPanel2.Name = "bunifuPanel2";
-            this.bunifuPanel2.ShowBorders = true;
-            this.bunifuPanel2.Size = new System.Drawing.Size(292, 48);
-            this.bunifuPanel2.TabIndex = 5;
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.ActiveBorderThickness = 1;
-            this.btnUpdate.ActiveCornerRadius = 20;
-            this.btnUpdate.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.btnUpdate.ActiveForecolor = System.Drawing.Color.IndianRed;
-            this.btnUpdate.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btnUpdate.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnUpdate.BackColor = System.Drawing.SystemColors.Control;
-            this.btnUpdate.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUpdate.BackgroundImage")));
-            this.btnUpdate.ButtonText = "Sửa";
-            this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnUpdate.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btnUpdate.IdleBorderThickness = 1;
-            this.btnUpdate.IdleCornerRadius = 20;
-            this.btnUpdate.IdleFillColor = System.Drawing.Color.Gold;
-            this.btnUpdate.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.btnUpdate.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnUpdate.Location = new System.Drawing.Point(123, 3);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(5);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(66, 40);
-            this.btnUpdate.TabIndex = 0;
-            this.btnUpdate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // bunifuSnackbar1
             // 
@@ -326,6 +240,105 @@
             this.txbFoodCount.Size = new System.Drawing.Size(120, 20);
             this.txbFoodCount.TabIndex = 5;
             // 
+            // bunifuPanel2
+            // 
+            this.bunifuPanel2.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.bunifuPanel2.BackgroundColor = System.Drawing.Color.Transparent;
+            this.bunifuPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel2.BackgroundImage")));
+            this.bunifuPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuPanel2.BorderColor = System.Drawing.Color.Transparent;
+            this.bunifuPanel2.BorderRadius = 3;
+            this.bunifuPanel2.BorderThickness = 1;
+            this.bunifuPanel2.Controls.Add(this.btnAddFood);
+            this.bunifuPanel2.Controls.Add(this.btnDelete);
+            this.bunifuPanel2.Controls.Add(this.btnUpdate);
+            this.bunifuPanel2.Location = new System.Drawing.Point(3, 272);
+            this.bunifuPanel2.Name = "bunifuPanel2";
+            this.bunifuPanel2.ShowBorders = true;
+            this.bunifuPanel2.Size = new System.Drawing.Size(292, 48);
+            this.bunifuPanel2.TabIndex = 5;
+            // 
+            // btnAddFood
+            // 
+            this.btnAddFood.ActiveBorderThickness = 1;
+            this.btnAddFood.ActiveCornerRadius = 20;
+            this.btnAddFood.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnAddFood.ActiveForecolor = System.Drawing.Color.IndianRed;
+            this.btnAddFood.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnAddFood.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAddFood.BackColor = System.Drawing.SystemColors.Control;
+            this.btnAddFood.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAddFood.BackgroundImage")));
+            this.btnAddFood.ButtonText = "Thêm";
+            this.btnAddFood.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddFood.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddFood.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnAddFood.IdleBorderThickness = 1;
+            this.btnAddFood.IdleCornerRadius = 20;
+            this.btnAddFood.IdleFillColor = System.Drawing.Color.Transparent;
+            this.btnAddFood.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.btnAddFood.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btnAddFood.Location = new System.Drawing.Point(32, 3);
+            this.btnAddFood.Margin = new System.Windows.Forms.Padding(5);
+            this.btnAddFood.Name = "btnAddFood";
+            this.btnAddFood.Size = new System.Drawing.Size(66, 40);
+            this.btnAddFood.TabIndex = 2;
+            this.btnAddFood.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnAddFood.Click += new System.EventHandler(this.btnAddFood_Click);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.ActiveBorderThickness = 1;
+            this.btnDelete.ActiveCornerRadius = 20;
+            this.btnDelete.ActiveFillColor = System.Drawing.Color.DeepPink;
+            this.btnDelete.ActiveForecolor = System.Drawing.Color.White;
+            this.btnDelete.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnDelete.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnDelete.BackColor = System.Drawing.SystemColors.Control;
+            this.btnDelete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDelete.BackgroundImage")));
+            this.btnDelete.ButtonText = "Xóa";
+            this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDelete.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnDelete.IdleBorderThickness = 1;
+            this.btnDelete.IdleCornerRadius = 20;
+            this.btnDelete.IdleFillColor = System.Drawing.Color.Red;
+            this.btnDelete.IdleForecolor = System.Drawing.Color.DarkGreen;
+            this.btnDelete.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btnDelete.Location = new System.Drawing.Point(218, 3);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(5);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(66, 40);
+            this.btnDelete.TabIndex = 0;
+            this.btnDelete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.ActiveBorderThickness = 1;
+            this.btnUpdate.ActiveCornerRadius = 20;
+            this.btnUpdate.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnUpdate.ActiveForecolor = System.Drawing.Color.IndianRed;
+            this.btnUpdate.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnUpdate.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnUpdate.BackColor = System.Drawing.SystemColors.Control;
+            this.btnUpdate.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUpdate.BackgroundImage")));
+            this.btnUpdate.ButtonText = "Sửa";
+            this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnUpdate.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnUpdate.IdleBorderThickness = 1;
+            this.btnUpdate.IdleCornerRadius = 20;
+            this.btnUpdate.IdleFillColor = System.Drawing.Color.Gold;
+            this.btnUpdate.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.btnUpdate.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btnUpdate.Location = new System.Drawing.Point(123, 3);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(5);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(66, 40);
+            this.btnUpdate.TabIndex = 0;
+            this.btnUpdate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
             // selectFoodCate
             // 
             this.selectFoodCate.BackColor = System.Drawing.Color.Transparent;
@@ -404,26 +417,26 @@
             this.txbFoodName.Modified = false;
             this.txbFoodName.Multiline = false;
             this.txbFoodName.Name = "txbFoodName";
-            stateProperties5.BorderColor = System.Drawing.Color.Indigo;
-            stateProperties5.FillColor = System.Drawing.Color.Empty;
-            stateProperties5.ForeColor = System.Drawing.Color.Empty;
-            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txbFoodName.OnActiveState = stateProperties5;
-            stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties6.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txbFoodName.OnDisabledState = stateProperties6;
-            stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            stateProperties7.FillColor = System.Drawing.Color.Empty;
-            stateProperties7.ForeColor = System.Drawing.Color.Empty;
-            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txbFoodName.OnHoverState = stateProperties7;
-            stateProperties8.BorderColor = System.Drawing.Color.Coral;
-            stateProperties8.FillColor = System.Drawing.Color.White;
-            stateProperties8.ForeColor = System.Drawing.Color.Empty;
-            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txbFoodName.OnIdleState = stateProperties8;
+            stateProperties1.BorderColor = System.Drawing.Color.Indigo;
+            stateProperties1.FillColor = System.Drawing.Color.Empty;
+            stateProperties1.ForeColor = System.Drawing.Color.Empty;
+            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txbFoodName.OnActiveState = stateProperties1;
+            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txbFoodName.OnDisabledState = stateProperties2;
+            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            stateProperties3.FillColor = System.Drawing.Color.Empty;
+            stateProperties3.ForeColor = System.Drawing.Color.Empty;
+            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txbFoodName.OnHoverState = stateProperties3;
+            stateProperties4.BorderColor = System.Drawing.Color.Coral;
+            stateProperties4.FillColor = System.Drawing.Color.White;
+            stateProperties4.ForeColor = System.Drawing.Color.Empty;
+            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txbFoodName.OnIdleState = stateProperties4;
             this.txbFoodName.Padding = new System.Windows.Forms.Padding(3);
             this.txbFoodName.PasswordChar = '\0';
             this.txbFoodName.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -491,59 +504,47 @@
             this.labelFoodName.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.labelFoodName.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // btnAddFood
+            // bunifuFormCaptionButton1
             // 
-            this.btnAddFood.ActiveBorderThickness = 1;
-            this.btnAddFood.ActiveCornerRadius = 20;
-            this.btnAddFood.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.btnAddFood.ActiveForecolor = System.Drawing.Color.IndianRed;
-            this.btnAddFood.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btnAddFood.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAddFood.BackColor = System.Drawing.SystemColors.Control;
-            this.btnAddFood.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAddFood.BackgroundImage")));
-            this.btnAddFood.ButtonText = "Thêm";
-            this.btnAddFood.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAddFood.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddFood.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btnAddFood.IdleBorderThickness = 1;
-            this.btnAddFood.IdleCornerRadius = 20;
-            this.btnAddFood.IdleFillColor = System.Drawing.Color.Transparent;
-            this.btnAddFood.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.btnAddFood.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnAddFood.Location = new System.Drawing.Point(32, 3);
-            this.btnAddFood.Margin = new System.Windows.Forms.Padding(5);
-            this.btnAddFood.Name = "btnAddFood";
-            this.btnAddFood.Size = new System.Drawing.Size(66, 40);
-            this.btnAddFood.TabIndex = 2;
-            this.btnAddFood.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnAddFood.Click += new System.EventHandler(this.btnAddFood_Click);
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.ActiveBorderThickness = 1;
-            this.btnDelete.ActiveCornerRadius = 20;
-            this.btnDelete.ActiveFillColor = System.Drawing.Color.DeepPink;
-            this.btnDelete.ActiveForecolor = System.Drawing.Color.White;
-            this.btnDelete.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btnDelete.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnDelete.BackColor = System.Drawing.SystemColors.Control;
-            this.btnDelete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDelete.BackgroundImage")));
-            this.btnDelete.ButtonText = "Xóa";
-            this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDelete.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btnDelete.IdleBorderThickness = 1;
-            this.btnDelete.IdleCornerRadius = 20;
-            this.btnDelete.IdleFillColor = System.Drawing.Color.Red;
-            this.btnDelete.IdleForecolor = System.Drawing.Color.DarkGreen;
-            this.btnDelete.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnDelete.Location = new System.Drawing.Point(218, 3);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(5);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(66, 40);
-            this.btnDelete.TabIndex = 0;
-            this.btnDelete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            this.bunifuFormCaptionButton1.AllowAnimations = true;
+            this.bunifuFormCaptionButton1.AllowBorderColorChanges = true;
+            this.bunifuFormCaptionButton1.AllowDefaults = true;
+            this.bunifuFormCaptionButton1.AllowMouseEffects = true;
+            this.bunifuFormCaptionButton1.AnimationSpeed = 200;
+            this.bunifuFormCaptionButton1.AutoSizeCaptions = true;
+            this.bunifuFormCaptionButton1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuFormCaptionButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(233)))));
+            this.bunifuFormCaptionButton1.BackHoverColor = System.Drawing.Color.LightGray;
+            this.bunifuFormCaptionButton1.BackPressedColor = System.Drawing.Color.Silver;
+            this.bunifuFormCaptionButton1.BorderColor = System.Drawing.Color.LightGray;
+            this.bunifuFormCaptionButton1.BorderHoverColor = System.Drawing.Color.DarkGray;
+            this.bunifuFormCaptionButton1.BorderPressedColor = System.Drawing.Color.DarkGray;
+            this.bunifuFormCaptionButton1.BorderRadius = 1;
+            this.bunifuFormCaptionButton1.BorderStyle = Bunifu.UI.WinForms.BunifuFormCaptionButton.BorderStyles.Solid;
+            this.bunifuFormCaptionButton1.BorderThickness = 1;
+            this.bunifuFormCaptionButton1.CaptionType = Bunifu.UI.WinForms.BunifuFormCaptionButton.CaptionTypes.Minimize;
+            this.bunifuFormCaptionButton1.ColorContrastOnClick = 30;
+            this.bunifuFormCaptionButton1.ColorContrastOnHover = 30;
+            this.bunifuFormCaptionButton1.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.bunifuFormCaptionButton1.CustomizableEdges = borderEdges1;
+            this.bunifuFormCaptionButton1.DefaultBorderColor = System.Drawing.Color.Silver;
+            this.bunifuFormCaptionButton1.DefaultColor = System.Drawing.Color.Gainsboro;
+            this.bunifuFormCaptionButton1.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.bunifuFormCaptionButton1.IconColor = System.Drawing.Color.Black;
+            this.bunifuFormCaptionButton1.IconHoverColor = System.Drawing.Color.Black;
+            this.bunifuFormCaptionButton1.IconPressedColor = System.Drawing.Color.Black;
+            this.bunifuFormCaptionButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuFormCaptionButton1.Image")));
+            this.bunifuFormCaptionButton1.ImageMargin = new System.Windows.Forms.Padding(1, 1, 0, 0);
+            this.bunifuFormCaptionButton1.ImageSize = new System.Drawing.Size(20, 20);
+            this.bunifuFormCaptionButton1.Location = new System.Drawing.Point(820, 12);
+            this.bunifuFormCaptionButton1.Name = "bunifuFormCaptionButton1";
+            this.bunifuFormCaptionButton1.ShowBorders = true;
+            this.bunifuFormCaptionButton1.Size = new System.Drawing.Size(24, 21);
+            this.bunifuFormCaptionButton1.TabIndex = 4;
             // 
             // fFoodsView
             // 
@@ -558,10 +559,10 @@
             this.Name = "fFoodsView";
             this.Text = "Danh sách món ăn";
             ((System.ComponentModel.ISupportInitialize)(this.tableMainDish)).EndInit();
-            this.bunifuPanel2.ResumeLayout(false);
             this.bunifuPanel1.ResumeLayout(false);
             this.bunifuPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txbFoodCount)).EndInit();
+            this.bunifuPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

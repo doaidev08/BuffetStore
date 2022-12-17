@@ -22,7 +22,7 @@ namespace Buffet.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -63,9 +63,9 @@ namespace Buffet.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap _29_104867 {
+        public static System.Drawing.Bitmap _12000002 {
             get {
-                object obj = ResourceManager.GetObject("29_104867", resourceCulture);
+                object obj = ResourceManager.GetObject("12000002", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,12 +73,6 @@ namespace Buffet.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap LogoLogin {
-            get {
-                object obj = ResourceManager.GetObject("LogoLogin", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
         public static System.Drawing.Bitmap _29_1048671 {
             get {
                 object obj = ResourceManager.GetObject("29_1048671", resourceCulture);
@@ -119,6 +113,27 @@ namespace Buffet.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap background1 {
+            get {
+                object obj = ResourceManager.GetObject("background1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap board_black_series_texture_background_wood_wallpaper_wood_texture_wallpapers_476_1536x960 {
+            get {
+                object obj = ResourceManager.GetObject("board-black-series-texture-background-wood-wallpaper-wood-texture-wallpapers-476-" +
+                        "1536x960", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap dinner_meal_food_eat_table_icon_209871 {
             get {
                 object obj = ResourceManager.GetObject("dinner_meal_food_eat_table_icon_209871", resourceCulture);
@@ -139,6 +154,86 @@ namespace Buffet.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap drink1 {
+            get {
+                object obj = ResourceManager.GetObject("drink1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap food {
+            get {
+                object obj = ResourceManager.GetObject("food", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap food2 {
+            get {
+                object obj = ResourceManager.GetObject("food2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap food3 {
+            get {
+                object obj = ResourceManager.GetObject("food3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap ImagesLoginForm {
+            get {
+                object obj = ResourceManager.GetObject("ImagesLoginForm", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap LogoLogin {
+            get {
+                object obj = ResourceManager.GetObject("LogoLogin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap order3 {
+            get {
+                object obj = ResourceManager.GetObject("order3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap pngtree_natural_wooden_background_image_551570 {
+            get {
+                object obj = ResourceManager.GetObject("pngtree-natural-wooden-background-image_551570", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap receipt_cancel_icon_177356 {
             get {
                 object obj = ResourceManager.GetObject("receipt_cancel_icon_177356", resourceCulture);
@@ -149,9 +244,49 @@ namespace Buffet.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap restau {
+            get {
+                object obj = ResourceManager.GetObject("restau", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap restau2 {
+            get {
+                object obj = ResourceManager.GetObject("restau2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap tasks_113292 {
             get {
                 object obj = ResourceManager.GetObject("tasks_113292", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap top_view_colorful_italian_pizza_with_various_ingredients {
+            get {
+                object obj = ResourceManager.GetObject("top-view-colorful-italian-pizza-with-various-ingredients", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap white_teapot_chopsticks_1220_206 {
+            get {
+                object obj = ResourceManager.GetObject("white-teapot-chopsticks_1220-206", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

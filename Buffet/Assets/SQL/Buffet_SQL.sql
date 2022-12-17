@@ -175,7 +175,6 @@ INSERT INTO QUANTRIVIEN(
 	'admin'
 );
 
-
 -- Thêm dữ liệu PHÂN QUYỀN
 INSERT INTO PHANQUYEN(
 	VaiTroPhanQuyen
@@ -191,6 +190,11 @@ INSERT INTO PHANQUYEN(
 	VaiTroPhanQuyen
 )VALUES(
 	N'Đầu bếp'
+);
+INSERT INTO PHANQUYEN(
+	VaiTroPhanQuyen
+)VALUES(
+	N'QuanTriVien'
 );
 -- Thêm dữ liệu NHÂN VIÊN 
 INSERT INTO NHANVIEN(
@@ -227,6 +231,23 @@ INSERT INTO NHANVIEN(
 	1921223332,
 	'0923456821'
 );
+
+--Thêm tài khoản
+INSERT INTO TAIKHOAN(
+	TenTruyCap,
+	MatKhau,
+	VaiTro,
+	MaPhanQuyen,
+	MaNhanVien
+
+)
+VALUES(
+	'sangha',
+	'admin',
+	N'Adminnha',
+	4,
+	1
+)
 
 -- Thêm dữ liệu BÀN ĂN 
 INSERT INTO BANAN(

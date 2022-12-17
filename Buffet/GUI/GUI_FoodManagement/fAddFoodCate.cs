@@ -113,7 +113,7 @@ namespace Buffet.GUI.GUI_FoodManagement
                 thongBao.HienThiThongBao(
                     this,
                     bunifuSnackbar1,
-                    "Ngon, Xóa thành công rồi này!",
+                    "Thành công!",
                     "Success"
                 );
 
@@ -129,6 +129,26 @@ namespace Buffet.GUI.GUI_FoodManagement
                     "Error"
                 );
             }
+        }
+
+        private void FoodCateGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void bunifuPanel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txbFoodCate_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fAddFoodCate_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

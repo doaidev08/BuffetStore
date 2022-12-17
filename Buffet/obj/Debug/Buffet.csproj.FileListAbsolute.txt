@@ -58,3 +58,6 @@ E:\HUMG\HOC\DOTNET\SourceCode\DEV\BuffetStore\Buffet\obj\Debug\Buffet.csproj.Cop
 E:\HUMG\HOC\DOTNET\SourceCode\DEV\BuffetStore\Buffet\obj\Debug\Buffet.exe
 E:\HUMG\HOC\DOTNET\SourceCode\DEV\BuffetStore\Buffet\obj\Debug\Buffet.pdb
 E:\HUMG\HOC\DOTNET\SourceCode\DEV\BuffetStore\Buffet\obj\Debug\Buffet.GUI.GUI_RevenueManagement.fRevenue.resources
+E:\HUMG\HOC\DOTNET\SourceCode\DEV\BuffetStore\Buffet\obj\Debug\Buffet.GUI.GUI_QuanLyKho.GUI_DanhMucKho.resources
+E:\HUMG\HOC\DOTNET\SourceCode\DEV\BuffetStore\Buffet\obj\Debug\Buffet.GUI.GUI_RevenueManagement.fRevenueSummary.resources
+E:\HUMG\HOC\DOTNET\SourceCode\DEV\BuffetStore\Buffet\obj\Debug\Buffet.GUI.GUI_QuanLyKho.GUI_VatPham.resources

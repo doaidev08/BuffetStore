@@ -41,11 +41,13 @@
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges10 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges11 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges12 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges13 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges14 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges15 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges16 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges17 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges18 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges12 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges13 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             this.pnHeader = new System.Windows.Forms.Panel();
             this.UserName = new Bunifu.UI.WinForms.BunifuLabel();
             this.AppName = new Bunifu.UI.WinForms.BunifuLabel();
@@ -66,18 +68,21 @@
             this.btnWarhourseView = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.btnWarhourseAdd = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.btnRevenueMngt = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuRating1 = new Bunifu.UI.WinForms.BunifuRating();
+            this.bunifuCircleProgress1 = new Bunifu.UI.WinForms.BunifuCircleProgress();
+            this.bunifuLoader1 = new Bunifu.UI.WinForms.BunifuLoader();
+            this.bunifuCircleProgress2 = new Bunifu.UI.WinForms.BunifuCircleProgress();
+            this.pnMainView = new System.Windows.Forms.Panel();
+            this.pnRevenueSubMenu = new Bunifu.UI.WinForms.BunifuPanel();
             this.btnBillMngt = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.btnStaffMngt = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.pnStaffSubMenu = new Bunifu.UI.WinForms.BunifuPanel();
             this.btnStaffView = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.btnStaffAdd = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.btnLogout = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
-            this.pnMainView = new System.Windows.Forms.Panel();
-            this.bunifuCircleProgress2 = new Bunifu.UI.WinForms.BunifuCircleProgress();
-            this.bunifuLoader1 = new Bunifu.UI.WinForms.BunifuLoader();
-            this.bunifuCircleProgress1 = new Bunifu.UI.WinForms.BunifuCircleProgress();
-            this.bunifuRating1 = new Bunifu.UI.WinForms.BunifuRating();
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.btnRevenueView = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
+            this.btnRevenueAdd = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.pnHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
@@ -85,8 +90,9 @@
             this.pnTableSubMenu.SuspendLayout();
             this.pnFoodSubMenu.SuspendLayout();
             this.pnWarhourseSubMenu.SuspendLayout();
-            this.pnStaffSubMenu.SuspendLayout();
             this.pnMainView.SuspendLayout();
+            this.pnRevenueSubMenu.SuspendLayout();
+            this.pnStaffSubMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnHeader
@@ -113,7 +119,7 @@
             this.UserName.Location = new System.Drawing.Point(665, 13);
             this.UserName.Name = "UserName";
             this.UserName.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.UserName.Size = new System.Drawing.Size(76, 19);
+            this.UserName.Size = new System.Drawing.Size(61, 17);
             this.UserName.TabIndex = 4;
             this.UserName.Text = "UserName";
             this.UserName.TextAlignment = System.Drawing.ContentAlignment.MiddleRight;
@@ -180,6 +186,7 @@
             this.pnSideBar.Controls.Add(this.btnWarhourseMngt);
             this.pnSideBar.Controls.Add(this.pnWarhourseSubMenu);
             this.pnSideBar.Controls.Add(this.btnRevenueMngt);
+            this.pnSideBar.Controls.Add(this.pnRevenueSubMenu);
             this.pnSideBar.Controls.Add(this.btnBillMngt);
             this.pnSideBar.Controls.Add(this.btnStaffMngt);
             this.pnSideBar.Controls.Add(this.pnStaffSubMenu);
@@ -1081,7 +1088,7 @@
             this.btnWarhourseAdd.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(197)))), ((int)(((byte)(153)))));
             this.btnWarhourseAdd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnWarhourseAdd.BackgroundImage")));
             this.btnWarhourseAdd.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
-            this.btnWarhourseAdd.ButtonText = "Thêm vật phẩm";
+            this.btnWarhourseAdd.ButtonText = "Thêm loại sản phẩm kho";
             this.btnWarhourseAdd.ButtonTextMarginLeft = 0;
             this.btnWarhourseAdd.ColorContrastOnClick = 45;
             this.btnWarhourseAdd.ColorContrastOnHover = 45;
@@ -1204,7 +1211,7 @@
             this.btnRevenueMngt.IdleBorderThickness = 1;
             this.btnRevenueMngt.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(140)))), ((int)(((byte)(49)))));
             this.btnRevenueMngt.IdleIconLeftImage = null;
-            this.btnRevenueMngt.IdleIconRightImage = null;
+            this.btnRevenueMngt.IdleIconRightImage = ((System.Drawing.Image)(resources.GetObject("btnRevenueMngt.IdleIconRightImage")));
             this.btnRevenueMngt.IndicateFocus = false;
             this.btnRevenueMngt.Location = new System.Drawing.Point(3, 376);
             this.btnRevenueMngt.Margin = new System.Windows.Forms.Padding(3, 0, 3, 1);
@@ -1232,7 +1239,7 @@
             this.btnRevenueMngt.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(140)))), ((int)(((byte)(49)))));
             this.btnRevenueMngt.OnIdleState.ForeColor = System.Drawing.Color.White;
             this.btnRevenueMngt.OnIdleState.IconLeftImage = null;
-            this.btnRevenueMngt.OnIdleState.IconRightImage = null;
+            this.btnRevenueMngt.OnIdleState.IconRightImage = ((System.Drawing.Image)(resources.GetObject("btnRevenueMngt.OnIdleState.IconRightImage")));
             this.btnRevenueMngt.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.btnRevenueMngt.OnPressedState.BorderRadius = 1;
             this.btnRevenueMngt.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
@@ -1249,6 +1256,165 @@
             this.btnRevenueMngt.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnRevenueMngt.UseDefaultRadiusAndThickness = true;
             this.btnRevenueMngt.Click += new System.EventHandler(this.btnRevenueMngt_Click);
+            // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 0;
+            this.bunifuElipse1.TargetControl = this;
+            // 
+            // bunifuRating1
+            // 
+            this.bunifuRating1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.bunifuRating1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuRating1.DisabledEmptyFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
+            this.bunifuRating1.DisabledRatedFillColor = System.Drawing.Color.DarkGray;
+            this.bunifuRating1.EmptyBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
+            this.bunifuRating1.EmptyFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
+            this.bunifuRating1.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(217)))), ((int)(((byte)(20)))));
+            this.bunifuRating1.HoverFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(217)))), ((int)(((byte)(20)))));
+            this.bunifuRating1.InnerRadius = 2F;
+            this.bunifuRating1.Location = new System.Drawing.Point(259, 283);
+            this.bunifuRating1.Name = "bunifuRating1";
+            this.bunifuRating1.OuterRadius = 10F;
+            this.bunifuRating1.RatedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(217)))), ((int)(((byte)(20)))));
+            this.bunifuRating1.RatedFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(217)))), ((int)(((byte)(20)))));
+            this.bunifuRating1.ReadOnly = false;
+            this.bunifuRating1.RightClickToClear = true;
+            this.bunifuRating1.Size = new System.Drawing.Size(121, 22);
+            this.bunifuRating1.TabIndex = 2;
+            this.bunifuRating1.Text = "bunifuRating1";
+            this.bunifuRating1.Value = 3;
+            // 
+            // bunifuCircleProgress1
+            // 
+            this.bunifuCircleProgress1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuCircleProgress1.Animated = true;
+            this.bunifuCircleProgress1.AnimationInterval = 1;
+            this.bunifuCircleProgress1.AnimationSpeed = 1;
+            this.bunifuCircleProgress1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuCircleProgress1.CircleMargin = 10;
+            this.bunifuCircleProgress1.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold);
+            this.bunifuCircleProgress1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.bunifuCircleProgress1.IsPercentage = false;
+            this.bunifuCircleProgress1.LineProgressThickness = 10;
+            this.bunifuCircleProgress1.LineThickness = 10;
+            this.bunifuCircleProgress1.Location = new System.Drawing.Point(365, 79);
+            this.bunifuCircleProgress1.Name = "bunifuCircleProgress1";
+            this.bunifuCircleProgress1.ProgressAnimationSpeed = 300;
+            this.bunifuCircleProgress1.ProgressBackColor = System.Drawing.Color.Gainsboro;
+            this.bunifuCircleProgress1.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.bunifuCircleProgress1.ProgressColor2 = System.Drawing.Color.Fuchsia;
+            this.bunifuCircleProgress1.ProgressEndCap = Bunifu.UI.WinForms.BunifuCircleProgress.CapStyles.Arrow;
+            this.bunifuCircleProgress1.ProgressFillStyle = Bunifu.UI.WinForms.BunifuCircleProgress.FillStyles.Gradient;
+            this.bunifuCircleProgress1.ProgressStartCap = Bunifu.UI.WinForms.BunifuCircleProgress.CapStyles.Round;
+            this.bunifuCircleProgress1.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.bunifuCircleProgress1.Size = new System.Drawing.Size(184, 184);
+            this.bunifuCircleProgress1.SubScriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.bunifuCircleProgress1.SubScriptMargin = new System.Windows.Forms.Padding(5, -20, 0, 0);
+            this.bunifuCircleProgress1.SubScriptText = ".00";
+            this.bunifuCircleProgress1.SuperScriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.bunifuCircleProgress1.SuperScriptMargin = new System.Windows.Forms.Padding(5, 20, 0, 0);
+            this.bunifuCircleProgress1.SuperScriptText = "°C";
+            this.bunifuCircleProgress1.TabIndex = 16;
+            this.bunifuCircleProgress1.Text = "30";
+            this.bunifuCircleProgress1.TextMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.bunifuCircleProgress1.Value = 30;
+            this.bunifuCircleProgress1.ValueByTransition = 30;
+            this.bunifuCircleProgress1.ValueMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            // 
+            // bunifuLoader1
+            // 
+            this.bunifuLoader1.AllowStylePresets = true;
+            this.bunifuLoader1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuLoader1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuLoader1.CapStyle = Bunifu.UI.WinForms.BunifuLoader.CapStyles.Round;
+            this.bunifuLoader1.Color = System.Drawing.Color.Gold;
+            this.bunifuLoader1.Colors = new Bunifu.UI.WinForms.Bloom[0];
+            this.bunifuLoader1.Customization = "";
+            this.bunifuLoader1.DashWidth = 0.5F;
+            this.bunifuLoader1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bunifuLoader1.Image = null;
+            this.bunifuLoader1.Location = new System.Drawing.Point(288, 21);
+            this.bunifuLoader1.Name = "bunifuLoader1";
+            this.bunifuLoader1.NoRounding = false;
+            this.bunifuLoader1.Preset = Bunifu.UI.WinForms.BunifuLoader.StylePresets.Solid;
+            this.bunifuLoader1.RingStyle = Bunifu.UI.WinForms.BunifuLoader.RingStyles.Solid;
+            this.bunifuLoader1.ShowText = false;
+            this.bunifuLoader1.Size = new System.Drawing.Size(61, 58);
+            this.bunifuLoader1.Speed = 7;
+            this.bunifuLoader1.TabIndex = 17;
+            this.bunifuLoader1.Text = "bunifuLoader1";
+            this.bunifuLoader1.TextPadding = new System.Windows.Forms.Padding(0);
+            this.bunifuLoader1.Thickness = 6;
+            this.bunifuLoader1.Transparent = true;
+            // 
+            // bunifuCircleProgress2
+            // 
+            this.bunifuCircleProgress2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuCircleProgress2.Animated = true;
+            this.bunifuCircleProgress2.AnimationInterval = 1;
+            this.bunifuCircleProgress2.AnimationSpeed = 1;
+            this.bunifuCircleProgress2.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuCircleProgress2.CircleMargin = 10;
+            this.bunifuCircleProgress2.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold);
+            this.bunifuCircleProgress2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.bunifuCircleProgress2.IsPercentage = false;
+            this.bunifuCircleProgress2.LineProgressThickness = 10;
+            this.bunifuCircleProgress2.LineThickness = 10;
+            this.bunifuCircleProgress2.Location = new System.Drawing.Point(66, 79);
+            this.bunifuCircleProgress2.Name = "bunifuCircleProgress2";
+            this.bunifuCircleProgress2.ProgressAnimationSpeed = 500;
+            this.bunifuCircleProgress2.ProgressBackColor = System.Drawing.Color.Gainsboro;
+            this.bunifuCircleProgress2.ProgressColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuCircleProgress2.ProgressColor2 = System.Drawing.Color.DodgerBlue;
+            this.bunifuCircleProgress2.ProgressEndCap = Bunifu.UI.WinForms.BunifuCircleProgress.CapStyles.Arrow;
+            this.bunifuCircleProgress2.ProgressFillStyle = Bunifu.UI.WinForms.BunifuCircleProgress.FillStyles.Solid;
+            this.bunifuCircleProgress2.ProgressStartCap = Bunifu.UI.WinForms.BunifuCircleProgress.CapStyles.Triangle;
+            this.bunifuCircleProgress2.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.bunifuCircleProgress2.Size = new System.Drawing.Size(184, 184);
+            this.bunifuCircleProgress2.SubScriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.bunifuCircleProgress2.SubScriptMargin = new System.Windows.Forms.Padding(5, -20, 0, 0);
+            this.bunifuCircleProgress2.SubScriptText = ".00";
+            this.bunifuCircleProgress2.SuperScriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.bunifuCircleProgress2.SuperScriptMargin = new System.Windows.Forms.Padding(5, 20, 0, 0);
+            this.bunifuCircleProgress2.SuperScriptText = "%";
+            this.bunifuCircleProgress2.TabIndex = 16;
+            this.bunifuCircleProgress2.Text = "30";
+            this.bunifuCircleProgress2.TextMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.bunifuCircleProgress2.Value = 30;
+            this.bunifuCircleProgress2.ValueByTransition = 30;
+            this.bunifuCircleProgress2.ValueMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            // 
+            // pnMainView
+            // 
+            this.pnMainView.AllowDrop = true;
+            this.pnMainView.BackColor = System.Drawing.Color.White;
+            this.pnMainView.Controls.Add(this.bunifuCircleProgress2);
+            this.pnMainView.Controls.Add(this.bunifuLoader1);
+            this.pnMainView.Controls.Add(this.bunifuCircleProgress1);
+            this.pnMainView.Controls.Add(this.bunifuRating1);
+            this.pnMainView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnMainView.Location = new System.Drawing.Point(214, 55);
+            this.pnMainView.Name = "pnMainView";
+            this.pnMainView.Size = new System.Drawing.Size(630, 401);
+            this.pnMainView.TabIndex = 2;
+            // 
+            // pnRevenueSubMenu
+            // 
+            this.pnRevenueSubMenu.BackgroundColor = System.Drawing.Color.Transparent;
+            this.pnRevenueSubMenu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnRevenueSubMenu.BackgroundImage")));
+            this.pnRevenueSubMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnRevenueSubMenu.BorderColor = System.Drawing.Color.Transparent;
+            this.pnRevenueSubMenu.BorderRadius = 3;
+            this.pnRevenueSubMenu.BorderThickness = 1;
+            this.pnRevenueSubMenu.Controls.Add(this.btnRevenueView);
+            this.pnRevenueSubMenu.Controls.Add(this.btnRevenueAdd);
+            this.pnRevenueSubMenu.Location = new System.Drawing.Point(3, 417);
+            this.pnRevenueSubMenu.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
+            this.pnRevenueSubMenu.Name = "pnRevenueSubMenu";
+            this.pnRevenueSubMenu.ShowBorders = true;
+            this.pnRevenueSubMenu.Size = new System.Drawing.Size(211, 72);
+            this.pnRevenueSubMenu.TabIndex = 8;
             // 
             // btnBillMngt
             // 
@@ -1269,11 +1435,11 @@
             this.btnBillMngt.ColorContrastOnClick = 45;
             this.btnBillMngt.ColorContrastOnHover = 45;
             this.btnBillMngt.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges12.BottomLeft = true;
-            borderEdges12.BottomRight = true;
-            borderEdges12.TopLeft = true;
-            borderEdges12.TopRight = true;
-            this.btnBillMngt.CustomizableEdges = borderEdges12;
+            borderEdges14.BottomLeft = true;
+            borderEdges14.BottomRight = true;
+            borderEdges14.TopLeft = true;
+            borderEdges14.TopRight = true;
+            this.btnBillMngt.CustomizableEdges = borderEdges14;
             this.btnBillMngt.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnBillMngt.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnBillMngt.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1297,7 +1463,7 @@
             this.btnBillMngt.IdleIconLeftImage = null;
             this.btnBillMngt.IdleIconRightImage = null;
             this.btnBillMngt.IndicateFocus = false;
-            this.btnBillMngt.Location = new System.Drawing.Point(3, 417);
+            this.btnBillMngt.Location = new System.Drawing.Point(3, 489);
             this.btnBillMngt.Margin = new System.Windows.Forms.Padding(3, 0, 3, 1);
             this.btnBillMngt.Name = "btnBillMngt";
             this.btnBillMngt.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
@@ -1333,13 +1499,13 @@
             this.btnBillMngt.OnPressedState.IconLeftImage = null;
             this.btnBillMngt.OnPressedState.IconRightImage = null;
             this.btnBillMngt.Size = new System.Drawing.Size(211, 40);
-            this.btnBillMngt.TabIndex = 8;
+            this.btnBillMngt.TabIndex = 12;
             this.btnBillMngt.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBillMngt.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnBillMngt.TextMarginLeft = 0;
             this.btnBillMngt.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnBillMngt.UseDefaultRadiusAndThickness = true;
-            this.btnBillMngt.Click += new System.EventHandler(this.btnBillMngt_Click);
+            this.btnBillMngt.Click += new System.EventHandler(this.btnBillMngt_Click_1);
             // 
             // btnStaffMngt
             // 
@@ -1360,11 +1526,11 @@
             this.btnStaffMngt.ColorContrastOnClick = 45;
             this.btnStaffMngt.ColorContrastOnHover = 45;
             this.btnStaffMngt.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges13.BottomLeft = true;
-            borderEdges13.BottomRight = true;
-            borderEdges13.TopLeft = true;
-            borderEdges13.TopRight = true;
-            this.btnStaffMngt.CustomizableEdges = borderEdges13;
+            borderEdges15.BottomLeft = true;
+            borderEdges15.BottomRight = true;
+            borderEdges15.TopLeft = true;
+            borderEdges15.TopRight = true;
+            this.btnStaffMngt.CustomizableEdges = borderEdges15;
             this.btnStaffMngt.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnStaffMngt.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnStaffMngt.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1388,7 +1554,7 @@
             this.btnStaffMngt.IdleIconLeftImage = null;
             this.btnStaffMngt.IdleIconRightImage = ((System.Drawing.Image)(resources.GetObject("btnStaffMngt.IdleIconRightImage")));
             this.btnStaffMngt.IndicateFocus = false;
-            this.btnStaffMngt.Location = new System.Drawing.Point(3, 458);
+            this.btnStaffMngt.Location = new System.Drawing.Point(3, 530);
             this.btnStaffMngt.Margin = new System.Windows.Forms.Padding(3, 0, 3, 1);
             this.btnStaffMngt.Name = "btnStaffMngt";
             this.btnStaffMngt.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
@@ -1424,13 +1590,13 @@
             this.btnStaffMngt.OnPressedState.IconLeftImage = null;
             this.btnStaffMngt.OnPressedState.IconRightImage = null;
             this.btnStaffMngt.Size = new System.Drawing.Size(211, 40);
-            this.btnStaffMngt.TabIndex = 9;
+            this.btnStaffMngt.TabIndex = 13;
             this.btnStaffMngt.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnStaffMngt.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnStaffMngt.TextMarginLeft = 0;
             this.btnStaffMngt.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnStaffMngt.UseDefaultRadiusAndThickness = true;
-            this.btnStaffMngt.Click += new System.EventHandler(this.btnStaffMngt_Click);
+            this.btnStaffMngt.Click += new System.EventHandler(this.btnStaffMngt_Click_1);
             // 
             // pnStaffSubMenu
             // 
@@ -1442,12 +1608,12 @@
             this.pnStaffSubMenu.BorderThickness = 1;
             this.pnStaffSubMenu.Controls.Add(this.btnStaffView);
             this.pnStaffSubMenu.Controls.Add(this.btnStaffAdd);
-            this.pnStaffSubMenu.Location = new System.Drawing.Point(3, 499);
+            this.pnStaffSubMenu.Location = new System.Drawing.Point(3, 571);
             this.pnStaffSubMenu.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
             this.pnStaffSubMenu.Name = "pnStaffSubMenu";
             this.pnStaffSubMenu.ShowBorders = true;
             this.pnStaffSubMenu.Size = new System.Drawing.Size(211, 72);
-            this.pnStaffSubMenu.TabIndex = 10;
+            this.pnStaffSubMenu.TabIndex = 14;
             // 
             // btnStaffView
             // 
@@ -1468,11 +1634,11 @@
             this.btnStaffView.ColorContrastOnClick = 45;
             this.btnStaffView.ColorContrastOnHover = 45;
             this.btnStaffView.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges14.BottomLeft = true;
-            borderEdges14.BottomRight = true;
-            borderEdges14.TopLeft = true;
-            borderEdges14.TopRight = true;
-            this.btnStaffView.CustomizableEdges = borderEdges14;
+            borderEdges16.BottomLeft = true;
+            borderEdges16.BottomRight = true;
+            borderEdges16.TopLeft = true;
+            borderEdges16.TopRight = true;
+            this.btnStaffView.CustomizableEdges = borderEdges16;
             this.btnStaffView.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnStaffView.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnStaffView.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1539,7 +1705,7 @@
             this.btnStaffView.TextMarginLeft = 0;
             this.btnStaffView.TextPadding = new System.Windows.Forms.Padding(50, 0, 0, 0);
             this.btnStaffView.UseDefaultRadiusAndThickness = true;
-            this.btnStaffView.Click += new System.EventHandler(this.btnStaffView_Click);
+            this.btnStaffView.Click += new System.EventHandler(this.btnStaffView_Click_1);
             // 
             // btnStaffAdd
             // 
@@ -1560,11 +1726,11 @@
             this.btnStaffAdd.ColorContrastOnClick = 45;
             this.btnStaffAdd.ColorContrastOnHover = 45;
             this.btnStaffAdd.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges15.BottomLeft = true;
-            borderEdges15.BottomRight = true;
-            borderEdges15.TopLeft = true;
-            borderEdges15.TopRight = true;
-            this.btnStaffAdd.CustomizableEdges = borderEdges15;
+            borderEdges17.BottomLeft = true;
+            borderEdges17.BottomRight = true;
+            borderEdges17.TopLeft = true;
+            borderEdges17.TopRight = true;
+            this.btnStaffAdd.CustomizableEdges = borderEdges17;
             this.btnStaffAdd.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnStaffAdd.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnStaffAdd.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1631,7 +1797,7 @@
             this.btnStaffAdd.TextMarginLeft = 0;
             this.btnStaffAdd.TextPadding = new System.Windows.Forms.Padding(50, 0, 0, 0);
             this.btnStaffAdd.UseDefaultRadiusAndThickness = true;
-            this.btnStaffAdd.Click += new System.EventHandler(this.btnStaffAdd_Click);
+            this.btnStaffAdd.Click += new System.EventHandler(this.btnStaffAdd_Click_1);
             // 
             // btnLogout
             // 
@@ -1652,15 +1818,16 @@
             this.btnLogout.ColorContrastOnClick = 45;
             this.btnLogout.ColorContrastOnHover = 45;
             this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges16.BottomLeft = true;
-            borderEdges16.BottomRight = true;
-            borderEdges16.TopLeft = true;
-            borderEdges16.TopRight = true;
-            this.btnLogout.CustomizableEdges = borderEdges16;
+            borderEdges18.BottomLeft = true;
+            borderEdges18.BottomRight = true;
+            borderEdges18.TopLeft = true;
+            borderEdges18.TopRight = true;
+            this.btnLogout.CustomizableEdges = borderEdges18;
             this.btnLogout.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnLogout.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnLogout.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.btnLogout.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnLogout.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnLogout.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.ButtonStates.Pressed;
             this.btnLogout.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.ForeColor = System.Drawing.Color.White;
@@ -1680,7 +1847,7 @@
             this.btnLogout.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btnLogout.IdleIconLeftImage")));
             this.btnLogout.IdleIconRightImage = null;
             this.btnLogout.IndicateFocus = false;
-            this.btnLogout.Location = new System.Drawing.Point(3, 571);
+            this.btnLogout.Location = new System.Drawing.Point(3, 643);
             this.btnLogout.Margin = new System.Windows.Forms.Padding(3, 0, 3, 1);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
@@ -1715,160 +1882,202 @@
             this.btnLogout.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnLogout.OnPressedState.IconLeftImage = null;
             this.btnLogout.OnPressedState.IconRightImage = null;
-            this.btnLogout.Size = new System.Drawing.Size(159, 40);
-            this.btnLogout.TabIndex = 11;
+            this.btnLogout.Size = new System.Drawing.Size(211, 40);
+            this.btnLogout.TabIndex = 15;
             this.btnLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLogout.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnLogout.TextMarginLeft = 0;
             this.btnLogout.TextPadding = new System.Windows.Forms.Padding(30, 0, 0, 0);
             this.btnLogout.UseDefaultRadiusAndThickness = true;
-            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click_1);
             // 
-            // pnMainView
+            // btnRevenueView
             // 
-            this.pnMainView.AllowDrop = true;
-            this.pnMainView.BackColor = System.Drawing.Color.White;
-            this.pnMainView.Controls.Add(this.bunifuCircleProgress2);
-            this.pnMainView.Controls.Add(this.bunifuLoader1);
-            this.pnMainView.Controls.Add(this.bunifuCircleProgress1);
-            this.pnMainView.Controls.Add(this.bunifuRating1);
-            this.pnMainView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnMainView.Location = new System.Drawing.Point(214, 55);
-            this.pnMainView.Name = "pnMainView";
-            this.pnMainView.Size = new System.Drawing.Size(630, 401);
-            this.pnMainView.TabIndex = 2;
+            this.btnRevenueView.AllowAnimations = true;
+            this.btnRevenueView.AllowMouseEffects = true;
+            this.btnRevenueView.AllowToggling = false;
+            this.btnRevenueView.AnimationSpeed = 200;
+            this.btnRevenueView.AutoGenerateColors = false;
+            this.btnRevenueView.AutoRoundBorders = false;
+            this.btnRevenueView.AutoSizeLeftIcon = true;
+            this.btnRevenueView.AutoSizeRightIcon = true;
+            this.btnRevenueView.BackColor = System.Drawing.Color.Transparent;
+            this.btnRevenueView.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(197)))), ((int)(((byte)(153)))));
+            this.btnRevenueView.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRevenueView.BackgroundImage")));
+            this.btnRevenueView.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnRevenueView.ButtonText = "Quản lí doanh thu";
+            this.btnRevenueView.ButtonTextMarginLeft = 0;
+            this.btnRevenueView.ColorContrastOnClick = 45;
+            this.btnRevenueView.ColorContrastOnHover = 45;
+            this.btnRevenueView.Cursor = System.Windows.Forms.Cursors.Hand;
+            borderEdges12.BottomLeft = true;
+            borderEdges12.BottomRight = true;
+            borderEdges12.TopLeft = true;
+            borderEdges12.TopRight = true;
+            this.btnRevenueView.CustomizableEdges = borderEdges12;
+            this.btnRevenueView.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnRevenueView.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnRevenueView.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnRevenueView.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnRevenueView.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnRevenueView.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.ButtonStates.Pressed;
+            this.btnRevenueView.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRevenueView.ForeColor = System.Drawing.Color.White;
+            this.btnRevenueView.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRevenueView.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.btnRevenueView.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.btnRevenueView.IconMarginLeft = 11;
+            this.btnRevenueView.IconPadding = 10;
+            this.btnRevenueView.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnRevenueView.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.btnRevenueView.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.btnRevenueView.IconSize = 25;
+            this.btnRevenueView.IdleBorderColor = System.Drawing.Color.Gray;
+            this.btnRevenueView.IdleBorderRadius = 1;
+            this.btnRevenueView.IdleBorderThickness = 1;
+            this.btnRevenueView.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(197)))), ((int)(((byte)(153)))));
+            this.btnRevenueView.IdleIconLeftImage = null;
+            this.btnRevenueView.IdleIconRightImage = null;
+            this.btnRevenueView.IndicateFocus = false;
+            this.btnRevenueView.Location = new System.Drawing.Point(0, 35);
+            this.btnRevenueView.Margin = new System.Windows.Forms.Padding(3, 0, 3, 1);
+            this.btnRevenueView.Name = "btnRevenueView";
+            this.btnRevenueView.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnRevenueView.OnDisabledState.BorderRadius = 1;
+            this.btnRevenueView.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnRevenueView.OnDisabledState.BorderThickness = 1;
+            this.btnRevenueView.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnRevenueView.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnRevenueView.OnDisabledState.IconLeftImage = null;
+            this.btnRevenueView.OnDisabledState.IconRightImage = null;
+            this.btnRevenueView.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btnRevenueView.onHoverState.BorderRadius = 1;
+            this.btnRevenueView.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnRevenueView.onHoverState.BorderThickness = 1;
+            this.btnRevenueView.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btnRevenueView.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.btnRevenueView.onHoverState.IconLeftImage = null;
+            this.btnRevenueView.onHoverState.IconRightImage = null;
+            this.btnRevenueView.OnIdleState.BorderColor = System.Drawing.Color.Gray;
+            this.btnRevenueView.OnIdleState.BorderRadius = 1;
+            this.btnRevenueView.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnRevenueView.OnIdleState.BorderThickness = 1;
+            this.btnRevenueView.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(197)))), ((int)(((byte)(153)))));
+            this.btnRevenueView.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.btnRevenueView.OnIdleState.IconLeftImage = null;
+            this.btnRevenueView.OnIdleState.IconRightImage = null;
+            this.btnRevenueView.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btnRevenueView.OnPressedState.BorderRadius = 1;
+            this.btnRevenueView.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnRevenueView.OnPressedState.BorderThickness = 1;
+            this.btnRevenueView.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btnRevenueView.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.btnRevenueView.OnPressedState.IconLeftImage = null;
+            this.btnRevenueView.OnPressedState.IconRightImage = null;
+            this.btnRevenueView.Size = new System.Drawing.Size(211, 35);
+            this.btnRevenueView.TabIndex = 3;
+            this.btnRevenueView.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRevenueView.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnRevenueView.TextMarginLeft = 0;
+            this.btnRevenueView.TextPadding = new System.Windows.Forms.Padding(50, 0, 0, 0);
+            this.btnRevenueView.UseDefaultRadiusAndThickness = true;
+            this.btnRevenueView.Click += new System.EventHandler(this.btnRevenueView_Click);
             // 
-            // bunifuCircleProgress2
+            // btnRevenueAdd
             // 
-            this.bunifuCircleProgress2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuCircleProgress2.Animated = true;
-            this.bunifuCircleProgress2.AnimationInterval = 1;
-            this.bunifuCircleProgress2.AnimationSpeed = 1;
-            this.bunifuCircleProgress2.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuCircleProgress2.CircleMargin = 10;
-            this.bunifuCircleProgress2.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold);
-            this.bunifuCircleProgress2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuCircleProgress2.IsPercentage = false;
-            this.bunifuCircleProgress2.LineProgressThickness = 10;
-            this.bunifuCircleProgress2.LineThickness = 10;
-            this.bunifuCircleProgress2.Location = new System.Drawing.Point(66, 79);
-            this.bunifuCircleProgress2.Name = "bunifuCircleProgress2";
-            this.bunifuCircleProgress2.ProgressAnimationSpeed = 500;
-            this.bunifuCircleProgress2.ProgressBackColor = System.Drawing.Color.Gainsboro;
-            this.bunifuCircleProgress2.ProgressColor = System.Drawing.Color.DodgerBlue;
-            this.bunifuCircleProgress2.ProgressColor2 = System.Drawing.Color.DodgerBlue;
-            this.bunifuCircleProgress2.ProgressEndCap = Bunifu.UI.WinForms.BunifuCircleProgress.CapStyles.Arrow;
-            this.bunifuCircleProgress2.ProgressFillStyle = Bunifu.UI.WinForms.BunifuCircleProgress.FillStyles.Solid;
-            this.bunifuCircleProgress2.ProgressStartCap = Bunifu.UI.WinForms.BunifuCircleProgress.CapStyles.Triangle;
-            this.bunifuCircleProgress2.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.bunifuCircleProgress2.Size = new System.Drawing.Size(184, 184);
-            this.bunifuCircleProgress2.SubScriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
-            this.bunifuCircleProgress2.SubScriptMargin = new System.Windows.Forms.Padding(5, -20, 0, 0);
-            this.bunifuCircleProgress2.SubScriptText = ".00";
-            this.bunifuCircleProgress2.SuperScriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
-            this.bunifuCircleProgress2.SuperScriptMargin = new System.Windows.Forms.Padding(5, 20, 0, 0);
-            this.bunifuCircleProgress2.SuperScriptText = "%";
-            this.bunifuCircleProgress2.TabIndex = 16;
-            this.bunifuCircleProgress2.Text = "30";
-            this.bunifuCircleProgress2.TextMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.bunifuCircleProgress2.Value = 30;
-            this.bunifuCircleProgress2.ValueByTransition = 30;
-            this.bunifuCircleProgress2.ValueMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            // 
-            // bunifuLoader1
-            // 
-            this.bunifuLoader1.AllowStylePresets = true;
-            this.bunifuLoader1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuLoader1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuLoader1.CapStyle = Bunifu.UI.WinForms.BunifuLoader.CapStyles.Round;
-            this.bunifuLoader1.Color = System.Drawing.Color.Gold;
-            this.bunifuLoader1.Colors = new Bunifu.UI.WinForms.Bloom[0];
-            this.bunifuLoader1.Customization = "";
-            this.bunifuLoader1.DashWidth = 0.5F;
-            this.bunifuLoader1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLoader1.Image = null;
-            this.bunifuLoader1.Location = new System.Drawing.Point(288, 21);
-            this.bunifuLoader1.Name = "bunifuLoader1";
-            this.bunifuLoader1.NoRounding = false;
-            this.bunifuLoader1.Preset = Bunifu.UI.WinForms.BunifuLoader.StylePresets.Solid;
-            this.bunifuLoader1.RingStyle = Bunifu.UI.WinForms.BunifuLoader.RingStyles.Solid;
-            this.bunifuLoader1.ShowText = false;
-            this.bunifuLoader1.Size = new System.Drawing.Size(61, 58);
-            this.bunifuLoader1.Speed = 7;
-            this.bunifuLoader1.TabIndex = 17;
-            this.bunifuLoader1.Text = "bunifuLoader1";
-            this.bunifuLoader1.TextPadding = new System.Windows.Forms.Padding(0);
-            this.bunifuLoader1.Thickness = 6;
-            this.bunifuLoader1.Transparent = true;
-            // 
-            // bunifuCircleProgress1
-            // 
-            this.bunifuCircleProgress1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuCircleProgress1.Animated = true;
-            this.bunifuCircleProgress1.AnimationInterval = 1;
-            this.bunifuCircleProgress1.AnimationSpeed = 1;
-            this.bunifuCircleProgress1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuCircleProgress1.CircleMargin = 10;
-            this.bunifuCircleProgress1.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Bold);
-            this.bunifuCircleProgress1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuCircleProgress1.IsPercentage = false;
-            this.bunifuCircleProgress1.LineProgressThickness = 10;
-            this.bunifuCircleProgress1.LineThickness = 10;
-            this.bunifuCircleProgress1.Location = new System.Drawing.Point(365, 79);
-            this.bunifuCircleProgress1.Name = "bunifuCircleProgress1";
-            this.bunifuCircleProgress1.ProgressAnimationSpeed = 300;
-            this.bunifuCircleProgress1.ProgressBackColor = System.Drawing.Color.Gainsboro;
-            this.bunifuCircleProgress1.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.bunifuCircleProgress1.ProgressColor2 = System.Drawing.Color.Fuchsia;
-            this.bunifuCircleProgress1.ProgressEndCap = Bunifu.UI.WinForms.BunifuCircleProgress.CapStyles.Arrow;
-            this.bunifuCircleProgress1.ProgressFillStyle = Bunifu.UI.WinForms.BunifuCircleProgress.FillStyles.Gradient;
-            this.bunifuCircleProgress1.ProgressStartCap = Bunifu.UI.WinForms.BunifuCircleProgress.CapStyles.Round;
-            this.bunifuCircleProgress1.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.bunifuCircleProgress1.Size = new System.Drawing.Size(184, 184);
-            this.bunifuCircleProgress1.SubScriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
-            this.bunifuCircleProgress1.SubScriptMargin = new System.Windows.Forms.Padding(5, -20, 0, 0);
-            this.bunifuCircleProgress1.SubScriptText = ".00";
-            this.bunifuCircleProgress1.SuperScriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
-            this.bunifuCircleProgress1.SuperScriptMargin = new System.Windows.Forms.Padding(5, 20, 0, 0);
-            this.bunifuCircleProgress1.SuperScriptText = "°C";
-            this.bunifuCircleProgress1.TabIndex = 16;
-            this.bunifuCircleProgress1.Text = "30";
-            this.bunifuCircleProgress1.TextMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.bunifuCircleProgress1.Value = 30;
-            this.bunifuCircleProgress1.ValueByTransition = 30;
-            this.bunifuCircleProgress1.ValueMargin = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            // 
-            // bunifuRating1
-            // 
-            this.bunifuRating1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.bunifuRating1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuRating1.DisabledEmptyFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
-            this.bunifuRating1.DisabledRatedFillColor = System.Drawing.Color.DarkGray;
-            this.bunifuRating1.EmptyBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
-            this.bunifuRating1.EmptyFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
-            this.bunifuRating1.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(217)))), ((int)(((byte)(20)))));
-            this.bunifuRating1.HoverFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(217)))), ((int)(((byte)(20)))));
-            this.bunifuRating1.InnerRadius = 2F;
-            this.bunifuRating1.Location = new System.Drawing.Point(259, 283);
-            this.bunifuRating1.Name = "bunifuRating1";
-            this.bunifuRating1.OuterRadius = 10F;
-            this.bunifuRating1.RatedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(217)))), ((int)(((byte)(20)))));
-            this.bunifuRating1.RatedFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(217)))), ((int)(((byte)(20)))));
-            this.bunifuRating1.ReadOnly = false;
-            this.bunifuRating1.RightClickToClear = true;
-            this.bunifuRating1.Size = new System.Drawing.Size(121, 22);
-            this.bunifuRating1.TabIndex = 2;
-            this.bunifuRating1.Text = "bunifuRating1";
-            this.bunifuRating1.Value = 3;
-            // 
-            // bunifuElipse1
-            // 
-            this.bunifuElipse1.ElipseRadius = 0;
-            this.bunifuElipse1.TargetControl = this;
+            this.btnRevenueAdd.AllowAnimations = true;
+            this.btnRevenueAdd.AllowMouseEffects = true;
+            this.btnRevenueAdd.AllowToggling = false;
+            this.btnRevenueAdd.AnimationSpeed = 200;
+            this.btnRevenueAdd.AutoGenerateColors = false;
+            this.btnRevenueAdd.AutoRoundBorders = false;
+            this.btnRevenueAdd.AutoSizeLeftIcon = true;
+            this.btnRevenueAdd.AutoSizeRightIcon = true;
+            this.btnRevenueAdd.BackColor = System.Drawing.Color.Transparent;
+            this.btnRevenueAdd.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(197)))), ((int)(((byte)(153)))));
+            this.btnRevenueAdd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRevenueAdd.BackgroundImage")));
+            this.btnRevenueAdd.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnRevenueAdd.ButtonText = "Thêm doanh thu";
+            this.btnRevenueAdd.ButtonTextMarginLeft = 0;
+            this.btnRevenueAdd.ColorContrastOnClick = 45;
+            this.btnRevenueAdd.ColorContrastOnHover = 45;
+            this.btnRevenueAdd.Cursor = System.Windows.Forms.Cursors.Hand;
+            borderEdges13.BottomLeft = true;
+            borderEdges13.BottomRight = true;
+            borderEdges13.TopLeft = true;
+            borderEdges13.TopRight = true;
+            this.btnRevenueAdd.CustomizableEdges = borderEdges13;
+            this.btnRevenueAdd.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnRevenueAdd.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnRevenueAdd.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnRevenueAdd.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnRevenueAdd.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnRevenueAdd.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.ButtonStates.Pressed;
+            this.btnRevenueAdd.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRevenueAdd.ForeColor = System.Drawing.Color.White;
+            this.btnRevenueAdd.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRevenueAdd.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.btnRevenueAdd.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.btnRevenueAdd.IconMarginLeft = 11;
+            this.btnRevenueAdd.IconPadding = 10;
+            this.btnRevenueAdd.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnRevenueAdd.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.btnRevenueAdd.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.btnRevenueAdd.IconSize = 25;
+            this.btnRevenueAdd.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(197)))), ((int)(((byte)(153)))));
+            this.btnRevenueAdd.IdleBorderRadius = 1;
+            this.btnRevenueAdd.IdleBorderThickness = 1;
+            this.btnRevenueAdd.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(197)))), ((int)(((byte)(153)))));
+            this.btnRevenueAdd.IdleIconLeftImage = null;
+            this.btnRevenueAdd.IdleIconRightImage = null;
+            this.btnRevenueAdd.IndicateFocus = false;
+            this.btnRevenueAdd.Location = new System.Drawing.Point(0, 0);
+            this.btnRevenueAdd.Margin = new System.Windows.Forms.Padding(3, 0, 3, 1);
+            this.btnRevenueAdd.Name = "btnRevenueAdd";
+            this.btnRevenueAdd.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnRevenueAdd.OnDisabledState.BorderRadius = 1;
+            this.btnRevenueAdd.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnRevenueAdd.OnDisabledState.BorderThickness = 1;
+            this.btnRevenueAdd.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnRevenueAdd.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnRevenueAdd.OnDisabledState.IconLeftImage = null;
+            this.btnRevenueAdd.OnDisabledState.IconRightImage = null;
+            this.btnRevenueAdd.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btnRevenueAdd.onHoverState.BorderRadius = 1;
+            this.btnRevenueAdd.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnRevenueAdd.onHoverState.BorderThickness = 1;
+            this.btnRevenueAdd.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btnRevenueAdd.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.btnRevenueAdd.onHoverState.IconLeftImage = null;
+            this.btnRevenueAdd.onHoverState.IconRightImage = null;
+            this.btnRevenueAdd.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(197)))), ((int)(((byte)(153)))));
+            this.btnRevenueAdd.OnIdleState.BorderRadius = 1;
+            this.btnRevenueAdd.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnRevenueAdd.OnIdleState.BorderThickness = 1;
+            this.btnRevenueAdd.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(197)))), ((int)(((byte)(153)))));
+            this.btnRevenueAdd.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.btnRevenueAdd.OnIdleState.IconLeftImage = null;
+            this.btnRevenueAdd.OnIdleState.IconRightImage = null;
+            this.btnRevenueAdd.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btnRevenueAdd.OnPressedState.BorderRadius = 1;
+            this.btnRevenueAdd.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
+            this.btnRevenueAdd.OnPressedState.BorderThickness = 1;
+            this.btnRevenueAdd.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btnRevenueAdd.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.btnRevenueAdd.OnPressedState.IconLeftImage = null;
+            this.btnRevenueAdd.OnPressedState.IconRightImage = null;
+            this.btnRevenueAdd.Size = new System.Drawing.Size(211, 35);
+            this.btnRevenueAdd.TabIndex = 2;
+            this.btnRevenueAdd.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRevenueAdd.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnRevenueAdd.TextMarginLeft = 0;
+            this.btnRevenueAdd.TextPadding = new System.Windows.Forms.Padding(50, 0, 0, 0);
+            this.btnRevenueAdd.UseDefaultRadiusAndThickness = true;
+            this.btnRevenueAdd.Click += new System.EventHandler(this.btnRevenueAdd_Click);
             // 
             // frmHome
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(51)))), ((int)(((byte)(130)))));
             this.ClientSize = new System.Drawing.Size(849, 461);
@@ -1885,7 +2094,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Trang chủ";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            //this.Load += new System.EventHandler(this.frmHome_Load);
             this.pnHeader.ResumeLayout(false);
             this.pnHeader.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).EndInit();
@@ -1894,8 +2102,9 @@
             this.pnTableSubMenu.ResumeLayout(false);
             this.pnFoodSubMenu.ResumeLayout(false);
             this.pnWarhourseSubMenu.ResumeLayout(false);
-            this.pnStaffSubMenu.ResumeLayout(false);
             this.pnMainView.ResumeLayout(false);
+            this.pnRevenueSubMenu.ResumeLayout(false);
+            this.pnStaffSubMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1904,7 +2113,6 @@
 
         private System.Windows.Forms.Panel pnHeader;
         private System.Windows.Forms.FlowLayoutPanel pnSideBar;
-        private System.Windows.Forms.Panel pnMainView;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox2;
         private Bunifu.UI.WinForms.BunifuLabel AppName;
@@ -1923,16 +2131,20 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnWarhourseView;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnWarhourseAdd;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnRevenueMngt;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnAddCate;
+        private System.Windows.Forms.Panel pnMainView;
+        private Bunifu.UI.WinForms.BunifuCircleProgress bunifuCircleProgress2;
+        private Bunifu.UI.WinForms.BunifuLoader bunifuLoader1;
+        private Bunifu.UI.WinForms.BunifuCircleProgress bunifuCircleProgress1;
+        private Bunifu.UI.WinForms.BunifuRating bunifuRating1;
+        private Bunifu.UI.WinForms.BunifuPanel pnRevenueSubMenu;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnRevenueView;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnRevenueAdd;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnBillMngt;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnStaffMngt;
         private Bunifu.UI.WinForms.BunifuPanel pnStaffSubMenu;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnStaffView;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnStaffAdd;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnLogout;
-        private Bunifu.UI.WinForms.BunifuCircleProgress bunifuCircleProgress1;
-        private Bunifu.UI.WinForms.BunifuRating bunifuRating1;
-        private Bunifu.UI.WinForms.BunifuLoader bunifuLoader1;
-        private Bunifu.UI.WinForms.BunifuCircleProgress bunifuCircleProgress2;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnAddCate;
     }
 }

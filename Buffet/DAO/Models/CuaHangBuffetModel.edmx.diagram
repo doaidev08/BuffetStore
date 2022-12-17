@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="95273c5743104026bf8e04afea784e8f" Name="Diagram1">
+        <EntityTypeShape EntityType="CuaHangBuffetModel.BANAN" Width="1.5" PointX="3.75" PointY="19" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuaHangBuffetModel.CHITIETHOADON" Width="1.5" PointX="8.25" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuaHangBuffetModel.DANHMUCDOUONG" Width="1.5" PointX="3.75" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuaHangBuffetModel.DANHMUCMONAN" Width="1.5" PointX="5.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuaHangBuffetModel.DOANHTHU" Width="1.5" PointX="3" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuaHangBuffetModel.DOUONG" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuaHangBuffetModel.HOADON" Width="1.5" PointX="6" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuaHangBuffetModel.KHO" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuaHangBuffetModel.LOAISANPHAMKHO" Width="1.5" PointX="0.75" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuaHangBuffetModel.MONAN" Width="1.5" PointX="8" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuaHangBuffetModel.NHANVIEN" Width="1.5" PointX="0.75" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuaHangBuffetModel.PHANQUYEN" Width="1.5" PointX="0.75" PointY="17.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuaHangBuffetModel.QUANTRIVIEN" Width="1.5" PointX="0.75" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuaHangBuffetModel.SANPHAMKHO" Width="1.5" PointX="3" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuaHangBuffetModel.TAIKHOAN" Width="1.5" PointX="3" PointY="14.75" IsExpanded="true" />
+        <AssociationConnector Association="CuaHangBuffetModel.FK__HOADON__MaBanAn__5165187F" ManuallyRouted="false" />
+        <AssociationConnector Association="CuaHangBuffetModel.FK__CHITIETHO__MaDoU__571DF1D5" ManuallyRouted="false" />
+        <AssociationConnector Association="CuaHangBuffetModel.FK__CHITIETHO__MaHoa__5812160E" ManuallyRouted="false" />
+        <AssociationConnector Association="CuaHangBuffetModel.FK__DOUONG__MaDanhMu__45F365D3" ManuallyRouted="false" />
+        <AssociationConnector Association="CuaHangBuffetModel.FK__MONAN__MaDanhMuc__3D5E1FD2" ManuallyRouted="false" />
+        <AssociationConnector Association="CuaHangBuffetModel.FK__DOANHTHU__MaHoaD__5AEE82B9" ManuallyRouted="false" />
+        <AssociationConnector Association="CuaHangBuffetModel.FK__DOANHTHU__MaNhan__5BE2A6F2" ManuallyRouted="false" />
+        <AssociationConnector Association="CuaHangBuffetModel.FK__HOADON__MaNhanVi__52593CB8" ManuallyRouted="false" />
+        <AssociationConnector Association="CuaHangBuffetModel.FK__SANPHAMKH__MaKho__35BCFE0A" ManuallyRouted="false" />
+        <AssociationConnector Association="CuaHangBuffetModel.FK__SANPHAMKH__MaLoa__34C8D9D1" ManuallyRouted="false" />
+        <AssociationConnector Association="CuaHangBuffetModel.FK__SANPHAMKH__MaNha__37A5467C" ManuallyRouted="false" />
+        <AssociationConnector Association="CuaHangBuffetModel.FK__TAIKHOAN__MaNhan__2C3393D0" ManuallyRouted="false" />
+        <AssociationConnector Association="CuaHangBuffetModel.FK__TAIKHOAN__MaPhan__2D27B809" ManuallyRouted="false" />
+        <AssociationConnector Association="CuaHangBuffetModel.FK__SANPHAMKH__MaQua__36B12243" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

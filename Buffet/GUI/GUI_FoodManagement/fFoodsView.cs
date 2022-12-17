@@ -78,7 +78,6 @@ namespace Buffet.GUI.GUI_FoodManagement
 
         private void btnAddFood_Click(object sender, EventArgs e)
         {
-            int foodID = Convert.ToInt32(tableMainDish.SelectedCells[0].OwningRow.Cells["MaMonAn"].Value.ToString());
             updateDB(txbFoodName.Text != "", busFoodManagement.BUS_addFood( txbFoodName, selectFoodCate, txbFoodCount));
         }
 
@@ -99,7 +98,7 @@ namespace Buffet.GUI.GUI_FoodManagement
                     thongBao.HienThiThongBao(
                         this,
                         bunifuSnackbar1,
-                        "Ngon, Thành công rồi đó!",
+                        "Thành công!",
                         "Success"
                     );
 

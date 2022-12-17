@@ -23,7 +23,7 @@ namespace Buffet.DAO.Models
         public int MaBanAn { get; set; }
         public string TenBanAn { get; set; }
         public int SucChua { get; set; }
-        public bool TinhTrangBanAn { get; set; }
+        public Nullable<bool> TinhTrangBanAn { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<HOADON> HOADONs { get; set; }
