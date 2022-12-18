@@ -35,7 +35,7 @@ namespace Buffet.DAO.Models
         public Nullable<decimal> SoTienNhan { get; set; }
         public Nullable<decimal> SoTienTraKhach { get; set; }
         public Nullable<System.DateTime> ThoiGianHoaDon { get; set; }
-        public bool TinhTrangHoaDon { get; set; }
+        public Nullable<bool> TinhTrangHoaDon { get; set; }
         public Nullable<int> MaBanAn { get; set; }
         public Nullable<int> MaNhanVien { get; set; }
     

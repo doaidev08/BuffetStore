@@ -326,9 +326,6 @@
     <Compile Include="DAO\Models\HOADON.cs">
       <DependentUpon>CuaHangBuffetModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="DAO\Models\KHO.cs">
-      <DependentUpon>CuaHangBuffetModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="DAO\Models\LOAISANPHAMKHO.cs">
       <DependentUpon>CuaHangBuffetModel.tt</DependentUpon>
     </Compile>

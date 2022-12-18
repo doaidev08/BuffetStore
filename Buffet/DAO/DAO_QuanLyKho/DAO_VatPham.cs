@@ -36,12 +36,13 @@ namespace Buffet.DAO.DAO_QuanLyKho
             {
                 foreach (var eve in e.EntityValidationErrors)
                 {
-                    Console.WriteLine("Entity of type \"{0}\" in state \"{1}\" has the following validation errors:",
-                        eve.Entry.Entity.GetType().Name, eve.Entry.State);
+                    /*MessageBox.Show(eve.Entry.Entity.GetType().Name);
+                    MessageBox.Show(eve.Entry.State.ToString());*/
                     foreach (var ve in eve.ValidationErrors)
                     {
-                        Console.WriteLine("- Property: \"{0}\", Error: \"{1}\"",
-                            ve.PropertyName, ve.ErrorMessage);
+                        MessageBox.Show(ve.PropertyName);
+                        MessageBox.Show(eve.Entry.CurrentValues.GetValue<object>(ve.PropertyName).ToString());
+                        MessageBox.Show(ve.ErrorMessage);
                     }
                 }
             }

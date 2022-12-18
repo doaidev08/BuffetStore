@@ -86,14 +86,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="KHOes">
-      <EntityTypeMapping TypeName="CuaHangBuffetModel.KHO">
-        <MappingFragment StoreEntitySet="KHO">
-          <ScalarProperty Name="MaKho" ColumnName="MaKho" />
-          <ScalarProperty Name="TenKho" ColumnName="TenKho" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="LOAISANPHAMKHOes">
       <EntityTypeMapping TypeName="CuaHangBuffetModel.LOAISANPHAMKHO">
         <MappingFragment StoreEntitySet="LOAISANPHAMKHO">

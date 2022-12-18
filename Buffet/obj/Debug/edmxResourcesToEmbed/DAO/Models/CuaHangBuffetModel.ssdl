@@ -78,13 +78,6 @@
     <Property Name="MaBanAn" Type="int" />
     <Property Name="MaNhanVien" Type="int" />
   </EntityType>
-  <EntityType Name="KHO">
-    <Key>
-      <PropertyRef Name="MaKho" />
-    </Key>
-    <Property Name="MaKho" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="TenKho" Type="nvarchar" MaxLength="255" Nullable="false" />
-  </EntityType>
   <EntityType Name="LOAISANPHAMKHO">
     <Key>
       <PropertyRef Name="MaLoaiSanPhamKho" />
@@ -252,18 +245,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__SANPHAMKH__MaKho__35BCFE0A">
-    <End Role="KHO" Type="Self.KHO" Multiplicity="0..1" />
-    <End Role="SANPHAMKHO" Type="Self.SANPHAMKHO" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="KHO">
-        <PropertyRef Name="MaKho" />
-      </Principal>
-      <Dependent Role="SANPHAMKHO">
-        <PropertyRef Name="MaKho" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="FK__SANPHAMKH__MaLoa__34C8D9D1">
     <End Role="LOAISANPHAMKHO" Type="Self.LOAISANPHAMKHO" Multiplicity="0..1" />
     <End Role="SANPHAMKHO" Type="Self.SANPHAMKHO" Multiplicity="*" />
@@ -332,7 +313,6 @@
     <EntitySet Name="DOANHTHU" EntityType="Self.DOANHTHU" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="DOUONG" EntityType="Self.DOUONG" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="HOADON" EntityType="Self.HOADON" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="KHO" EntityType="Self.KHO" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="LOAISANPHAMKHO" EntityType="Self.LOAISANPHAMKHO" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="MONAN" EntityType="Self.MONAN" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="NHANVIEN" EntityType="Self.NHANVIEN" Schema="dbo" store:Type="Tables" />
@@ -371,10 +351,6 @@
     <AssociationSet Name="FK__MONAN__MaDanhMuc__3D5E1FD2" Association="Self.FK__MONAN__MaDanhMuc__3D5E1FD2">
       <End Role="DANHMUCMONAN" EntitySet="DANHMUCMONAN" />
       <End Role="MONAN" EntitySet="MONAN" />
-    </AssociationSet>
-    <AssociationSet Name="FK__SANPHAMKH__MaKho__35BCFE0A" Association="Self.FK__SANPHAMKH__MaKho__35BCFE0A">
-      <End Role="KHO" EntitySet="KHO" />
-      <End Role="SANPHAMKHO" EntitySet="SANPHAMKHO" />
     </AssociationSet>
     <AssociationSet Name="FK__SANPHAMKH__MaLoa__34C8D9D1" Association="Self.FK__SANPHAMKH__MaLoa__34C8D9D1">
       <End Role="LOAISANPHAMKHO" EntitySet="LOAISANPHAMKHO" />

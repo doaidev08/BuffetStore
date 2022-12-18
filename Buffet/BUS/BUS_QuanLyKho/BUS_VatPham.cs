@@ -35,7 +35,8 @@ namespace Buffet.BUS.BUS_QuanLyKho
             SANPHAMKHO spKho = new SANPHAMKHO()
             {
                 TenSanPhamKho = name.Text,
-                MaSanPhamKho = int.Parse(loaiVP.SelectedValue.ToString()),
+                MaLoaiSanPhamKho= int.Parse(loaiVP.SelectedValue.ToString()),
+                LoaiSanPhamKho= loaiVP.SelectedText,
                 SoLuong = Convert.ToInt32(count.Value)
             };
             daoVatPham.AddVatPham(spKho);

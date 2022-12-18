@@ -28,7 +28,6 @@ namespace Buffet.DAO.Models
         public Nullable<int> MaQuanTriVien { get; set; }
         public Nullable<int> MaNhanVien { get; set; }
     
-        public virtual KHO KHO1 { get; set; }
         public virtual LOAISANPHAMKHO LOAISANPHAMKHO1 { get; set; }
         public virtual NHANVIEN NHANVIEN { get; set; }
         public virtual QUANTRIVIEN QUANTRIVIEN { get; set; }

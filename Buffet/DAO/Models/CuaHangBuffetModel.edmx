@@ -83,13 +83,6 @@
           <Property Name="MaBanAn" Type="int" />
           <Property Name="MaNhanVien" Type="int" />
         </EntityType>
-        <EntityType Name="KHO">
-          <Key>
-            <PropertyRef Name="MaKho" />
-          </Key>
-          <Property Name="MaKho" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="TenKho" Type="nvarchar" MaxLength="255" Nullable="false" />
-        </EntityType>
         <EntityType Name="LOAISANPHAMKHO">
           <Key>
             <PropertyRef Name="MaLoaiSanPhamKho" />
@@ -257,18 +250,6 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__SANPHAMKH__MaKho__35BCFE0A">
-          <End Role="KHO" Type="Self.KHO" Multiplicity="0..1" />
-          <End Role="SANPHAMKHO" Type="Self.SANPHAMKHO" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="KHO">
-              <PropertyRef Name="MaKho" />
-            </Principal>
-            <Dependent Role="SANPHAMKHO">
-              <PropertyRef Name="MaKho" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK__SANPHAMKH__MaLoa__34C8D9D1">
           <End Role="LOAISANPHAMKHO" Type="Self.LOAISANPHAMKHO" Multiplicity="0..1" />
           <End Role="SANPHAMKHO" Type="Self.SANPHAMKHO" Multiplicity="*" />
@@ -337,7 +318,6 @@
           <EntitySet Name="DOANHTHU" EntityType="Self.DOANHTHU" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="DOUONG" EntityType="Self.DOUONG" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="HOADON" EntityType="Self.HOADON" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="KHO" EntityType="Self.KHO" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="LOAISANPHAMKHO" EntityType="Self.LOAISANPHAMKHO" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="MONAN" EntityType="Self.MONAN" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="NHANVIEN" EntityType="Self.NHANVIEN" Schema="dbo" store:Type="Tables" />
@@ -376,10 +356,6 @@
           <AssociationSet Name="FK__MONAN__MaDanhMuc__3D5E1FD2" Association="Self.FK__MONAN__MaDanhMuc__3D5E1FD2">
             <End Role="DANHMUCMONAN" EntitySet="DANHMUCMONAN" />
             <End Role="MONAN" EntitySet="MONAN" />
-          </AssociationSet>
-          <AssociationSet Name="FK__SANPHAMKH__MaKho__35BCFE0A" Association="Self.FK__SANPHAMKH__MaKho__35BCFE0A">
-            <End Role="KHO" EntitySet="KHO" />
-            <End Role="SANPHAMKHO" EntitySet="SANPHAMKHO" />
           </AssociationSet>
           <AssociationSet Name="FK__SANPHAMKH__MaLoa__34C8D9D1" Association="Self.FK__SANPHAMKH__MaLoa__34C8D9D1">
             <End Role="LOAISANPHAMKHO" EntitySet="LOAISANPHAMKHO" />
@@ -498,14 +474,6 @@
           <NavigationProperty Name="DOANHTHUs" Relationship="Self.FK__DOANHTHU__MaHoaD__5AEE82B9" FromRole="HOADON" ToRole="DOANHTHU" />
           <NavigationProperty Name="NHANVIEN" Relationship="Self.FK__HOADON__MaNhanVi__52593CB8" FromRole="HOADON" ToRole="NHANVIEN" />
         </EntityType>
-        <EntityType Name="KHO">
-          <Key>
-            <PropertyRef Name="MaKho" />
-          </Key>
-          <Property Name="MaKho" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="TenKho" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
-          <NavigationProperty Name="SANPHAMKHOes" Relationship="Self.FK__SANPHAMKH__MaKho__35BCFE0A" FromRole="KHO" ToRole="SANPHAMKHO" />
-        </EntityType>
         <EntityType Name="LOAISANPHAMKHO">
           <Key>
             <PropertyRef Name="MaLoaiSanPhamKho" />
@@ -573,7 +541,6 @@
           <Property Name="MaLoaiSanPhamKho" Type="Int32" />
           <Property Name="MaQuanTriVien" Type="Int32" />
           <Property Name="MaNhanVien" Type="Int32" />
-          <NavigationProperty Name="KHO1" Relationship="Self.FK__SANPHAMKH__MaKho__35BCFE0A" FromRole="SANPHAMKHO" ToRole="KHO" />
           <NavigationProperty Name="LOAISANPHAMKHO1" Relationship="Self.FK__SANPHAMKH__MaLoa__34C8D9D1" FromRole="SANPHAMKHO" ToRole="LOAISANPHAMKHO" />
           <NavigationProperty Name="NHANVIEN" Relationship="Self.FK__SANPHAMKH__MaNha__37A5467C" FromRole="SANPHAMKHO" ToRole="NHANVIEN" />
           <NavigationProperty Name="QUANTRIVIEN" Relationship="Self.FK__SANPHAMKH__MaQua__36B12243" FromRole="SANPHAMKHO" ToRole="QUANTRIVIEN" />
@@ -687,18 +654,6 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__SANPHAMKH__MaKho__35BCFE0A">
-          <End Role="KHO" Type="Self.KHO" Multiplicity="0..1" />
-          <End Role="SANPHAMKHO" Type="Self.SANPHAMKHO" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="KHO">
-              <PropertyRef Name="MaKho" />
-            </Principal>
-            <Dependent Role="SANPHAMKHO">
-              <PropertyRef Name="MaKho" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK__SANPHAMKH__MaLoa__34C8D9D1">
           <End Role="LOAISANPHAMKHO" Type="Self.LOAISANPHAMKHO" Multiplicity="0..1" />
           <End Role="SANPHAMKHO" Type="Self.SANPHAMKHO" Multiplicity="*" />
@@ -767,7 +722,6 @@
           <EntitySet Name="DOANHTHUs" EntityType="Self.DOANHTHU" />
           <EntitySet Name="DOUONGs" EntityType="Self.DOUONG" />
           <EntitySet Name="HOADONs" EntityType="Self.HOADON" />
-          <EntitySet Name="KHOes" EntityType="Self.KHO" />
           <EntitySet Name="LOAISANPHAMKHOes" EntityType="Self.LOAISANPHAMKHO" />
           <EntitySet Name="MONANs" EntityType="Self.MONAN" />
           <EntitySet Name="NHANVIENs" EntityType="Self.NHANVIEN" />
@@ -806,10 +760,6 @@
           <AssociationSet Name="FK__HOADON__MaNhanVi__52593CB8" Association="Self.FK__HOADON__MaNhanVi__52593CB8">
             <End Role="NHANVIEN" EntitySet="NHANVIENs" />
             <End Role="HOADON" EntitySet="HOADONs" />
-          </AssociationSet>
-          <AssociationSet Name="FK__SANPHAMKH__MaKho__35BCFE0A" Association="Self.FK__SANPHAMKH__MaKho__35BCFE0A">
-            <End Role="KHO" EntitySet="KHOes" />
-            <End Role="SANPHAMKHO" EntitySet="SANPHAMKHOes" />
           </AssociationSet>
           <AssociationSet Name="FK__SANPHAMKH__MaLoa__34C8D9D1" Association="Self.FK__SANPHAMKH__MaLoa__34C8D9D1">
             <End Role="LOAISANPHAMKHO" EntitySet="LOAISANPHAMKHOes" />
@@ -920,14 +870,6 @@
                 <ScalarProperty Name="TinhTrangHoaDon" ColumnName="TinhTrangHoaDon" />
                 <ScalarProperty Name="MaBanAn" ColumnName="MaBanAn" />
                 <ScalarProperty Name="MaNhanVien" ColumnName="MaNhanVien" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="KHOes">
-            <EntityTypeMapping TypeName="CuaHangBuffetModel.KHO">
-              <MappingFragment StoreEntitySet="KHO">
-                <ScalarProperty Name="MaKho" ColumnName="MaKho" />
-                <ScalarProperty Name="TenKho" ColumnName="TenKho" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
