@@ -12,6 +12,7 @@ using System.Windows.Forms;
 using Buffet.GUI.GUI_DangNhap;
 using Buffet.Helper;
 using Bunifu.UI.WinForms;
+using Bunifu.UI.WinForms.BunifuAnimatorNS;
 
 namespace Buffet
 {
@@ -19,13 +20,17 @@ namespace Buffet
     {
         ThongBao thongBao = new ThongBao();
         BunifuSnackbar snack = new BunifuSnackbar();
+        //BunifuAnimatorNS bunifuTransition1 = new BunifuAnimatorNS();
         public frmHome()
         {
+            
             InitializeComponent();
             hideSubMenu();
             this.FormBorderStyle = FormBorderStyle.Sizable;
             UserName.Text = Properties.Settings.Default.tennguoidung;
         }
+
+        
 
         public void hideSubMenu()
         {
@@ -73,6 +78,7 @@ namespace Buffet
         #endregion
 
         private Form activeForm = null;
+
         private void openChildForm(Form childForm)
         {
             if (activeForm != null) activeForm.Close();
@@ -203,6 +209,16 @@ namespace Buffet
             this.Hide();
             formDN.Show();
         }
+
         #endregion
+
+        private async void frmHome_Load(object sender, EventArgs e)
+        {
+            await Task.Delay(500);
+            bunifuTransition1.ShowSync(bunifuCards1, false, Animation.Mosaic);
+            bunifuTransition1.ShowSync(bunifuCards2, false, Animation.Mosaic);
+            bunifuTransition1.ShowSync(bunifuCards3, false, Animation.Mosaic);
+            bunifuTransition1.ShowSync(bunifuCards4, false, Animation.Mosaic);
+        }
     }
 }
