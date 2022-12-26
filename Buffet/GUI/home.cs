@@ -95,7 +95,15 @@ namespace Buffet
         #region Food management 
         private void btnFoodMngt_Click(object sender, EventArgs e)
         {
-            toggleSubMenu(pnFoodSubMenu);
+            hideSubMenu();
+            if (Properties.Settings.Default.phanquyen == 4 || Properties.Settings.Default.phanquyen == 3)
+            {
+                toggleSubMenu(pnFoodSubMenu);
+            }
+            else
+            {
+                thongBao.HienThiThongBao(this, snack, "Bạn không có quyền truy cập vào mục này", "Warning");
+            }
         }
 
         private void btnFoodAdd_Click(object sender, EventArgs e)
@@ -158,8 +166,16 @@ namespace Buffet
         #region Bill Management
         private void btnBillMngt_Click_1(object sender, EventArgs e)
         {
+            if (Properties.Settings.Default.phanquyen == 4 || Properties.Settings.Default.phanquyen == 1)
+            {
+                openChildForm(new Buffet.GUI.GUI_QuanLyHoaDon.GUI_ThanhToanHoaDon());
+            }
+            else
+            {
+                thongBao.HienThiThongBao(this, snack, "Bạn không có quyền truy cập vào mục này", "Warning");
+            }
+
             hideSubMenu();
-            openChildForm(new Buffet.GUI.GUI_QuanLyHoaDon.GUI_ThanhToanHoaDon());
         }
         #endregion
 

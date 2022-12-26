@@ -28,6 +28,11 @@ namespace Buffet.DAO.DAO_QLiNhanVien
             
 
         }
+        public int GetIdStaff(string hoten , string sdt)
+        {
+            var query = from c in databaseOrigin.database.NHANVIENs.Where(x => x.HoTenNhanVien == hoten && x.DienThoai == sdt) select c;
+            return query.First().MaNhanVien;
+        }
         public bool AddStaff (string tenNV ,DateTime ngaySinh , int cccd , string sdt)
         {
             var query = from c in databaseOrigin.database.NHANVIENs.Where(x => x.SoCCCDNhanVien == cccd || x.DienThoai == sdt) select c;
@@ -43,9 +48,11 @@ namespace Buffet.DAO.DAO_QLiNhanVien
                 nvNew.SoCCCDNhanVien = cccd;
                 nvNew.DienThoai = sdt;
                 databaseOrigin.database.NHANVIENs.Add(nvNew);
-                 int recordNUmber =  databaseOrigin.database.SaveChanges();
-                return recordNUmber == 1 ? true :false;
+               int recordNumber =  databaseOrigin.database.SaveChanges();
+                return recordNumber == 1 ? true : false;
+
             }
+            
         }
         public dynamic UpdateStaff(int maNV,string tenNV, DateTime ngaySinh, int cccd, string sdt)
         {

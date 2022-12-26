@@ -4,12 +4,6 @@ GO
 USE CuaHangBuffet;
 GO
 
-CREATE TABLE QUANTRIVIEN(
-    MaQuanTriVien INT PRIMARY KEY NOT NULL IDENTITY,
-	TenTruyCapQTV VARCHAR(10) NOT NULL,
-	MatKhau VARCHAR(50) NOT NULL
-);
-GO
 
 CREATE TABLE NHANVIEN (
     MaNhanVien INT PRIMARY KEY NOT NULL IDENTITY,
@@ -155,15 +149,6 @@ CREATE TABLE DOANHTHU (
 );
 GO
 
-
--- Thêm dữ liệu QUẢN TRỊ VIÊN 
-INSERT INTO QUANTRIVIEN(
-	TenTruyCapQTV,
-	MatKhau
-)VALUES(
-	'admin',
-	'admin'
-);
 
 -- Thêm dữ liệu PHÂN QUYỀN
 INSERT INTO PHANQUYEN(
@@ -529,29 +514,5 @@ VALUES(
 	10000,
 	500,
 	1
-);
-
-
--- Thêm dữ liệu KHO
-INSERT INTO KHO(
-	TenKho
-)
-VALUES(
-	N'Kho Số 1'
-);
-
--- Thêm dữ liệu LOAISANPHAMKHO
-INSERT INTO LOAISANPHAMKHO(
-	TenLoaiSanPhamKho
-)
-VALUES(
-	N'Nguyên liệu'
-);
-
-INSERT INTO LOAISANPHAMKHO(
-	TenLoaiSanPhamKho
-)
-VALUES(
-	N'Vật tư'
 );
 

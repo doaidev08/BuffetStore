@@ -16,7 +16,7 @@ namespace Buffet.DAO.DAO_ThemTaiKhoan
         public dynamic getDataAddRole()
         {
             // lay vai tro phan quyen
-            var queryRole = from c in databaseOrigin.database.PHANQUYENs.OrderBy(x => x.VaiTroPhanQuyen) select c.VaiTroPhanQuyen;
+            var queryRole = from c in databaseOrigin.database.PHANQUYENs.OrderBy(x => x.VaiTroPhanQuyen) select c;
        
 
             return queryRole.ToList();
@@ -25,7 +25,7 @@ namespace Buffet.DAO.DAO_ThemTaiKhoan
         {
           
             // lay ma nhan vien
-            var queryStaff = from c in databaseOrigin.database.NHANVIENs.OrderBy(x => x.MaNhanVien) select c.MaNhanVien;
+            var queryStaff = from c in databaseOrigin.database.NHANVIENs.OrderBy(x => x.MaNhanVien) select c;
 
             return queryStaff.ToList();
         }
