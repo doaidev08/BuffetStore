@@ -16,20 +16,16 @@ namespace Buffet.DAO.Models
     {
         public int MaSanPhamKho { get; set; }
         public string TenSanPhamKho { get; set; }
-        public string Kho { get; set; }
         public string LoaiSanPhamKho { get; set; }
         public string DonViTinh { get; set; }
         public int SoLuong { get; set; }
         public string NguoiNhapKho { get; set; }
         public string NguoiCapNhat { get; set; }
         public Nullable<bool> TinhTrangSpKho { get; set; }
-        public Nullable<int> MaKho { get; set; }
         public Nullable<int> MaLoaiSanPhamKho { get; set; }
-        public Nullable<int> MaQuanTriVien { get; set; }
         public Nullable<int> MaNhanVien { get; set; }
     
         public virtual LOAISANPHAMKHO LOAISANPHAMKHO1 { get; set; }
         public virtual NHANVIEN NHANVIEN { get; set; }
-        public virtual QUANTRIVIEN QUANTRIVIEN { get; set; }
     }
 }

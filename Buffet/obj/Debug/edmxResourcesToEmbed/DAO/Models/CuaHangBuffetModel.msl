@@ -124,30 +124,18 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="QUANTRIVIENs">
-      <EntityTypeMapping TypeName="CuaHangBuffetModel.QUANTRIVIEN">
-        <MappingFragment StoreEntitySet="QUANTRIVIEN">
-          <ScalarProperty Name="MaQuanTriVien" ColumnName="MaQuanTriVien" />
-          <ScalarProperty Name="TenTruyCapQTV" ColumnName="TenTruyCapQTV" />
-          <ScalarProperty Name="MatKhau" ColumnName="MatKhau" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="SANPHAMKHOes">
       <EntityTypeMapping TypeName="CuaHangBuffetModel.SANPHAMKHO">
         <MappingFragment StoreEntitySet="SANPHAMKHO">
           <ScalarProperty Name="MaSanPhamKho" ColumnName="MaSanPhamKho" />
           <ScalarProperty Name="TenSanPhamKho" ColumnName="TenSanPhamKho" />
-          <ScalarProperty Name="Kho" ColumnName="Kho" />
           <ScalarProperty Name="LoaiSanPhamKho" ColumnName="LoaiSanPhamKho" />
           <ScalarProperty Name="DonViTinh" ColumnName="DonViTinh" />
           <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
           <ScalarProperty Name="NguoiNhapKho" ColumnName="NguoiNhapKho" />
           <ScalarProperty Name="NguoiCapNhat" ColumnName="NguoiCapNhat" />
           <ScalarProperty Name="TinhTrangSpKho" ColumnName="TinhTrangSpKho" />
-          <ScalarProperty Name="MaKho" ColumnName="MaKho" />
           <ScalarProperty Name="MaLoaiSanPhamKho" ColumnName="MaLoaiSanPhamKho" />
-          <ScalarProperty Name="MaQuanTriVien" ColumnName="MaQuanTriVien" />
           <ScalarProperty Name="MaNhanVien" ColumnName="MaNhanVien" />
         </MappingFragment>
       </EntityTypeMapping>

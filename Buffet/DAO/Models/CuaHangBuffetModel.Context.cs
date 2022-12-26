@@ -36,7 +36,6 @@ namespace Buffet.DAO.Models
         public virtual DbSet<MONAN> MONANs { get; set; }
         public virtual DbSet<NHANVIEN> NHANVIENs { get; set; }
         public virtual DbSet<PHANQUYEN> PHANQUYENs { get; set; }
-        public virtual DbSet<QUANTRIVIEN> QUANTRIVIENs { get; set; }
         public virtual DbSet<SANPHAMKHO> SANPHAMKHOes { get; set; }
         public virtual DbSet<TAIKHOAN> TAIKHOANs { get; set; }
     }
