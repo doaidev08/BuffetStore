@@ -1,4 +1,5 @@
 ﻿using Buffet.BUS.BUS_QLiNhanVien;
+using Buffet.BUS.BUS_ThemTaiKhoan;
 using Buffet.Helper;
 using Bunifu.UI.WinForms;
 using System;
@@ -18,6 +19,7 @@ namespace Buffet.GUI.GUI_ThemTaiKhoan
         ThongBao thongbao = new ThongBao();
         BunifuSnackbar snack = new BunifuSnackbar();
         BUS_QliNhanVien bUS_QliNhanVien = new BUS_QliNhanVien();
+        BUS_ThemTaiKhoan bus_themTK = new BUS_ThemTaiKhoan();
         public int manv = -1;
         public GUI_QLiTaiKhoan()
         {
@@ -28,6 +30,9 @@ namespace Buffet.GUI.GUI_ThemTaiKhoan
             bunifuDataGridViewStaff.Columns[2].Width = 150;
             bunifuDataGridViewStaff.Columns[3].Width = 200;
             bunifuDataGridViewStaff.Columns[4].Width = 200;
+            bus_themTK.BUS_setAddAccount(comboBoxVaitro);
+            comboBoxVaitro.SelectedValue = 2;
+
         }
 
         private void AddStaff_Click(object sender, EventArgs e)
@@ -38,7 +43,7 @@ namespace Buffet.GUI.GUI_ThemTaiKhoan
             }
             else
             {
-                bUS_QliNhanVien.addStaff(textFieldTenNV.Text, dateTimePickerNgaySinh.Value, Convert.ToInt32(textFiledCCCD.Value) , textFieldSDT.Text,this);
+                bUS_QliNhanVien.addStaff(textFieldTenNV.Text, dateTimePickerNgaySinh.Value, Convert.ToInt32(textFiledCCCD.Value) , textFieldSDT.Text, textFiledCCCD.Value.ToString(), "123",comboBoxVaitro.SelectedText,Int32.Parse(comboBoxVaitro.SelectedValue.ToString()),this);
                 bUS_QliNhanVien.loadDataNV(bunifuDataGridViewStaff, "");
                 // call funcion add Staff
 

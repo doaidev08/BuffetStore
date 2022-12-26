@@ -35,9 +35,9 @@ namespace Buffet.DAO.DAO_FoodManagement
             dataBaseOrigin.database.SaveChanges();
         }
 
-        public void DAO_deleteCateFood(DANHMUCMONAN foodCate)
+        public void DAO_deleteCateFood(int foodCateID)
         {
-            dataBaseOrigin.database.DANHMUCMONANs.Attach(foodCate);
+            DANHMUCMONAN foodCate = dataBaseOrigin.database.DANHMUCMONANs.Find(foodCateID);
             dataBaseOrigin.database.DANHMUCMONANs.Remove(foodCate);
             dataBaseOrigin.database.MONANs.RemoveRange(dataBaseOrigin.database.MONANs.Where(
                 x => x.MaDanhMucMonAn == foodCate.MaDanhMucMonAn)
@@ -91,9 +91,9 @@ namespace Buffet.DAO.DAO_FoodManagement
             dataBaseOrigin.database.SaveChanges();
         }
 
-        public void DAO_deleteFood(MONAN food)
+        public void DAO_deleteFood(int foodID)
         {
-            dataBaseOrigin.database.MONANs.Attach(food);
+            MONAN food = dataBaseOrigin.database.MONANs.Find(foodID);
             dataBaseOrigin.database.MONANs.Remove(food);
             dataBaseOrigin.database.SaveChanges();
         }

@@ -21,7 +21,7 @@ namespace Buffet.DAO.Models
         public int SoLuong { get; set; }
         public string NguoiNhapKho { get; set; }
         public string NguoiCapNhat { get; set; }
-        public Nullable<bool> TinhTrangSpKho { get; set; }
+        public bool TinhTrangSpKho { get; set; }
         public Nullable<int> MaLoaiSanPhamKho { get; set; }
         public Nullable<int> MaNhanVien { get; set; }
     

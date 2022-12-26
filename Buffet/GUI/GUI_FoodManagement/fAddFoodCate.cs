@@ -67,7 +67,10 @@ namespace Buffet.GUI.GUI_FoodManagement
             }
             
         }
-
+        private void reset()
+        {
+            txbFoodCate.Text = "";
+        }
         private void btnAdd_Click(object sender, EventArgs e)
         {
             if (txbFoodCate.Text != "")
@@ -83,6 +86,7 @@ namespace Buffet.GUI.GUI_FoodManagement
                     
                     busFoodManagement.BUS_loadDataFoodCate(FoodCateGridView);
                     //openChildForm()
+                    reset();
                 }
                 else
                 {

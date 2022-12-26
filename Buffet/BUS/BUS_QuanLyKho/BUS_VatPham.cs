@@ -30,13 +30,14 @@ namespace Buffet.BUS.BUS_QuanLyKho
             comboBox.ValueMember = "MaLoaiSanPhamKho";
         }
 
-        public bool BUS_AddVatPham(BunifuTextBox name, ComboBox loaiVP, NumericUpDown count)
+        public bool BUS_AddVatPham(BunifuTextBox name, ComboBox loaiVP, BunifuTextBox dvTinh, NumericUpDown count)
         {
             SANPHAMKHO spKho = new SANPHAMKHO()
             {
                 TenSanPhamKho = name.Text,
                 MaLoaiSanPhamKho= int.Parse(loaiVP.SelectedValue.ToString()),
                 LoaiSanPhamKho= loaiVP.SelectedText,
+                DonViTinh = dvTinh.Text,
                 SoLuong = Convert.ToInt32(count.Value)
             };
             daoVatPham.AddVatPham(spKho);
@@ -59,7 +60,7 @@ namespace Buffet.BUS.BUS_QuanLyKho
         {
             SANPHAMKHO spKho = new SANPHAMKHO();
             spKho.MaSanPhamKho = vpID;
-            daoVatPham.DAO_XoaVatPham(spKho);
+            daoVatPham.DAO_XoaVatPham(vpID);
             return true;
         }
     }

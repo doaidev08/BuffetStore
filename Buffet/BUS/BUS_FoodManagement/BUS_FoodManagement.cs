@@ -72,7 +72,7 @@ namespace Buffet.BUS.BUS_FoodManagement
             {
                 MaDanhMucMonAn = primaryKey,
             };
-            daoFoodManagement.DAO_deleteCateFood(FoodCate);
+            daoFoodManagement.DAO_deleteCateFood(primaryKey);
             return true;
         }
 
@@ -103,7 +103,7 @@ namespace Buffet.BUS.BUS_FoodManagement
             {
                 MaMonAn = primaryKey,
             };
-            daoFoodManagement.DAO_deleteFood(Food);
+            daoFoodManagement.DAO_deleteFood(primaryKey);
             return true;
         }
     }

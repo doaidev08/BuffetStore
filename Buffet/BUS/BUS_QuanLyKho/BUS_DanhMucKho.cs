@@ -35,7 +35,7 @@ namespace Buffet.BUS.BUS_QuanLyKho
             {
                 MaLoaiSanPhamKho = primaryKey,
             };
-            daoDanhMucKho.DAO_deleteCateProduct(productCate);
+            daoDanhMucKho.DAO_deleteCateProduct(primaryKey);
             return true;
         }
         //Sửa loại sản phẩm kho

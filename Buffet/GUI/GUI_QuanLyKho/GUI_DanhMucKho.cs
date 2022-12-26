@@ -23,6 +23,12 @@ namespace Buffet.GUI.GUI_QuanLyKho
             busDanhMucKho.BUS_loadDataProductCate(ProductCateGridView);
         }
 
+        public void reset()
+        {
+            txbProductCate.Text = "";
+            //selectFoodCate = null;
+        }
+
         private void lbFoodCate_Click(object sender, EventArgs e)
         {
 
@@ -42,6 +48,7 @@ namespace Buffet.GUI.GUI_QuanLyKho
 
                 busDanhMucKho.BUS_loadDataProductCate(ProductCateGridView);
                 //openChildForm()
+                reset();
             }
             else
             {

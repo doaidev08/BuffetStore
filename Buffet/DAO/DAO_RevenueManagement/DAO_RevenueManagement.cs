@@ -50,9 +50,9 @@ namespace Buffet.DAO.DAO_RevenueManagement
             return listRevenues;
         }
 
-        public void DAO_deleteRevenue(DOANHTHU revenue)
+        public void DAO_deleteRevenue(DOANHTHU revenueID)
         {
-            dataBaseOrigin.database.DOANHTHUs.Attach(revenue);
+            DOANHTHU revenue = dataBaseOrigin.database.DOANHTHUs.Find(revenueID);
             dataBaseOrigin.database.DOANHTHUs.Remove(revenue);
             dataBaseOrigin.database.SaveChanges();
         }

@@ -20,32 +20,15 @@ namespace Buffet.DAO.DAO_QuanLyKho
                 x.MaSanPhamKho,
                 x.TenSanPhamKho,
                 x.MaLoaiSanPhamKho,
+                x.DonViTinh
             }).ToList();
             return dsVatPham;
         }
 
         public void AddVatPham(SANPHAMKHO spKho)
         {
-            try
-            {
                 dataBaseOrigin.database.SANPHAMKHOes.Add(spKho);
                 dataBaseOrigin.database.SaveChanges();
-                MessageBox.Show("done!");
-            }
-            catch (DbEntityValidationException e)
-            {
-                foreach (var eve in e.EntityValidationErrors)
-                {
-                    /*MessageBox.Show(eve.Entry.Entity.GetType().Name);
-                    MessageBox.Show(eve.Entry.State.ToString());*/
-                    foreach (var ve in eve.ValidationErrors)
-                    {
-                        MessageBox.Show(ve.PropertyName);
-                        MessageBox.Show(eve.Entry.CurrentValues.GetValue<object>(ve.PropertyName).ToString());
-                        MessageBox.Show(ve.ErrorMessage);
-                    }
-                }
-            }
         }
 
         public void DAO_UpdateVatPham(int primaryKey, SANPHAMKHO vp)
@@ -57,9 +40,9 @@ namespace Buffet.DAO.DAO_QuanLyKho
             dataBaseOrigin.database.SaveChanges();
         }
 
-        public void DAO_XoaVatPham(SANPHAMKHO sp)
+        public void DAO_XoaVatPham(int spID)
         {
-            dataBaseOrigin.database.SANPHAMKHOes.Attach(sp);
+            SANPHAMKHO sp = dataBaseOrigin.database.SANPHAMKHOes.Find(spID);
             dataBaseOrigin.database.SANPHAMKHOes.Remove(sp);
             dataBaseOrigin.database.SaveChanges();
         }

@@ -29,9 +29,9 @@ namespace Buffet.DAO.DAO_QuanLyKho
             dataBaseOrigin.database.SaveChanges();
         }
         //xóa Loại sản phẩm kho
-        public void DAO_deleteCateProduct(LOAISANPHAMKHO productCate)
+        public void DAO_deleteCateProduct(int productCateID)
         {
-            dataBaseOrigin.database.LOAISANPHAMKHOes.Attach(productCate);
+            LOAISANPHAMKHO productCate = dataBaseOrigin.database.LOAISANPHAMKHOes.Find(productCateID);
             dataBaseOrigin.database.LOAISANPHAMKHOes.Remove(productCate);
             dataBaseOrigin.database.SANPHAMKHOes.RemoveRange(dataBaseOrigin.database.SANPHAMKHOes.Where(
                 x => x.MaLoaiSanPhamKho == productCate.MaLoaiSanPhamKho)

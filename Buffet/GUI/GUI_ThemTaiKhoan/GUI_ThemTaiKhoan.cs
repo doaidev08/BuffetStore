@@ -21,7 +21,7 @@ namespace Buffet.GUI.GUI_ThemTaiKhoan
         public GUI_ThemTaiKhoan()
         {
             InitializeComponent();
-            themtaikhoan.BUS_setAddAccount(comboBoxVaitro, comboBoxMaNV);
+            themtaikhoan.BUS_setAddAccount(comboBoxVaitro);
         }
         private void ThemTaiKhoan()
         {

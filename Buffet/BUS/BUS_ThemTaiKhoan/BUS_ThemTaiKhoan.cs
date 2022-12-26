@@ -15,12 +15,12 @@ namespace Buffet.BUS.BUS_ThemTaiKhoan
         DAO_ThemTaiKHoan themtaikhoan = new DAO_ThemTaiKHoan();
         ThongBao thongBao = new ThongBao();
         BunifuSnackbar snack = new BunifuSnackbar();
-        public void BUS_setAddAccount(ComboBox cbRole ,ComboBox cbStaff)
+        public void BUS_setAddAccount(ComboBox cbRole )
         {
              var dataRole = themtaikhoan.getDataAddRole();
-             cbRole.DataSource = dataRole;
-             var dataStaff = themtaikhoan.getDataAddStaff();
-             cbStaff.DataSource = dataStaff;
+             cbRole.DataSource = dataRole;     
+            cbRole.DisplayMember = "VaiTroPhanQuyen";
+            cbRole.ValueMember = "MaPhanQuyen";
         }
         public void BUS_AddAccount (string tenTruyCap, string matKhau, string vaiTro, int maNV, Form form) 
         {

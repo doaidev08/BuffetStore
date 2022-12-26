@@ -29,7 +29,8 @@ namespace Buffet.GUI.GUI_QuanLyKho
         {
             txbTenVatPham.Text = "";
             //selectFoodCate = null;
-            txbSoLuong.Value = 0;
+            txbDvTinh.Text = "";
+            txbSoLuong.Value = 10;
         }
 
         public void updateDB(bool condition1, bool condition2)
@@ -70,7 +71,6 @@ namespace Buffet.GUI.GUI_QuanLyKho
                 );
             }
         }
-
         private void tableVatPham_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             // handle update func
@@ -81,7 +81,7 @@ namespace Buffet.GUI.GUI_QuanLyKho
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            updateDB(txbTenVatPham.Text != "", busVatPham.BUS_AddVatPham(txbTenVatPham, selectLoaiVatPham, txbSoLuong));
+            updateDB(txbTenVatPham.Text != "" && txbDvTinh.Text != "", busVatPham.BUS_AddVatPham(txbTenVatPham, selectLoaiVatPham,txbDvTinh, txbSoLuong));
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
